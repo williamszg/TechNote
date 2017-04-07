@@ -1,0 +1,1278 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{indentfirst}
+\usepackage{changepage}
+\usepackage{gensymb}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{authblk}
+\usepackage{listings}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\urlstyle{same}
+
+\newlist{steps}{enumerate}{1}
+\setlist[steps, 1]{label = Step \arabic*:}
+
+
+
+\title{Acceptance Study for SciBooNE Charged-Current Coherent Pion Production Technical Note Rough Draft}
+\author[1]{Jonathan Asaadi\thanks{jonathan.asaadi@uta.edu}}
+\author[1]{Zachary Glenn Randell Williams\thanks{zachary.williams2@mavs.uta.edu}}
+\affil[1]{Department of Physics, The University of Texas at Arlington}
+
+\renewcommand\Authands{ and }
+
+%|------------------------------The Document Begins Here----------------------------------|
+\begin{document}
+
+%|------------------------------The Title Page Begins Here--------------------------------|
+\begin{minipage}[h]{\textwidth}
+\maketitle
+\begin{abstract}
+This was blah blah and blah blah blah yes thank you.
+\end{abstract}
+\end{minipage}
+\newpage
+%|===============================The Title Page Ends Here=================================|
+
+
+
+%============================ A New Section Begins Here ===================================
+\section{Introduction}
+The purpose of this document is to serve as both a reference and guide for those who will work with the SciBooNE Acceptance Study Code that was written by Zachary Williams. Ideally, the order of the figures that appear in this document will follow the order that the same figures appear in the acceptance study slide show hyper-linked \href{https://drive.google.com/open?id=1bMB4h3mLkGnKXWI7Tkn8edYM4Eyt6c9w6497nT9lB3A}{here}. The code can be downloaded from this github repository labeled \href{https://github.com/williamszg/SciBooNE-MC}{SciBooNE-MC}.
+
+There is a lot more to say in this introduction before I just nonchalantly move on to the next fucking subject of this fucking tech note!
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{The Goal}
+The goal of the reanalysis is to examine the acceptance modeling for the SciBooNE results in the presence of modern neutrino generators and updated models in order to understand why SciBooNE did not observe Charged-Current Coherent Pion Production at low neutrino energy. The purpose of this acceptance study is to blah blah blah... 
+%%%%%%%%%%%%%%%%%%%%%%%%%%% The Introduction section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%============================ A New Section Begins Here ===================================
+\section{Selecting Charged-Current Coherent Pion Production Events}
+This section is intended to detail the nuances of this acceptance model, and to detail what assumptions are made in the acceptance modeling to result in accurate classifications of events as Charged-Current Coherent Pion Production.
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{The Detector}
+For the purposes of this acceptance study, there are two sub-detectors, which are both simulated for event classification and selection cuts, that the detector of the SciBooNE experiment is composed of. The first (and the more upstream) of the sub-detectors, is the Scintillator Bar Tracker (SciBar) which was originally conceived and constructed to function as the near detector for the K2K experiment [reference]. The second (and more downstream) of the sub-detectors, is the Muon Range Detector (MRD), which is the detector designed and constructed specifically for SciBooNE for measuring the momentums of the muons produced from charged-current neutrino interactions up to $1.2$ $GeV/c$ by using the observed range of the trajectory of the muon.
+
+\subsubsection{The Scintillator Bar Tracker (SciBar)}
+\begin{lstlisting}[language=C]
+hPStoppedBSCC->Sumw2();
+hPNonStoppedBSCC->Sumw2();
+hCosStoppedBSCC->Sumw2();
+hCosNonStoppedBSCC->Sumw2();
+\end{lstlisting}
+
+\subsubsection{The Muon Range Detector (MRD)}
+Here I will detail the MRD and how I simulated it in my code, such as the dimensions and the energy required to traverse the detector.
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{Vertex Distributions}
+The events were all given a random initial point that was generated with the goal that the vertex distributions of this simulation would closely match the vertex distributions that Hiraide (need to put a reference) showed in his thesis. This was done by... etc.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{EventClassifications/VertexDistributions.png}
+\caption{Vertex distributions of the events in the new Rein-Sehgal sample.}
+\end{figure}
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{Event Classifications}
+There were three different classifications for events that qualified as CC-Coh Pion Production events, that the muon made it to the MRD, and the muon penetrated at least three layers of steel. These categories will be referenced multiple times throughout the remainder of this paper, which makes pertinent that the reader has an understanding of what each of the three specifically mean for any event that falls under any of these classifications.
+
+\subsubsection{Stopped}
+An event is classified as "Stopped," if the event qualified as being a CC-Coh Pion Production event, the muon of the event reached the MRD, penetrated three layers of steel, and stopped (or embedded) in the MRD without exiting the sides or the back face. Events that are classified as "Stopped" are included in the combined samples of this acceptance study and are called "Good" events. This is shown in the figure below.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{EventClassifications/Stopped.png}
+\caption{Depiction of an event that was classified as "Stopped."}
+\end{figure}
+
+\subsubsection{Not-Stopped}
+An event is classified as "Not-Stopped," if the event qualified as being a CC-Coh Pion Production event, the muon of the event reached the MRD, and the muon passed out the back face of the MRD without stopping. Events that are classified as "Not-Stopped" are included in the combined samples of this acceptance study and are also called "Good" events. This is shown in the figure below.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{EventClassifications/NotStopped.png}
+\caption{Depiction of an event that was classified as "Not-Stopped."}
+\end{figure}
+
+\subsubsection{Out-Side}
+An event is classified as "Out-Side," if the event qualified as being a CC-Coh Pion Production event, the muon of the event reached the MRD, penetrated three layers of steel, and then passed through one of the sides of the MRD (not including the back face) without stopping. Events that are classified as "Out-Side" are not included in the combined samples because there was not enough material traversal for an accurate reconstruction of the particles momentum and energy to be made. This is shown in the figure below.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{EventClassifications/OutSide.png}
+\caption{Depiction of an event that was classified as "Out-Side."}
+\end{figure}
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{What Is Next?}
+Blank example.
+%%%%%%%%%%%%%%%%%%%%%%%%%%% The CC-Coh Pion section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%============================ A New Section Begins Here ===================================
+\section{The Files and Their Outputs}
+This section details the different files, and what the files output. 
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{SciBooNE\textunderscore numu\textunderscore coh\textunderscore RooTrack.root}
+This is the root file that contains the Neutrino Mode Rein-Sehgal based events from a newer version of the NEUT generator with 1,000,000 events generated. The version of NEUT that was used is: NEUTv5.3.6. This was generated by Callum Wilkinson, so big thanks to Callum!
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{SciBooNE\textunderscore numubar\textunderscore coh\textunderscore RooTrack.root}
+This is the root file that contains the Anti-Neutrino Mode Rein-Sehgal based events from a newer version of the NEUT generator with 1,000,000 events generated. The version of NEUT that was used is: NEUTv5.3.6. This was also generated by Callum Wilkinson, so big thanks again!
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{SciBooNE\textunderscore numu\textunderscore coh\textunderscore RooTrack\textunderscore NEW.root}
+This is the root file that contains the Neutrino Mode Berger-Sehgal based events from a newer version of the NEUT generator with 1,000,000 events generated. The version of NEUT that was used is: NEUTv5.3.6. This was again generated by Callum Wilkinson, so big thanks again!
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{SciBooNE\textunderscore numubar\textunderscore coh\textunderscore RooTrack\textunderscore NEW.root}
+This is the root file that contains the Anti-Neutrino Mode Berger-Sehgal based events from a newer version of the NEUT generator with 1,000,000 events generated. The version of NEUT that was used is: NEUTv5.3.6. This was again generated by Callum Wilkinson, so big thanks yet again!
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{SciBooNE\textunderscore numu\textunderscore coh\textunderscore OLDNEUT\textunderscore RooTrack.root}
+This is the root file that contains the Neutrino Mode Rein-Sehgal based events from an older version (believed to be the version used by the SciBooNE collaboration) of the NEUT generator with 100,000 generated events. This sample, as a result of being an order of magnitude smaller than the other samples, is statistics limited. This was generated by Callum Wilkinson, so big thanks to Callum again!
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{NewNMReinSehgal.C}
+This file is the macro that corresponds to the "NewNMReinSehgal.h" file, which connects with this file: "SciBooNE\textunderscore numu\textunderscore coh\textunderscore RooTrack.root". This file performs the main analysis for this generated sample, and then organizes the information into many different histograms. The histograms are then written to a file titled "totalmuoninfoRS.root" inside the "ROOTFILES" directory. The "ROOTFILES" directory is included in the SciBooNE-MC repository (it is absolutely pertinent that this directory be located where the macro files are located due to how the calls of the combined data macros reference the now saved histograms). When this macro is run (which can take a while), it also plots a few different histograms. The histograms that are plotted are the ones shown in the figures below with descriptions included with the corresponding figures. The order that the histograms appear in this paper is the same order they will be shown when this macro is run in root.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMReinSehgalImages/1-X-YVertexDistributionNMRS.png}
+\caption{New Rein-Sehgal X-Y vertex distributions for muons that made it to the MRD.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMReinSehgalImages/2-ZVertexDistributionNMRS.png}
+\caption{New Rein-Sehgal Z vertex distributions for the interactions.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMReinSehgalImages/3-YVertexDistributionNMRS.png}
+\caption{New Rein-Sehgal Y vertex distributions for the interactions.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMReinSehgalImages/4-XVertexDistributionNMRS.png}
+\caption{New Rein-Sehgal X vertex distributions for the interactions.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMReinSehgalImages/5-GoodCCCohPionInfoNMRS.png}
+\caption{This is a 2D histogram for the momentum and angle of the pion in the CC Coh Pion events that met the qualification of being "good".}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMReinSehgalImages/6-GoodCCCohMuonInfoNMRS.png}
+\caption{This is a 2D histogram for the momentum and angle of the muon in the CC Coh Pion events that met the qualification of being "good".}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMReinSehgalImages/7-LayerPenetrationNMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMReinSehgalImages/8-TotalCCCohPionInfoNMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMReinSehgalImages/9-TotalCCCohMuonInfoNMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+The NewNMReinSehgal.C macro also calculates many different quantities for the generated simulation of the events and saves the information in histograms that are later called upon through the plotting macros (which are after all of the analysis macros). The first quantity that is calculated for the different vertexes is the momentum of both the muon and the pion, which are both calculated using the equations:
+
+\begin{equation}
+|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
+\end{equation}
+
+\begin{equation}
+|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
+\end{equation}
+
+\noindent
+The momentum is reported in units of $MeV/c$.
+
+The next quantity that is calculated in the macro is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
+
+\begin{equation}
+\theta_\mu = tan^{-1}(\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}/{P_{\mu_z}})
+\end{equation}
+
+\begin{equation}
+\theta_\pi = tan^{-1}(\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}/{P_{\pi_z}})
+\end{equation}
+
+\noindent
+The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
+
+The last two quantities that this analysis macro calculates are the two different types of four-momentum transfers specific to this interaction, which are $Q^2$ and $|t|$. The $Q^2$ corresponds to the four-momentum transfer from the neutrino and muon to the nucleus and pion, and is calculated using the equation:
+
+\begin{equation}
+Q^2 = |(P_{\nu_\mu} - P_\mu)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $Q^2$:
+
+\begin{equation}
+Q^2 = |(P_{\nu_{\mu,x}} - P_{\mu_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E})^2|
+\end{equation}
+
+\noindent
+$Q^2$ is reported in units of $(MeV/c)^2$.
+
+The $|t|$ corresponds to the four-momentum transfer from the neutrino, muon, and pion to the nucleus, and is calculated using the equation:
+
+\begin{equation}
+|t| = |(Q - P_\pi)^2| = |(P_{\nu_\mu} - P_\mu - P_\pi)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $|t|$:
+
+\begin{equation}
+|t| = |(P_{\nu_{\mu,x}} - P_{\mu_x} - P_{\pi_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y} - P_{\pi_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z} - P_{\pi_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E} - P_{\pi_E})^2|
+\end{equation}
+
+\noindent
+$|t|$ is reported in units of $(MeV/c)^2$.
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{NewNMBergerSehgal.C}
+This file is the macro that corresponds to the "NewNMBergerSehgal.h" file, which connects with this file: "SciBooNE\textunderscore numu\textunderscore coh\textunderscore RooTrack\textunderscore NEW.root". This file performs the main analysis for this generated sample, and then organizes the information into many different histograms. The histograms are then written to a file titled "totalmuoninfoBS.root" inside the "ROOTFILES" directory. The "ROOTFILES" directory is included in the SciBooNE-MC repository (it is absolutely pertinent that this directory be located where the macro files are located due to how the calls of the combined data macros reference the now saved histograms).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMBergerSehgalImages/1-X-YVertexDistributionNMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMBergerSehgalImages/2-ZVertexDistributionNMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMBergerSehgalImages/3-YVertexDistributionNMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMBergerSehgalImages/4-XVertexDistributionNMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMBergerSehgalImages/5-GoodCCCohPionInfoNMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMBergerSehgalImages/6-GoodCCCohMuonInfoNMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMBergerSehgalImages/7-LayerPenetrationNMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMBergerSehgalImages/8-TotalCCCohPionInfoNMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewNMBergerSehgalImages/9-TotalCCCohMuonInfoNMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+The NewNMBergerSehgal.C macro also calculates many different quantities for the generated simulation of the events and saves the information in histograms that are later called upon through the plotting macros (which are after all of the analysis macros). The first quantity that is calculated for the different vertexes is the momentum of both the muon and the pion, which are both calculated using the equations:
+
+\begin{equation}
+|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
+\end{equation}
+
+\begin{equation}
+|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
+\end{equation}
+
+\noindent
+The momentum is reported in units of $MeV/c$.
+
+The next quantity that is calculated in the macro is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
+
+\begin{equation}
+\theta_\mu = tan^{-1}(\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}/{P_{\mu_z}})
+\end{equation}
+
+\begin{equation}
+\theta_\pi = tan^{-1}(\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}/{P_{\pi_z}})
+\end{equation}
+
+\noindent
+The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
+
+The last two quantities that this analysis macro calculates are the two different types of four-momentum transfers specific to this interaction, which are $Q^2$ and $|t|$. The $Q^2$ corresponds to the four-momentum transfer from the neutrino and muon to the nucleus and pion, and is calculated using the equation:
+
+\begin{equation}
+Q^2 = |(P_{\nu_\mu} - P_\mu)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $Q^2$:
+
+\begin{equation}
+Q^2 = |(P_{\nu_{\mu,x}} - P_{\mu_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E})^2|
+\end{equation}
+
+\noindent
+$Q^2$ is reported in units of $(MeV/c)^2$.
+
+The $|t|$ corresponds to the four-momentum transfer from the neutrino, muon, and pion to the nucleus, and is calculated using the equation:
+
+\begin{equation}
+|t| = |(Q - P_\pi)^2| = |(P_{\nu_\mu} - P_\mu - P_\pi)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $|t|$:
+
+\begin{equation}
+|t| = |(P_{\nu_{\mu,x}} - P_{\mu_x} - P_{\pi_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y} - P_{\pi_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z} - P_{\pi_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E} - P_{\pi_E})^2|
+\end{equation}
+
+\noindent
+$|t|$ is reported in units of $(MeV/c)^2$.
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{OldNMReinSehgal.C}
+This file is the macro that corresponds to the "OldNMReinSehgal.h" file, which connects with this file: "SciBooNE\textunderscore numu\textunderscore coh\textunderscore OLDNEUT\textunderscore RooTrack.root". This file performs the main analysis for this generated sample, and then organizes the information into many different histograms. The histograms are then written to a file titled "totalmuoninfoOBS.root" inside the "ROOTFILES" directory. The "ROOTFILES" directory is included in the SciBooNE-MC repository (it is absolutely pertinent that this directory be located where the macro files are located due to how the calls of the combined data macros reference the now saved histograms).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OldNMReinSehgalImages/1-X-YVertexDistributionNMORS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OldNMReinSehgalImages/2-ZVertexDistributionNMORS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OldNMReinSehgalImages/3-YVertexDistributionNMORS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OldNMReinSehgalImages/4-XVertexDistributionNMORS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OldNMReinSehgalImages/5-GoodCCCohPionInfoNMORS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OldNMReinSehgalImages/6-GoodCCCohMuonInfoNMORS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OldNMReinSehgalImages/7-LayerPenetrationNMORS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OldNMReinSehgalImages/8-TotalCCCohPionInfoNMORS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OldNMReinSehgalImages/9-TotalCCCohMuonInfoNMORS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+The OldNMReinSehgal.C macro also calculates many different quantities for the generated simulation of the events and saves the information in histograms that are later called upon through the plotting macros (which are after all of the analysis macros). The first quantity that is calculated for the different vertexes is the momentum of both the muon and the pion, which are both calculated using the equations:
+
+\begin{equation}
+|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
+\end{equation}
+
+\begin{equation}
+|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
+\end{equation}
+
+\noindent
+The momentum is reported in units of $MeV/c$.
+
+The next quantity that is calculated in the macro is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
+
+\begin{equation}
+\theta_\mu = tan^{-1}(\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}/{P_{\mu_z}})
+\end{equation}
+
+\begin{equation}
+\theta_\pi = tan^{-1}(\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}/{P_{\pi_z}})
+\end{equation}
+
+\noindent
+The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
+
+The last two quantities that this analysis macro calculates are the two different types of four-momentum transfers specific to this interaction, which are $Q^2$ and $|t|$. The $Q^2$ corresponds to the four-momentum transfer from the neutrino and muon to the nucleus and pion, and is calculated using the equation:
+
+\begin{equation}
+Q^2 = |(P_{\nu_\mu} - P_\mu)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $Q^2$:
+
+\begin{equation}
+Q^2 = |(P_{\nu_{\mu,x}} - P_{\mu_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E})^2|
+\end{equation}
+
+\noindent
+$Q^2$ is reported in units of $(MeV/c)^2$.
+
+The $|t|$ corresponds to the four-momentum transfer from the neutrino, muon, and pion to the nucleus, and is calculated using the equation:
+
+\begin{equation}
+|t| = |(Q - P_\pi)^2| = |(P_{\nu_\mu} - P_\mu - P_\pi)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $|t|$:
+
+\begin{equation}
+|t| = |(P_{\nu_{\mu,x}} - P_{\mu_x} - P_{\pi_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y} - P_{\pi_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z} - P_{\pi_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E} - P_{\pi_E})^2|
+\end{equation}
+
+\noindent
+$|t|$ is reported in units of $(MeV/c)^2$.
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{NewANMReinSehgal.C}
+This file is the macro that corresponds to the "NewANMReinSehgal.h" file, which connects with this file: "SciBooNE\textunderscore numubar\textunderscore coh\textunderscore RooTrack.root". This file performs the main analysis for this generated sample, and then organizes the information into many different histograms. The histograms are then written to a file titled "totalmuoninfoRSBar.root" inside the "ROOTFILES" directory. The "ROOTFILES" directory is included in the SciBooNE-MC repository (it is absolutely pertinent that this directory be located where the macro files are located due to how the calls of the combined data macros reference the now saved histograms).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMReinSehgalImages/1-X-YVertexDistributionANMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMReinSehgalImages/2-ZVertexDistributionANMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMReinSehgalImages/3-YVertexDistributionANMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMReinSehgalImages/4-XVertexDistributionANMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMReinSehgalImages/5-GoodCCCohPionInfoANMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMReinSehgalImages/6-GoodCCCohMuonInfoANMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMReinSehgalImages/7-LayerPenetrationANMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMReinSehgalImages/8-TotalCCCohPionInfoANMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMReinSehgalImages/9-TotalCCCohMuonInfoANMRS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+The NewANMReinSehgal.C macro also calculates many different quantities for the generated simulation of the events and saves the information in histograms that are later called upon through the plotting macros (which are after all of the analysis macros). The first quantity that is calculated for the different vertexes is the momentum of both the muon and the pion, which are both calculated using the equations:
+
+\begin{equation}
+|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
+\end{equation}
+
+\begin{equation}
+|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
+\end{equation}
+
+\noindent
+The momentum is reported in units of $MeV/c$.
+
+The next quantity that is calculated in the macro is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
+
+\begin{equation}
+\theta_\mu = tan^{-1}(\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}/{P_{\mu_z}})
+\end{equation}
+
+\begin{equation}
+\theta_\pi = tan^{-1}(\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}/{P_{\pi_z}})
+\end{equation}
+
+\noindent
+The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
+
+The last two quantities that this analysis macro calculates are the two different types of four-momentum transfers specific to this interaction, which are $Q^2$ and $|t|$. The $Q^2$ corresponds to the four-momentum transfer from the neutrino and muon to the nucleus and pion, and is calculated using the equation:
+
+\begin{equation}
+Q^2 = |(P_{\nu_\mu} - P_\mu)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $Q^2$:
+
+\begin{equation}
+Q^2 = |(P_{\nu_{\mu,x}} - P_{\mu_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E})^2|
+\end{equation}
+
+\noindent
+$Q^2$ is reported in units of $(MeV/c)^2$.
+
+The $|t|$ corresponds to the four-momentum transfer from the neutrino, muon, and pion to the nucleus, and is calculated using the equation:
+
+\begin{equation}
+|t| = |(Q - P_\pi)^2| = |(P_{\nu_\mu} - P_\mu - P_\pi)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $|t|$:
+
+\begin{equation}
+|t| = |(P_{\nu_{\mu,x}} - P_{\mu_x} - P_{\pi_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y} - P_{\pi_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z} - P_{\pi_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E} - P_{\pi_E})^2|
+\end{equation}
+
+\noindent
+$|t|$ is reported in units of $(MeV/c)^2$.
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{NewANMBergerSehgal.C}
+This file is the macro that corresponds to the "NewANMBergerSehgal.h" file, which connects with this file: "SciBooNE\textunderscore numubar\textunderscore coh\textunderscore RooTrack\textunderscore NEW.root". This file performs the main analysis for this generated sample, and then organizes the information into many different histograms. The histograms are then written to a file titled "totalmuoninfoBSBar.root" inside the "ROOTFILES" directory. The "ROOTFILES" directory is included in the SciBooNE-MC repository (it is absolutely pertinent that this directory be located where the macro files are located due to how the calls of the combined data macros reference the now saved histograms).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMBergerSehgalImages/1-X-YVertexDistributionANMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMBergerSehgalImages/2-ZVertexDistributionANMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMBergerSehgalImages/3-YVertexDistributionANMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMBergerSehgalImages/4-XVertexDistributionANMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMBergerSehgalImages/5-GoodCCCohPionInfoANMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMBergerSehgalImages/6-GoodCCCohMuonInfoANMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMBergerSehgalImages/7-LayerPenetrationANMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMBergerSehgalImages/8-TotalCCCohPionInfoANMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NewANMBergerSehgalImages/9-TotalCCCohMuonInfoANMBS.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+The NewANMBergerSehgal.C macro also calculates many different quantities for the generated simulation of the events and saves the information in histograms that are later called upon through the plotting macros (which are after all of the analysis macros). The first quantity that is calculated for the different vertexes is the momentum of both the muon and the pion, which are both calculated using the equations:
+
+\begin{equation}
+|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
+\end{equation}
+
+\begin{equation}
+|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
+\end{equation}
+
+\noindent
+The momentum is reported in units of $MeV/c$.
+
+The next quantity that is calculated in the macro is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
+
+\begin{equation}
+\theta_\mu = tan^{-1}(\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}/{P_{\mu_z}})
+\end{equation}
+
+\begin{equation}
+\theta_\pi = tan^{-1}(\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}/{P_{\pi_z}})
+\end{equation}
+
+\noindent
+The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
+
+The last two quantities that this analysis macro calculates are the two different types of four-momentum transfers specific to this interaction, which are $Q^2$ and $|t|$. The $Q^2$ corresponds to the four-momentum transfer from the neutrino and muon to the nucleus and pion, and is calculated using the equation:
+
+\begin{equation}
+Q^2 = |(P_{\nu_\mu} - P_\mu)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $Q^2$:
+
+\begin{equation}
+Q^2 = |(P_{\nu_{\mu,x}} - P_{\mu_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E})^2|
+\end{equation}
+
+\noindent
+$Q^2$ is reported in units of $(MeV/c)^2$.
+
+The $|t|$ corresponds to the four-momentum transfer from the neutrino, muon, and pion to the nucleus, and is calculated using the equation:
+
+\begin{equation}
+|t| = |(Q - P_\pi)^2| = |(P_{\nu_\mu} - P_\mu - P_\pi)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $|t|$:
+
+\begin{equation}
+|t| = |(P_{\nu_{\mu,x}} - P_{\mu_x} - P_{\pi_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y} - P_{\pi_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z} - P_{\pi_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E} - P_{\pi_E})^2|
+\end{equation}
+
+\noindent
+$|t|$ is reported in units of $(MeV/c)^2$.
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{NMCombinedPlots.C}
+I need to come back and insert all of my images here.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/1-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/2-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/3-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/4-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/5-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/6-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/7-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/8-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/9-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/10-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/11-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/12-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/13-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/14-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/15-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/16-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/17-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/18-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/19-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/20-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/21-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/22-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/23-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/24-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMCombinedPlotsImages/25-NMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{NMPionPlotting.C}
+I need to come back and insert all of my images here.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/1-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/2-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/3-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/4-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/5-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/6-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/7-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/8-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/9-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/10-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/11-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMPionPlottingImages/12-NMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{NMFourSquaredPlotting.C}
+I need to come back and insert all of my images here.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/1-NMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/2-NMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/3-NMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/4-NMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/5-NMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/6-NMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{ANMCombinedPlots.C}
+I need to come back and insert all of my images here.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/1-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/2-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/3-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/4-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/5-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/6-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/7-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/8-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/9-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/10-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/11-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/12-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/13-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/14-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/15-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/16-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/17-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMCombinedPlotsImages/18-ANMCombinedPlots.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{ANMPionPlotting.C}
+I need to come back and insert all of my images here.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/1-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/2-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/3-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/4-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/5-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/6-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/7-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/8-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/9-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/10-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/11-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMPionPlottingImages/12-ANMPionPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+%-----------------------------------------------------------------------------------------------------------------|
+\subsection{ANMFourSquaredPlotting.C}
+I need to come back and insert all of my images here.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/1-ANMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/2-ANMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/3-ANMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/4-ANMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/5-ANMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/6-ANMFourSquaredPlotting.png}
+\caption{This is a plot right here. Nice of you to notice!}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Files and Their Outputs section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
+
+
+
+%======================================== A New Section Begins Here =============================================|
+\section{Steps for Running the Code}
+The instructions on how to run the code and the order the files need to run in so that there are no resulting error messages, or other issues while running the code, are detailed in this section.
+
+\begin{adjustwidth}{4.0em}{0pt}
+\begin{steps}
+  \item This is the first step.
+  \item This is the second step.
+  \item This is the third step.
+  \item Etc.
+\end{steps}
+\end{adjustwidth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Steps for Running the Code section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
+
+
+
+%===================================== A New Section Begins Here ===============================================|
+\section{Closing Remarks and Cautions}
+These are just a few cautionary suggestions for potential issues that might be encountered while trying to use this code. This will also be where and further closing remarks can be made.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Steps for Running the Code section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
+
+
+
+%====================================== A New Section Begins Here ==============================================|
+\section{Acknowledgements}
+Thank everyone who helped, and thank everyone who gave their inputs into your acceptance study. YOU NEED TO GIVE A HUGE AND SPECIAL THANKS TO DR. ASAADI RIGHT HERE!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Steps for Running the Code section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
+
+
+
+%===================================== A New Section Begins Here ===============================================|
+\section{Appendix}
+There will eventually be a huge list of figures here.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Steps for Running the Code section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
+
+
+
+%===================================== A New Section Begins Here ===============================================|
+\section{Yo Momma So Ugly}
+She really is! Believe me! I'm a scientist. I know these things.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Yo Momma So Ugly section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
+
+\end{document}
+%|------------------------------The Document Ends Here----------------------------------|
