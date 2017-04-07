@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.27)  6 APR 2017 22:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.27)  6 APR 2017 23:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,1170 +721,1173 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 39--45
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-<EventClassifications/VertexDistributions.png, id=154, 1973.3725pt x 465.74pt>
+Overfull \hbox (33.2699pt too wide) in paragraph at lines 80--81
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+<EventClassifications/VertexDistributions.png, id=171, 1973.3725pt x 465.74pt>
 File: EventClassifications/VertexDistributions.png Graphic file (type png)
 
 <use EventClassifications/VertexDistributions.png>
 Package pdftex.def Info: EventClassifications/VertexDistributions.png used on i
-nput line 88.
+nput line 85.
 (pdftex.def)             Requested size: 469.75502pt x 110.86313pt.
- [2]
-<EventClassifications/Stopped.png, id=170, 806.01125pt x 486.81876pt>
+
+<EventClassifications/Stopped.png, id=172, 806.01125pt x 486.81876pt>
 File: EventClassifications/Stopped.png Graphic file (type png)
 
 <use EventClassifications/Stopped.png>
-Package pdftex.def Info: EventClassifications/Stopped.png used on input line 10
-1.
+Package pdftex.def Info: EventClassifications/Stopped.png used on input line 98
+.
 (pdftex.def)             Requested size: 281.85587pt x 170.23312pt.
- [3 <./EventClassifications/VertexDistributions.png> <./EventClassifications/St
-opped.png>]
-<EventClassifications/NotStopped.png, id=177, 831.105pt x 445.665pt>
+ [3 <./EventClassifications/VertexDistributions.png>]
+<EventClassifications/NotStopped.png, id=180, 831.105pt x 445.665pt>
 File: EventClassifications/NotStopped.png Graphic file (type png)
 
 <use EventClassifications/NotStopped.png>
 Package pdftex.def Info: EventClassifications/NotStopped.png used on input line
- 110.
+ 107.
 (pdftex.def)             Requested size: 281.85587pt x 151.13647pt.
 
-<EventClassifications/OutSide.png, id=178, 762.85pt x 479.7925pt>
+<EventClassifications/OutSide.png, id=181, 762.85pt x 479.7925pt>
 File: EventClassifications/OutSide.png Graphic file (type png)
 
 <use EventClassifications/OutSide.png>
 Package pdftex.def Info: EventClassifications/OutSide.png used on input line 11
-9.
+6.
 (pdftex.def)             Requested size: 281.85587pt x 177.27151pt.
- [4 <./EventClassifications/NotStopped.png> <./EventClassifications/OutSide.png
->]
-<NewNMReinSehgalImages/1-X-YVertexDistributionNMRS.png, id=186, 700.6175pt x 47
+ [4 <./EventClassifications/Stopped.png> <./EventClassifications/NotStopped.png
+>] [5 <./EventClassifications/OutSide.png>]
+<NewNMReinSehgalImages/1-X-YVertexDistributionNMRS.png, id=194, 700.6175pt x 47
 2.76625pt>
 File: NewNMReinSehgalImages/1-X-YVertexDistributionNMRS.png Graphic file (type 
 png)
  <use NewNMReinSehgalImages/1-X-YVertexDistributionNMRS.png>
 Package pdftex.def Info: NewNMReinSehgalImages/1-X-YVertexDistributionNMRS.png 
-used on input line 160.
+used on input line 157.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [5]
-<NewNMReinSehgalImages/2-ZVertexDistributionNMRS.png, id=191, 700.6175pt x 472.
+
+<NewNMReinSehgalImages/2-ZVertexDistributionNMRS.png, id=195, 700.6175pt x 472.
 76625pt>
 File: NewNMReinSehgalImages/2-ZVertexDistributionNMRS.png Graphic file (type pn
 g)
  <use NewNMReinSehgalImages/2-ZVertexDistributionNMRS.png>
 Package pdftex.def Info: NewNMReinSehgalImages/2-ZVertexDistributionNMRS.png us
-ed on input line 166.
+ed on input line 163.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewNMReinSehgalImages/3-YVertexDistributionNMRS.png, id=192, 700.6175pt x 472.
+ [6 <./NewNMReinSehgalImages/1-X-YVertexDistributionNMRS.png>]
+<NewNMReinSehgalImages/3-YVertexDistributionNMRS.png, id=201, 700.6175pt x 472.
 76625pt>
 File: NewNMReinSehgalImages/3-YVertexDistributionNMRS.png Graphic file (type pn
 g)
  <use NewNMReinSehgalImages/3-YVertexDistributionNMRS.png>
 Package pdftex.def Info: NewNMReinSehgalImages/3-YVertexDistributionNMRS.png us
-ed on input line 172.
+ed on input line 169.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [6 <./NewNMReinSehgalImages/1-X-YVertexDistributionNMRS.png> <./NewNMReinSehga
-lImages/2-ZVertexDistributionNMRS.png>]
-<NewNMReinSehgalImages/4-XVertexDistributionNMRS.png, id=199, 700.6175pt x 472.
+
+<NewNMReinSehgalImages/4-XVertexDistributionNMRS.png, id=202, 700.6175pt x 472.
 76625pt>
 File: NewNMReinSehgalImages/4-XVertexDistributionNMRS.png Graphic file (type pn
 g)
  <use NewNMReinSehgalImages/4-XVertexDistributionNMRS.png>
 Package pdftex.def Info: NewNMReinSehgalImages/4-XVertexDistributionNMRS.png us
-ed on input line 178.
+ed on input line 175.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewNMReinSehgalImages/5-GoodCCCohPionInfoNMRS.png, id=200, 700.6175pt x 472.76
+ [7 <./NewNMReinSehgalImages/2-ZVertexDistributionNMRS.png> <./NewNMReinSehgalI
+mages/3-YVertexDistributionNMRS.png>]
+<NewNMReinSehgalImages/5-GoodCCCohPionInfoNMRS.png, id=210, 700.6175pt x 472.76
 625pt>
 File: NewNMReinSehgalImages/5-GoodCCCohPionInfoNMRS.png Graphic file (type png)
 
  <use NewNMReinSehgalImages/5-GoodCCCohPionInfoNMRS.png>
 Package pdftex.def Info: NewNMReinSehgalImages/5-GoodCCCohPionInfoNMRS.png used
- on input line 184.
+ on input line 181.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [7 <./NewNMReinSehgalImages/3-YVertexDistributionNMRS.png> <./NewNMReinSehgalI
-mages/4-XVertexDistributionNMRS.png>]
-<NewNMReinSehgalImages/6-GoodCCCohMuonInfoNMRS.png, id=208, 700.6175pt x 472.76
+
+<NewNMReinSehgalImages/6-GoodCCCohMuonInfoNMRS.png, id=211, 700.6175pt x 472.76
 625pt>
 File: NewNMReinSehgalImages/6-GoodCCCohMuonInfoNMRS.png Graphic file (type png)
 
  <use NewNMReinSehgalImages/6-GoodCCCohMuonInfoNMRS.png>
 Package pdftex.def Info: NewNMReinSehgalImages/6-GoodCCCohMuonInfoNMRS.png used
- on input line 190.
+ on input line 187.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewNMReinSehgalImages/7-LayerPenetrationNMRS.png, id=209, 700.6175pt x 472.766
+ [8 <./NewNMReinSehgalImages/4-XVertexDistributionNMRS.png> <./NewNMReinSehgalI
+mages/5-GoodCCCohPionInfoNMRS.png>]
+<NewNMReinSehgalImages/7-LayerPenetrationNMRS.png, id=218, 700.6175pt x 472.766
 25pt>
 File: NewNMReinSehgalImages/7-LayerPenetrationNMRS.png Graphic file (type png)
  <use NewNMReinSehgalImages/7-LayerPenetrationNMRS.png>
 Package pdftex.def Info: NewNMReinSehgalImages/7-LayerPenetrationNMRS.png used 
-on input line 196.
+on input line 193.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [8 <./NewNMReinSehgalImages/5-GoodCCCohPionInfoNMRS.png> <./NewNMReinSehgalIma
-ges/6-GoodCCCohMuonInfoNMRS.png>]
-<NewNMReinSehgalImages/8-TotalCCCohPionInfoNMRS.png, id=216, 700.6175pt x 472.7
+
+<NewNMReinSehgalImages/8-TotalCCCohPionInfoNMRS.png, id=219, 700.6175pt x 472.7
 6625pt>
 File: NewNMReinSehgalImages/8-TotalCCCohPionInfoNMRS.png Graphic file (type png
 )
  <use NewNMReinSehgalImages/8-TotalCCCohPionInfoNMRS.png>
 Package pdftex.def Info: NewNMReinSehgalImages/8-TotalCCCohPionInfoNMRS.png use
-d on input line 202.
+d on input line 199.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewNMReinSehgalImages/9-TotalCCCohMuonInfoNMRS.png, id=217, 700.6175pt x 472.7
+ [9 <./NewNMReinSehgalImages/6-GoodCCCohMuonInfoNMRS.png> <./NewNMReinSehgalIma
+ges/7-LayerPenetrationNMRS.png>]
+<NewNMReinSehgalImages/9-TotalCCCohMuonInfoNMRS.png, id=226, 700.6175pt x 472.7
 6625pt>
 File: NewNMReinSehgalImages/9-TotalCCCohMuonInfoNMRS.png Graphic file (type png
 )
  <use NewNMReinSehgalImages/9-TotalCCCohMuonInfoNMRS.png>
 Package pdftex.def Info: NewNMReinSehgalImages/9-TotalCCCohMuonInfoNMRS.png use
-d on input line 208.
+d on input line 205.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [9 <./NewNMReinSehgalImages/7-LayerPenetrationNMRS.png> <./NewNMReinSehgalImag
-es/8-TotalCCCohPionInfoNMRS.png>] [10 <./NewNMReinSehgalImages/9-TotalCCCohMuon
-InfoNMRS.png>]
-<NewNMBergerSehgalImages/1-X-YVertexDistributionNMBS.png, id=238, 700.6175pt x 
+ [10 <./NewNMReinSehgalImages/8-TotalCCCohPionInfoNMRS.png> <./NewNMReinSehgalI
+mages/9-TotalCCCohMuonInfoNMRS.png>]
+<NewNMBergerSehgalImages/1-X-YVertexDistributionNMBS.png, id=240, 700.6175pt x 
 472.76625pt>
 File: NewNMBergerSehgalImages/1-X-YVertexDistributionNMBS.png Graphic file (typ
 e png)
  <use NewNMBergerSehgalImages/1-X-YVertexDistributionNMBS.png>
 Package pdftex.def Info: NewNMBergerSehgalImages/1-X-YVertexDistributionNMBS.pn
-g used on input line 276.
+g used on input line 273.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-<NewNMBergerSehgalImages/2-ZVertexDistributionNMBS.png, id=239, 700.6175pt x 47
+[11]
+<NewNMBergerSehgalImages/2-ZVertexDistributionNMBS.png, id=251, 700.6175pt x 47
 2.76625pt>
 File: NewNMBergerSehgalImages/2-ZVertexDistributionNMBS.png Graphic file (type 
 png)
  <use NewNMBergerSehgalImages/2-ZVertexDistributionNMBS.png>
 Package pdftex.def Info: NewNMBergerSehgalImages/2-ZVertexDistributionNMBS.png 
-used on input line 282.
+used on input line 279.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [11 <./NewNMBergerSehgalImages/1-X-YVertexDistributionNMBS.png>]
-<NewNMBergerSehgalImages/3-YVertexDistributionNMBS.png, id=248, 700.6175pt x 47
+
+<NewNMBergerSehgalImages/3-YVertexDistributionNMBS.png, id=252, 700.6175pt x 47
 2.76625pt>
 File: NewNMBergerSehgalImages/3-YVertexDistributionNMBS.png Graphic file (type 
 png)
  <use NewNMBergerSehgalImages/3-YVertexDistributionNMBS.png>
 Package pdftex.def Info: NewNMBergerSehgalImages/3-YVertexDistributionNMBS.png 
-used on input line 288.
+used on input line 285.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewNMBergerSehgalImages/4-XVertexDistributionNMBS.png, id=249, 700.6175pt x 47
+ [12 <./NewNMBergerSehgalImages/1-X-YVertexDistributionNMBS.png> <./NewNMBerger
+SehgalImages/2-ZVertexDistributionNMBS.png>]
+<NewNMBergerSehgalImages/4-XVertexDistributionNMBS.png, id=259, 700.6175pt x 47
 2.76625pt>
 File: NewNMBergerSehgalImages/4-XVertexDistributionNMBS.png Graphic file (type 
 png)
  <use NewNMBergerSehgalImages/4-XVertexDistributionNMBS.png>
 Package pdftex.def Info: NewNMBergerSehgalImages/4-XVertexDistributionNMBS.png 
-used on input line 294.
+used on input line 291.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [12 <./NewNMBergerSehgalImages/2-ZVertexDistributionNMBS.png> <./NewNMBergerSe
-hgalImages/3-YVertexDistributionNMBS.png>]
-<NewNMBergerSehgalImages/5-GoodCCCohPionInfoNMBS.png, id=256, 700.6175pt x 472.
+
+<NewNMBergerSehgalImages/5-GoodCCCohPionInfoNMBS.png, id=260, 700.6175pt x 472.
 76625pt>
 File: NewNMBergerSehgalImages/5-GoodCCCohPionInfoNMBS.png Graphic file (type pn
 g)
  <use NewNMBergerSehgalImages/5-GoodCCCohPionInfoNMBS.png>
 Package pdftex.def Info: NewNMBergerSehgalImages/5-GoodCCCohPionInfoNMBS.png us
-ed on input line 300.
+ed on input line 297.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewNMBergerSehgalImages/6-GoodCCCohMuonInfoNMBS.png, id=257, 700.6175pt x 472.
+ [13 <./NewNMBergerSehgalImages/3-YVertexDistributionNMBS.png> <./NewNMBergerSe
+hgalImages/4-XVertexDistributionNMBS.png>]
+<NewNMBergerSehgalImages/6-GoodCCCohMuonInfoNMBS.png, id=268, 700.6175pt x 472.
 76625pt>
 File: NewNMBergerSehgalImages/6-GoodCCCohMuonInfoNMBS.png Graphic file (type pn
 g)
  <use NewNMBergerSehgalImages/6-GoodCCCohMuonInfoNMBS.png>
 Package pdftex.def Info: NewNMBergerSehgalImages/6-GoodCCCohMuonInfoNMBS.png us
-ed on input line 306.
+ed on input line 303.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [13 <./NewNMBergerSehgalImages/4-XVertexDistributionNMBS.png> <./NewNMBergerSe
-hgalImages/5-GoodCCCohPionInfoNMBS.png>]
-<NewNMBergerSehgalImages/7-LayerPenetrationNMBS.png, id=265, 700.6175pt x 472.7
+
+<NewNMBergerSehgalImages/7-LayerPenetrationNMBS.png, id=269, 700.6175pt x 472.7
 6625pt>
 File: NewNMBergerSehgalImages/7-LayerPenetrationNMBS.png Graphic file (type png
 )
  <use NewNMBergerSehgalImages/7-LayerPenetrationNMBS.png>
 Package pdftex.def Info: NewNMBergerSehgalImages/7-LayerPenetrationNMBS.png use
-d on input line 312.
+d on input line 309.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewNMBergerSehgalImages/8-TotalCCCohPionInfoNMBS.png, id=266, 700.6175pt x 472
+ [14 <./NewNMBergerSehgalImages/5-GoodCCCohPionInfoNMBS.png> <./NewNMBergerSehg
+alImages/6-GoodCCCohMuonInfoNMBS.png>]
+<NewNMBergerSehgalImages/8-TotalCCCohPionInfoNMBS.png, id=276, 700.6175pt x 472
 .76625pt>
 File: NewNMBergerSehgalImages/8-TotalCCCohPionInfoNMBS.png Graphic file (type p
 ng)
  <use NewNMBergerSehgalImages/8-TotalCCCohPionInfoNMBS.png>
 Package pdftex.def Info: NewNMBergerSehgalImages/8-TotalCCCohPionInfoNMBS.png u
-sed on input line 318.
+sed on input line 315.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [14 <./NewNMBergerSehgalImages/6-GoodCCCohMuonInfoNMBS.png> <./NewNMBergerSehg
-alImages/7-LayerPenetrationNMBS.png>]
-<NewNMBergerSehgalImages/9-TotalCCCohMuonInfoNMBS.png, id=273, 700.6175pt x 472
+
+<NewNMBergerSehgalImages/9-TotalCCCohMuonInfoNMBS.png, id=277, 700.6175pt x 472
 .76625pt>
 File: NewNMBergerSehgalImages/9-TotalCCCohMuonInfoNMBS.png Graphic file (type p
 ng)
  <use NewNMBergerSehgalImages/9-TotalCCCohMuonInfoNMBS.png>
 Package pdftex.def Info: NewNMBergerSehgalImages/9-TotalCCCohMuonInfoNMBS.png u
-sed on input line 324.
+sed on input line 321.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [15 <./NewNMBergerSehgalImages/8-TotalCCCohPionInfoNMBS.png> <./NewNMBergerSeh
-galImages/9-TotalCCCohMuonInfoNMBS.png>]
-<OldNMReinSehgalImages/1-X-YVertexDistributionNMORS.png, id=282, 700.6175pt x 4
+ [15 <./NewNMBergerSehgalImages/7-LayerPenetrationNMBS.png> <./NewNMBergerSehga
+lImages/8-TotalCCCohPionInfoNMBS.png>] [16 <./NewNMBergerSehgalImages/9-TotalCC
+CohMuonInfoNMBS.png>]
+<OldNMReinSehgalImages/1-X-YVertexDistributionNMORS.png, id=294, 700.6175pt x 4
 72.76625pt>
 File: OldNMReinSehgalImages/1-X-YVertexDistributionNMORS.png Graphic file (type
  png)
  <use OldNMReinSehgalImages/1-X-YVertexDistributionNMORS.png>
 Package pdftex.def Info: OldNMReinSehgalImages/1-X-YVertexDistributionNMORS.png
- used on input line 392.
+ used on input line 389.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[16]
-<OldNMReinSehgalImages/2-ZVertexDistributionNMORS.png, id=293, 700.6175pt x 472
+<OldNMReinSehgalImages/2-ZVertexDistributionNMORS.png, id=295, 700.6175pt x 472
 .76625pt>
 File: OldNMReinSehgalImages/2-ZVertexDistributionNMORS.png Graphic file (type p
 ng)
  <use OldNMReinSehgalImages/2-ZVertexDistributionNMORS.png>
 Package pdftex.def Info: OldNMReinSehgalImages/2-ZVertexDistributionNMORS.png u
-sed on input line 398.
+sed on input line 395.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<OldNMReinSehgalImages/3-YVertexDistributionNMORS.png, id=294, 700.6175pt x 472
+ [17 <./OldNMReinSehgalImages/1-X-YVertexDistributionNMORS.png>]
+<OldNMReinSehgalImages/3-YVertexDistributionNMORS.png, id=304, 700.6175pt x 472
 .76625pt>
 File: OldNMReinSehgalImages/3-YVertexDistributionNMORS.png Graphic file (type p
 ng)
  <use OldNMReinSehgalImages/3-YVertexDistributionNMORS.png>
 Package pdftex.def Info: OldNMReinSehgalImages/3-YVertexDistributionNMORS.png u
-sed on input line 404.
+sed on input line 401.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [17 <./OldNMReinSehgalImages/1-X-YVertexDistributionNMORS.png> <./OldNMReinSeh
-galImages/2-ZVertexDistributionNMORS.png>]
-<OldNMReinSehgalImages/4-XVertexDistributionNMORS.png, id=301, 700.6175pt x 472
+
+<OldNMReinSehgalImages/4-XVertexDistributionNMORS.png, id=305, 700.6175pt x 472
 .76625pt>
 File: OldNMReinSehgalImages/4-XVertexDistributionNMORS.png Graphic file (type p
 ng)
  <use OldNMReinSehgalImages/4-XVertexDistributionNMORS.png>
 Package pdftex.def Info: OldNMReinSehgalImages/4-XVertexDistributionNMORS.png u
-sed on input line 410.
+sed on input line 407.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<OldNMReinSehgalImages/5-GoodCCCohPionInfoNMORS.png, id=302, 700.6175pt x 472.7
+ [18 <./OldNMReinSehgalImages/2-ZVertexDistributionNMORS.png> <./OldNMReinSehga
+lImages/3-YVertexDistributionNMORS.png>]
+<OldNMReinSehgalImages/5-GoodCCCohPionInfoNMORS.png, id=312, 700.6175pt x 472.7
 6625pt>
 File: OldNMReinSehgalImages/5-GoodCCCohPionInfoNMORS.png Graphic file (type png
 )
  <use OldNMReinSehgalImages/5-GoodCCCohPionInfoNMORS.png>
 Package pdftex.def Info: OldNMReinSehgalImages/5-GoodCCCohPionInfoNMORS.png use
-d on input line 416.
+d on input line 413.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [18 <./OldNMReinSehgalImages/3-YVertexDistributionNMORS.png> <./OldNMReinSehga
-lImages/4-XVertexDistributionNMORS.png>]
-<OldNMReinSehgalImages/6-GoodCCCohMuonInfoNMORS.png, id=309, 700.6175pt x 472.7
+
+<OldNMReinSehgalImages/6-GoodCCCohMuonInfoNMORS.png, id=313, 700.6175pt x 472.7
 6625pt>
 File: OldNMReinSehgalImages/6-GoodCCCohMuonInfoNMORS.png Graphic file (type png
 )
  <use OldNMReinSehgalImages/6-GoodCCCohMuonInfoNMORS.png>
 Package pdftex.def Info: OldNMReinSehgalImages/6-GoodCCCohMuonInfoNMORS.png use
-d on input line 422.
+d on input line 419.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<OldNMReinSehgalImages/7-LayerPenetrationNMORS.png, id=310, 700.6175pt x 472.76
+ [19 <./OldNMReinSehgalImages/4-XVertexDistributionNMORS.png> <./OldNMReinSehga
+lImages/5-GoodCCCohPionInfoNMORS.png>]
+<OldNMReinSehgalImages/7-LayerPenetrationNMORS.png, id=321, 700.6175pt x 472.76
 625pt>
 File: OldNMReinSehgalImages/7-LayerPenetrationNMORS.png Graphic file (type png)
 
  <use OldNMReinSehgalImages/7-LayerPenetrationNMORS.png>
 Package pdftex.def Info: OldNMReinSehgalImages/7-LayerPenetrationNMORS.png used
- on input line 428.
+ on input line 425.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [19 <./OldNMReinSehgalImages/5-GoodCCCohPionInfoNMORS.png> <./OldNMReinSehgalI
-mages/6-GoodCCCohMuonInfoNMORS.png>]
-<OldNMReinSehgalImages/8-TotalCCCohPionInfoNMORS.png, id=318, 700.6175pt x 472.
+
+<OldNMReinSehgalImages/8-TotalCCCohPionInfoNMORS.png, id=322, 700.6175pt x 472.
 76625pt>
 File: OldNMReinSehgalImages/8-TotalCCCohPionInfoNMORS.png Graphic file (type pn
 g)
  <use OldNMReinSehgalImages/8-TotalCCCohPionInfoNMORS.png>
 Package pdftex.def Info: OldNMReinSehgalImages/8-TotalCCCohPionInfoNMORS.png us
-ed on input line 434.
+ed on input line 431.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<OldNMReinSehgalImages/9-TotalCCCohMuonInfoNMORS.png, id=319, 700.6175pt x 472.
+ [20 <./OldNMReinSehgalImages/6-GoodCCCohMuonInfoNMORS.png> <./OldNMReinSehgalI
+mages/7-LayerPenetrationNMORS.png>]
+<OldNMReinSehgalImages/9-TotalCCCohMuonInfoNMORS.png, id=330, 700.6175pt x 472.
 76625pt>
 File: OldNMReinSehgalImages/9-TotalCCCohMuonInfoNMORS.png Graphic file (type pn
 g)
  <use OldNMReinSehgalImages/9-TotalCCCohMuonInfoNMORS.png>
 Package pdftex.def Info: OldNMReinSehgalImages/9-TotalCCCohMuonInfoNMORS.png us
-ed on input line 440.
+ed on input line 437.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [20 <./OldNMReinSehgalImages/7-LayerPenetrationNMORS.png> <./OldNMReinSehgalIm
-ages/8-TotalCCCohPionInfoNMORS.png>] [21 <./OldNMReinSehgalImages/9-TotalCCCohM
-uonInfoNMORS.png>]
-<NewANMReinSehgalImages/1-X-YVertexDistributionANMRS.png, id=337, 700.6175pt x 
+ [21 <./OldNMReinSehgalImages/8-TotalCCCohPionInfoNMORS.png> <./OldNMReinSehgal
+Images/9-TotalCCCohMuonInfoNMORS.png>]
+<NewANMReinSehgalImages/1-X-YVertexDistributionANMRS.png, id=339, 700.6175pt x 
 472.76625pt>
 File: NewANMReinSehgalImages/1-X-YVertexDistributionANMRS.png Graphic file (typ
 e png)
  <use NewANMReinSehgalImages/1-X-YVertexDistributionANMRS.png>
 Package pdftex.def Info: NewANMReinSehgalImages/1-X-YVertexDistributionANMRS.pn
-g used on input line 508.
+g used on input line 505.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-<NewANMReinSehgalImages/2-ZVertexDistributionANMRS.png, id=338, 700.6175pt x 47
+[22]
+<NewANMReinSehgalImages/2-ZVertexDistributionANMRS.png, id=350, 700.6175pt x 47
 2.76625pt>
 File: NewANMReinSehgalImages/2-ZVertexDistributionANMRS.png Graphic file (type 
 png)
  <use NewANMReinSehgalImages/2-ZVertexDistributionANMRS.png>
 Package pdftex.def Info: NewANMReinSehgalImages/2-ZVertexDistributionANMRS.png 
-used on input line 514.
+used on input line 511.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [22 <./NewANMReinSehgalImages/1-X-YVertexDistributionANMRS.png>]
-<NewANMReinSehgalImages/3-YVertexDistributionANMRS.png, id=347, 700.6175pt x 47
+
+<NewANMReinSehgalImages/3-YVertexDistributionANMRS.png, id=351, 700.6175pt x 47
 2.76625pt>
 File: NewANMReinSehgalImages/3-YVertexDistributionANMRS.png Graphic file (type 
 png)
  <use NewANMReinSehgalImages/3-YVertexDistributionANMRS.png>
 Package pdftex.def Info: NewANMReinSehgalImages/3-YVertexDistributionANMRS.png 
-used on input line 520.
+used on input line 517.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewANMReinSehgalImages/4-XVertexDistributionANMRS.png, id=348, 700.6175pt x 47
+ [23 <./NewANMReinSehgalImages/1-X-YVertexDistributionANMRS.png> <./NewANMReinS
+ehgalImages/2-ZVertexDistributionANMRS.png>]
+<NewANMReinSehgalImages/4-XVertexDistributionANMRS.png, id=358, 700.6175pt x 47
 2.76625pt>
 File: NewANMReinSehgalImages/4-XVertexDistributionANMRS.png Graphic file (type 
 png)
  <use NewANMReinSehgalImages/4-XVertexDistributionANMRS.png>
 Package pdftex.def Info: NewANMReinSehgalImages/4-XVertexDistributionANMRS.png 
-used on input line 526.
+used on input line 523.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [23 <./NewANMReinSehgalImages/2-ZVertexDistributionANMRS.png> <./NewANMReinSeh
-galImages/3-YVertexDistributionANMRS.png>]
-<NewANMReinSehgalImages/5-GoodCCCohPionInfoANMRS.png, id=355, 700.6175pt x 472.
+
+<NewANMReinSehgalImages/5-GoodCCCohPionInfoANMRS.png, id=359, 700.6175pt x 472.
 76625pt>
 File: NewANMReinSehgalImages/5-GoodCCCohPionInfoANMRS.png Graphic file (type pn
 g)
  <use NewANMReinSehgalImages/5-GoodCCCohPionInfoANMRS.png>
 Package pdftex.def Info: NewANMReinSehgalImages/5-GoodCCCohPionInfoANMRS.png us
-ed on input line 532.
+ed on input line 529.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewANMReinSehgalImages/6-GoodCCCohMuonInfoANMRS.png, id=356, 700.6175pt x 472.
+ [24 <./NewANMReinSehgalImages/3-YVertexDistributionANMRS.png> <./NewANMReinSeh
+galImages/4-XVertexDistributionANMRS.png>]
+<NewANMReinSehgalImages/6-GoodCCCohMuonInfoANMRS.png, id=366, 700.6175pt x 472.
 76625pt>
 File: NewANMReinSehgalImages/6-GoodCCCohMuonInfoANMRS.png Graphic file (type pn
 g)
  <use NewANMReinSehgalImages/6-GoodCCCohMuonInfoANMRS.png>
 Package pdftex.def Info: NewANMReinSehgalImages/6-GoodCCCohMuonInfoANMRS.png us
-ed on input line 538.
+ed on input line 535.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [24 <./NewANMReinSehgalImages/4-XVertexDistributionANMRS.png> <./NewANMReinSeh
-galImages/5-GoodCCCohPionInfoANMRS.png>]
-<NewANMReinSehgalImages/7-LayerPenetrationANMRS.png, id=363, 700.6175pt x 472.7
+
+<NewANMReinSehgalImages/7-LayerPenetrationANMRS.png, id=367, 700.6175pt x 472.7
 6625pt>
 File: NewANMReinSehgalImages/7-LayerPenetrationANMRS.png Graphic file (type png
 )
  <use NewANMReinSehgalImages/7-LayerPenetrationANMRS.png>
 Package pdftex.def Info: NewANMReinSehgalImages/7-LayerPenetrationANMRS.png use
-d on input line 544.
+d on input line 541.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewANMReinSehgalImages/8-TotalCCCohPionInfoANMRS.png, id=364, 700.6175pt x 472
+ [25 <./NewANMReinSehgalImages/5-GoodCCCohPionInfoANMRS.png> <./NewANMReinSehga
+lImages/6-GoodCCCohMuonInfoANMRS.png>]
+<NewANMReinSehgalImages/8-TotalCCCohPionInfoANMRS.png, id=375, 700.6175pt x 472
 .76625pt>
 File: NewANMReinSehgalImages/8-TotalCCCohPionInfoANMRS.png Graphic file (type p
 ng)
  <use NewANMReinSehgalImages/8-TotalCCCohPionInfoANMRS.png>
 Package pdftex.def Info: NewANMReinSehgalImages/8-TotalCCCohPionInfoANMRS.png u
-sed on input line 550.
+sed on input line 547.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [25 <./NewANMReinSehgalImages/6-GoodCCCohMuonInfoANMRS.png> <./NewANMReinSehga
-lImages/7-LayerPenetrationANMRS.png>]
-<NewANMReinSehgalImages/9-TotalCCCohMuonInfoANMRS.png, id=372, 700.6175pt x 472
+
+<NewANMReinSehgalImages/9-TotalCCCohMuonInfoANMRS.png, id=376, 700.6175pt x 472
 .76625pt>
 File: NewANMReinSehgalImages/9-TotalCCCohMuonInfoANMRS.png Graphic file (type p
 ng)
  <use NewANMReinSehgalImages/9-TotalCCCohMuonInfoANMRS.png>
 Package pdftex.def Info: NewANMReinSehgalImages/9-TotalCCCohMuonInfoANMRS.png u
-sed on input line 556.
+sed on input line 553.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [26 <./NewANMReinSehgalImages/8-TotalCCCohPionInfoANMRS.png> <./NewANMReinSehg
-alImages/9-TotalCCCohMuonInfoANMRS.png>]
-<NewANMBergerSehgalImages/1-X-YVertexDistributionANMBS.png, id=381, 700.6175pt 
+ [26 <./NewANMReinSehgalImages/7-LayerPenetrationANMRS.png> <./NewANMReinSehgal
+Images/8-TotalCCCohPionInfoANMRS.png>] [27 <./NewANMReinSehgalImages/9-TotalCCC
+ohMuonInfoANMRS.png>]
+<NewANMBergerSehgalImages/1-X-YVertexDistributionANMBS.png, id=393, 700.6175pt 
 x 472.76625pt>
 File: NewANMBergerSehgalImages/1-X-YVertexDistributionANMBS.png Graphic file (t
 ype png)
  <use NewANMBergerSehgalImages/1-X-YVertexDistributionANMBS.png>
 Package pdftex.def Info: NewANMBergerSehgalImages/1-X-YVertexDistributionANMBS.
-png used on input line 624.
+png used on input line 621.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[27]
-<NewANMBergerSehgalImages/2-ZVertexDistributionANMBS.png, id=392, 700.6175pt x 
+<NewANMBergerSehgalImages/2-ZVertexDistributionANMBS.png, id=394, 700.6175pt x 
 472.76625pt>
 File: NewANMBergerSehgalImages/2-ZVertexDistributionANMBS.png Graphic file (typ
 e png)
  <use NewANMBergerSehgalImages/2-ZVertexDistributionANMBS.png>
 Package pdftex.def Info: NewANMBergerSehgalImages/2-ZVertexDistributionANMBS.pn
-g used on input line 630.
+g used on input line 627.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-<NewANMBergerSehgalImages/3-YVertexDistributionANMBS.png, id=393, 700.6175pt x 
+[28 <./NewANMBergerSehgalImages/1-X-YVertexDistributionANMBS.png>]
+<NewANMBergerSehgalImages/3-YVertexDistributionANMBS.png, id=403, 700.6175pt x 
 472.76625pt>
 File: NewANMBergerSehgalImages/3-YVertexDistributionANMBS.png Graphic file (typ
 e png)
  <use NewANMBergerSehgalImages/3-YVertexDistributionANMBS.png>
 Package pdftex.def Info: NewANMBergerSehgalImages/3-YVertexDistributionANMBS.pn
-g used on input line 636.
+g used on input line 633.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[28 <./NewANMBergerSehgalImages/1-X-YVertexDistributionANMBS.png> <./NewANMBerg
-erSehgalImages/2-ZVertexDistributionANMBS.png>]
-<NewANMBergerSehgalImages/4-XVertexDistributionANMBS.png, id=400, 700.6175pt x 
+<NewANMBergerSehgalImages/4-XVertexDistributionANMBS.png, id=404, 700.6175pt x 
 472.76625pt>
 File: NewANMBergerSehgalImages/4-XVertexDistributionANMBS.png Graphic file (typ
 e png)
  <use NewANMBergerSehgalImages/4-XVertexDistributionANMBS.png>
 Package pdftex.def Info: NewANMBergerSehgalImages/4-XVertexDistributionANMBS.pn
-g used on input line 642.
+g used on input line 639.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-<NewANMBergerSehgalImages/5-GoodCCCohPionInfoANMBS.png, id=401, 700.6175pt x 47
+[29 <./NewANMBergerSehgalImages/2-ZVertexDistributionANMBS.png> <./NewANMBerger
+SehgalImages/3-YVertexDistributionANMBS.png>]
+<NewANMBergerSehgalImages/5-GoodCCCohPionInfoANMBS.png, id=411, 700.6175pt x 47
 2.76625pt>
 File: NewANMBergerSehgalImages/5-GoodCCCohPionInfoANMBS.png Graphic file (type 
 png)
  <use NewANMBergerSehgalImages/5-GoodCCCohPionInfoANMBS.png>
 Package pdftex.def Info: NewANMBergerSehgalImages/5-GoodCCCohPionInfoANMBS.png 
-used on input line 648.
+used on input line 645.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [29 <./NewANMBergerSehgalImages/3-YVertexDistributionANMBS.png> <./NewANMBerge
-rSehgalImages/4-XVertexDistributionANMBS.png>]
-<NewANMBergerSehgalImages/6-GoodCCCohMuonInfoANMBS.png, id=408, 700.6175pt x 47
+
+<NewANMBergerSehgalImages/6-GoodCCCohMuonInfoANMBS.png, id=412, 700.6175pt x 47
 2.76625pt>
 File: NewANMBergerSehgalImages/6-GoodCCCohMuonInfoANMBS.png Graphic file (type 
 png)
  <use NewANMBergerSehgalImages/6-GoodCCCohMuonInfoANMBS.png>
 Package pdftex.def Info: NewANMBergerSehgalImages/6-GoodCCCohMuonInfoANMBS.png 
-used on input line 654.
+used on input line 651.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NewANMBergerSehgalImages/7-LayerPenetrationANMBS.png, id=409, 700.6175pt x 472
+ [30 <./NewANMBergerSehgalImages/4-XVertexDistributionANMBS.png> <./NewANMBerge
+rSehgalImages/5-GoodCCCohPionInfoANMBS.png>]
+<NewANMBergerSehgalImages/7-LayerPenetrationANMBS.png, id=419, 700.6175pt x 472
 .76625pt>
 File: NewANMBergerSehgalImages/7-LayerPenetrationANMBS.png Graphic file (type p
 ng)
  <use NewANMBergerSehgalImages/7-LayerPenetrationANMBS.png>
 Package pdftex.def Info: NewANMBergerSehgalImages/7-LayerPenetrationANMBS.png u
-sed on input line 660.
+sed on input line 657.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [30 <./NewANMBergerSehgalImages/5-GoodCCCohPionInfoANMBS.png> <./NewANMBergerS
-ehgalImages/6-GoodCCCohMuonInfoANMBS.png>]
-<NewANMBergerSehgalImages/8-TotalCCCohPionInfoANMBS.png, id=416, 700.6175pt x 4
+
+<NewANMBergerSehgalImages/8-TotalCCCohPionInfoANMBS.png, id=420, 700.6175pt x 4
 72.76625pt>
 File: NewANMBergerSehgalImages/8-TotalCCCohPionInfoANMBS.png Graphic file (type
  png)
  <use NewANMBergerSehgalImages/8-TotalCCCohPionInfoANMBS.png>
 Package pdftex.def Info: NewANMBergerSehgalImages/8-TotalCCCohPionInfoANMBS.png
- used on input line 666.
+ used on input line 663.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-<NewANMBergerSehgalImages/9-TotalCCCohMuonInfoANMBS.png, id=417, 700.6175pt x 4
+[31 <./NewANMBergerSehgalImages/6-GoodCCCohMuonInfoANMBS.png> <./NewANMBergerSe
+hgalImages/7-LayerPenetrationANMBS.png>]
+<NewANMBergerSehgalImages/9-TotalCCCohMuonInfoANMBS.png, id=428, 700.6175pt x 4
 72.76625pt>
 File: NewANMBergerSehgalImages/9-TotalCCCohMuonInfoANMBS.png Graphic file (type
  png)
  <use NewANMBergerSehgalImages/9-TotalCCCohMuonInfoANMBS.png>
 Package pdftex.def Info: NewANMBergerSehgalImages/9-TotalCCCohMuonInfoANMBS.png
- used on input line 672.
+ used on input line 669.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[31 <./NewANMBergerSehgalImages/7-LayerPenetrationANMBS.png> <./NewANMBergerSeh
-galImages/8-TotalCCCohPionInfoANMBS.png>] [32 <./NewANMBergerSehgalImages/9-Tot
-alCCCohMuonInfoANMBS.png>]
-<NMCombinedPlotsImages/1-NMCombinedPlots.png, id=435, 700.6175pt x 472.76625pt>
+[32 <./NewANMBergerSehgalImages/8-TotalCCCohPionInfoANMBS.png> <./NewANMBergerS
+ehgalImages/9-TotalCCCohMuonInfoANMBS.png>]
+<NMCombinedPlotsImages/1-NMCombinedPlots.png, id=437, 700.6175pt x 472.76625pt>
 File: NMCombinedPlotsImages/1-NMCombinedPlots.png Graphic file (type png)
 <use NMCombinedPlotsImages/1-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/1-NMCombinedPlots.png used on in
-put line 740.
+put line 737.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/2-NMCombinedPlots.png, id=436, 700.6175pt x 472.76625pt>
+ [33]
+<NMCombinedPlotsImages/2-NMCombinedPlots.png, id=448, 700.6175pt x 472.76625pt>
 File: NMCombinedPlotsImages/2-NMCombinedPlots.png Graphic file (type png)
 <use NMCombinedPlotsImages/2-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/2-NMCombinedPlots.png used on in
-put line 746.
+put line 743.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [33 <./NMCombinedPlotsImages/1-NMCombinedPlots.png>]
-<NMCombinedPlotsImages/3-NMCombinedPlots.png, id=445, 700.6175pt x 472.76625pt>
+
+<NMCombinedPlotsImages/3-NMCombinedPlots.png, id=449, 700.6175pt x 472.76625pt>
 File: NMCombinedPlotsImages/3-NMCombinedPlots.png Graphic file (type png)
 <use NMCombinedPlotsImages/3-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/3-NMCombinedPlots.png used on in
-put line 752.
+put line 749.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/4-NMCombinedPlots.png, id=446, 700.6175pt x 472.76625pt>
+ [34 <./NMCombinedPlotsImages/1-NMCombinedPlots.png> <./NMCombinedPlotsImages/2
+-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/4-NMCombinedPlots.png, id=456, 700.6175pt x 472.76625pt>
 File: NMCombinedPlotsImages/4-NMCombinedPlots.png Graphic file (type png)
 <use NMCombinedPlotsImages/4-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/4-NMCombinedPlots.png used on in
-put line 758.
+put line 755.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [34 <./NMCombinedPlotsImages/2-NMCombinedPlots.png> <./NMCombinedPlotsImages/3
--NMCombinedPlots.png>]
-<NMCombinedPlotsImages/5-NMCombinedPlots.png, id=453, 700.6175pt x 472.76625pt>
+
+<NMCombinedPlotsImages/5-NMCombinedPlots.png, id=457, 700.6175pt x 472.76625pt>
 File: NMCombinedPlotsImages/5-NMCombinedPlots.png Graphic file (type png)
 <use NMCombinedPlotsImages/5-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/5-NMCombinedPlots.png used on in
-put line 764.
+put line 761.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/6-NMCombinedPlots.png, id=454, 700.6175pt x 472.76625pt>
+ [35 <./NMCombinedPlotsImages/3-NMCombinedPlots.png> <./NMCombinedPlotsImages/4
+-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/6-NMCombinedPlots.png, id=464, 700.6175pt x 472.76625pt>
 File: NMCombinedPlotsImages/6-NMCombinedPlots.png Graphic file (type png)
 <use NMCombinedPlotsImages/6-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/6-NMCombinedPlots.png used on in
-put line 770.
+put line 767.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [35 <./NMCombinedPlotsImages/4-NMCombinedPlots.png> <./NMCombinedPlotsImages/5
--NMCombinedPlots.png>]
-<NMCombinedPlotsImages/7-NMCombinedPlots.png, id=461, 700.6175pt x 472.76625pt>
+
+<NMCombinedPlotsImages/7-NMCombinedPlots.png, id=465, 700.6175pt x 472.76625pt>
 File: NMCombinedPlotsImages/7-NMCombinedPlots.png Graphic file (type png)
 <use NMCombinedPlotsImages/7-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/7-NMCombinedPlots.png used on in
-put line 776.
+put line 773.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/8-NMCombinedPlots.png, id=462, 700.6175pt x 472.76625pt>
+ [36 <./NMCombinedPlotsImages/5-NMCombinedPlots.png> <./NMCombinedPlotsImages/6
+-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/8-NMCombinedPlots.png, id=473, 700.6175pt x 472.76625pt>
 File: NMCombinedPlotsImages/8-NMCombinedPlots.png Graphic file (type png)
 <use NMCombinedPlotsImages/8-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/8-NMCombinedPlots.png used on in
-put line 782.
+put line 779.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [36 <./NMCombinedPlotsImages/6-NMCombinedPlots.png> <./NMCombinedPlotsImages/7
--NMCombinedPlots.png>]
-<NMCombinedPlotsImages/9-NMCombinedPlots.png, id=470, 700.6175pt x 472.76625pt>
+
+<NMCombinedPlotsImages/9-NMCombinedPlots.png, id=474, 700.6175pt x 472.76625pt>
 File: NMCombinedPlotsImages/9-NMCombinedPlots.png Graphic file (type png)
 <use NMCombinedPlotsImages/9-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/9-NMCombinedPlots.png used on in
-put line 788.
+put line 785.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/10-NMCombinedPlots.png, id=471, 700.6175pt x 472.76625pt
+ [37 <./NMCombinedPlotsImages/7-NMCombinedPlots.png> <./NMCombinedPlotsImages/8
+-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/10-NMCombinedPlots.png, id=482, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/10-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/10-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/10-NMCombinedPlots.png used on i
-nput line 794.
+nput line 791.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [37 <./NMCombinedPlotsImages/8-NMCombinedPlots.png> <./NMCombinedPlotsImages/9
--NMCombinedPlots.png>]
-<NMCombinedPlotsImages/11-NMCombinedPlots.png, id=479, 700.6175pt x 472.76625pt
+
+<NMCombinedPlotsImages/11-NMCombinedPlots.png, id=483, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/11-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/11-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/11-NMCombinedPlots.png used on i
-nput line 800.
+nput line 797.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/12-NMCombinedPlots.png, id=480, 700.6175pt x 472.76625pt
+ [38 <./NMCombinedPlotsImages/9-NMCombinedPlots.png> <./NMCombinedPlotsImages/1
+0-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/12-NMCombinedPlots.png, id=490, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/12-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/12-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/12-NMCombinedPlots.png used on i
-nput line 806.
+nput line 803.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [38 <./NMCombinedPlotsImages/10-NMCombinedPlots.png> <./NMCombinedPlotsImages/
-11-NMCombinedPlots.png>]
-<NMCombinedPlotsImages/13-NMCombinedPlots.png, id=487, 700.6175pt x 472.76625pt
+
+<NMCombinedPlotsImages/13-NMCombinedPlots.png, id=491, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/13-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/13-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/13-NMCombinedPlots.png used on i
-nput line 812.
+nput line 809.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/14-NMCombinedPlots.png, id=488, 700.6175pt x 472.76625pt
+ [39 <./NMCombinedPlotsImages/11-NMCombinedPlots.png> <./NMCombinedPlotsImages/
+12-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/14-NMCombinedPlots.png, id=498, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/14-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/14-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/14-NMCombinedPlots.png used on i
-nput line 818.
+nput line 815.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [39 <./NMCombinedPlotsImages/12-NMCombinedPlots.png> <./NMCombinedPlotsImages/
-13-NMCombinedPlots.png>]
-<NMCombinedPlotsImages/15-NMCombinedPlots.png, id=495, 700.6175pt x 472.76625pt
+
+<NMCombinedPlotsImages/15-NMCombinedPlots.png, id=499, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/15-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/15-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/15-NMCombinedPlots.png used on i
-nput line 824.
+nput line 821.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/16-NMCombinedPlots.png, id=496, 700.6175pt x 472.76625pt
+ [40 <./NMCombinedPlotsImages/13-NMCombinedPlots.png> <./NMCombinedPlotsImages/
+14-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/16-NMCombinedPlots.png, id=506, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/16-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/16-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/16-NMCombinedPlots.png used on i
-nput line 830.
+nput line 827.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [40 <./NMCombinedPlotsImages/14-NMCombinedPlots.png> <./NMCombinedPlotsImages/
-15-NMCombinedPlots.png>]
-<NMCombinedPlotsImages/17-NMCombinedPlots.png, id=503, 700.6175pt x 472.76625pt
+
+<NMCombinedPlotsImages/17-NMCombinedPlots.png, id=507, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/17-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/17-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/17-NMCombinedPlots.png used on i
-nput line 836.
+nput line 833.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/18-NMCombinedPlots.png, id=504, 700.6175pt x 472.76625pt
+ [41 <./NMCombinedPlotsImages/15-NMCombinedPlots.png> <./NMCombinedPlotsImages/
+16-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/18-NMCombinedPlots.png, id=514, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/18-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/18-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/18-NMCombinedPlots.png used on i
-nput line 842.
+nput line 839.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [41 <./NMCombinedPlotsImages/16-NMCombinedPlots.png> <./NMCombinedPlotsImages/
-17-NMCombinedPlots.png>]
-<NMCombinedPlotsImages/19-NMCombinedPlots.png, id=511, 700.6175pt x 472.76625pt
+
+<NMCombinedPlotsImages/19-NMCombinedPlots.png, id=515, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/19-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/19-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/19-NMCombinedPlots.png used on i
-nput line 848.
+nput line 845.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/20-NMCombinedPlots.png, id=512, 700.6175pt x 472.76625pt
+ [42 <./NMCombinedPlotsImages/17-NMCombinedPlots.png> <./NMCombinedPlotsImages/
+18-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/20-NMCombinedPlots.png, id=522, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/20-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/20-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/20-NMCombinedPlots.png used on i
-nput line 854.
+nput line 851.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [42 <./NMCombinedPlotsImages/18-NMCombinedPlots.png> <./NMCombinedPlotsImages/
-19-NMCombinedPlots.png>]
-<NMCombinedPlotsImages/21-NMCombinedPlots.png, id=519, 700.6175pt x 472.76625pt
+
+<NMCombinedPlotsImages/21-NMCombinedPlots.png, id=523, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/21-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/21-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/21-NMCombinedPlots.png used on i
-nput line 860.
+nput line 857.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/22-NMCombinedPlots.png, id=520, 700.6175pt x 472.76625pt
+ [43 <./NMCombinedPlotsImages/19-NMCombinedPlots.png> <./NMCombinedPlotsImages/
+20-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/22-NMCombinedPlots.png, id=531, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/22-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/22-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/22-NMCombinedPlots.png used on i
-nput line 866.
+nput line 863.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [43 <./NMCombinedPlotsImages/20-NMCombinedPlots.png> <./NMCombinedPlotsImages/
-21-NMCombinedPlots.png>]
-<NMCombinedPlotsImages/23-NMCombinedPlots.png, id=528, 700.6175pt x 472.76625pt
+
+<NMCombinedPlotsImages/23-NMCombinedPlots.png, id=532, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/23-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/23-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/23-NMCombinedPlots.png used on i
-nput line 872.
+nput line 869.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMCombinedPlotsImages/24-NMCombinedPlots.png, id=529, 700.6175pt x 472.76625pt
+ [44 <./NMCombinedPlotsImages/21-NMCombinedPlots.png> <./NMCombinedPlotsImages/
+22-NMCombinedPlots.png>]
+<NMCombinedPlotsImages/24-NMCombinedPlots.png, id=539, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/24-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/24-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/24-NMCombinedPlots.png used on i
-nput line 878.
+nput line 875.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [44 <./NMCombinedPlotsImages/22-NMCombinedPlots.png> <./NMCombinedPlotsImages/
-23-NMCombinedPlots.png>]
-<NMCombinedPlotsImages/25-NMCombinedPlots.png, id=536, 700.6175pt x 472.76625pt
+
+<NMCombinedPlotsImages/25-NMCombinedPlots.png, id=540, 700.6175pt x 472.76625pt
 >
 File: NMCombinedPlotsImages/25-NMCombinedPlots.png Graphic file (type png)
  <use NMCombinedPlotsImages/25-NMCombinedPlots.png>
 Package pdftex.def Info: NMCombinedPlotsImages/25-NMCombinedPlots.png used on i
-nput line 884.
+nput line 881.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMPionPlottingImages/1-NMPionPlotting.png, id=537, 700.6175pt x 472.76625pt>
+ [45 <./NMCombinedPlotsImages/23-NMCombinedPlots.png> <./NMCombinedPlotsImages/
+24-NMCombinedPlots.png>]
+<NMPionPlottingImages/1-NMPionPlotting.png, id=547, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/1-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/1-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/1-NMPionPlotting.png used on inpu
-t line 894.
+t line 891.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [45 <./NMCombinedPlotsImages/24-NMCombinedPlots.png> <./NMCombinedPlotsImages/
-25-NMCombinedPlots.png>]
-<NMPionPlottingImages/2-NMPionPlotting.png, id=544, 700.6175pt x 472.76625pt>
+
+<NMPionPlottingImages/2-NMPionPlotting.png, id=548, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/2-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/2-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/2-NMPionPlotting.png used on inpu
-t line 900.
+t line 897.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMPionPlottingImages/3-NMPionPlotting.png, id=545, 700.6175pt x 472.76625pt>
+ [46 <./NMCombinedPlotsImages/25-NMCombinedPlots.png> <./NMPionPlottingImages/1
+-NMPionPlotting.png>]
+<NMPionPlottingImages/3-NMPionPlotting.png, id=555, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/3-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/3-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/3-NMPionPlotting.png used on inpu
-t line 906.
+t line 903.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [46 <./NMPionPlottingImages/1-NMPionPlotting.png> <./NMPionPlottingImages/2-NM
-PionPlotting.png>]
-<NMPionPlottingImages/4-NMPionPlotting.png, id=552, 700.6175pt x 472.76625pt>
+
+<NMPionPlottingImages/4-NMPionPlotting.png, id=556, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/4-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/4-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/4-NMPionPlotting.png used on inpu
-t line 912.
+t line 909.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMPionPlottingImages/5-NMPionPlotting.png, id=553, 700.6175pt x 472.76625pt>
+ [47 <./NMPionPlottingImages/2-NMPionPlotting.png> <./NMPionPlottingImages/3-NM
+PionPlotting.png>]
+<NMPionPlottingImages/5-NMPionPlotting.png, id=563, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/5-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/5-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/5-NMPionPlotting.png used on inpu
-t line 918.
+t line 915.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [47 <./NMPionPlottingImages/3-NMPionPlotting.png> <./NMPionPlottingImages/4-NM
-PionPlotting.png>]
-<NMPionPlottingImages/6-NMPionPlotting.png, id=560, 700.6175pt x 472.76625pt>
+
+<NMPionPlottingImages/6-NMPionPlotting.png, id=564, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/6-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/6-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/6-NMPionPlotting.png used on inpu
-t line 924.
+t line 921.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMPionPlottingImages/7-NMPionPlotting.png, id=561, 700.6175pt x 472.76625pt>
+ [48 <./NMPionPlottingImages/4-NMPionPlotting.png> <./NMPionPlottingImages/5-NM
+PionPlotting.png>]
+<NMPionPlottingImages/7-NMPionPlotting.png, id=571, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/7-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/7-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/7-NMPionPlotting.png used on inpu
-t line 930.
+t line 927.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [48 <./NMPionPlottingImages/5-NMPionPlotting.png> <./NMPionPlottingImages/6-NM
-PionPlotting.png>]
-<NMPionPlottingImages/8-NMPionPlotting.png, id=568, 700.6175pt x 472.76625pt>
+
+<NMPionPlottingImages/8-NMPionPlotting.png, id=572, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/8-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/8-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/8-NMPionPlotting.png used on inpu
-t line 936.
+t line 933.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMPionPlottingImages/9-NMPionPlotting.png, id=569, 700.6175pt x 472.76625pt>
+ [49 <./NMPionPlottingImages/6-NMPionPlotting.png> <./NMPionPlottingImages/7-NM
+PionPlotting.png>]
+<NMPionPlottingImages/9-NMPionPlotting.png, id=580, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/9-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/9-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/9-NMPionPlotting.png used on inpu
-t line 942.
+t line 939.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [49 <./NMPionPlottingImages/7-NMPionPlotting.png> <./NMPionPlottingImages/8-NM
-PionPlotting.png>]
-<NMPionPlottingImages/10-NMPionPlotting.png, id=577, 700.6175pt x 472.76625pt>
+
+<NMPionPlottingImages/10-NMPionPlotting.png, id=581, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/10-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/10-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/10-NMPionPlotting.png used on inp
-ut line 948.
+ut line 945.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMPionPlottingImages/11-NMPionPlotting.png, id=578, 700.6175pt x 472.76625pt>
+ [50 <./NMPionPlottingImages/8-NMPionPlotting.png> <./NMPionPlottingImages/9-NM
+PionPlotting.png>]
+<NMPionPlottingImages/11-NMPionPlotting.png, id=588, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/11-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/11-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/11-NMPionPlotting.png used on inp
-ut line 954.
+ut line 951.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [50 <./NMPionPlottingImages/9-NMPionPlotting.png> <./NMPionPlottingImages/10-N
-MPionPlotting.png>]
-<NMPionPlottingImages/12-NMPionPlotting.png, id=585, 700.6175pt x 472.76625pt>
+
+<NMPionPlottingImages/12-NMPionPlotting.png, id=589, 700.6175pt x 472.76625pt>
 File: NMPionPlottingImages/12-NMPionPlotting.png Graphic file (type png)
 
 <use NMPionPlottingImages/12-NMPionPlotting.png>
 Package pdftex.def Info: NMPionPlottingImages/12-NMPionPlotting.png used on inp
-ut line 960.
+ut line 957.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<NMFourSquaredPlottingImages/1-NMFourSquaredPlotting.png, id=586, 700.6175pt x 
+ [51 <./NMPionPlottingImages/10-NMPionPlotting.png> <./NMPionPlottingImages/11-
+NMPionPlotting.png>]
+<NMFourSquaredPlottingImages/1-NMFourSquaredPlotting.png, id=596, 700.6175pt x 
 472.76625pt>
 File: NMFourSquaredPlottingImages/1-NMFourSquaredPlotting.png Graphic file (typ
 e png)
  <use NMFourSquaredPlottingImages/1-NMFourSquaredPlotting.png>
 Package pdftex.def Info: NMFourSquaredPlottingImages/1-NMFourSquaredPlotting.pn
-g used on input line 970.
+g used on input line 967.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[51 <./NMPionPlottingImages/11-NMPionPlotting.png> <./NMPionPlottingImages/12-N
-MPionPlotting.png>]
-<NMFourSquaredPlottingImages/2-NMFourSquaredPlotting.png, id=593, 700.6175pt x 
+<NMFourSquaredPlottingImages/2-NMFourSquaredPlotting.png, id=597, 700.6175pt x 
 472.76625pt>
 File: NMFourSquaredPlottingImages/2-NMFourSquaredPlotting.png Graphic file (typ
 e png)
  <use NMFourSquaredPlottingImages/2-NMFourSquaredPlotting.png>
 Package pdftex.def Info: NMFourSquaredPlottingImages/2-NMFourSquaredPlotting.pn
-g used on input line 976.
+g used on input line 973.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-<NMFourSquaredPlottingImages/3-NMFourSquaredPlotting.png, id=594, 700.6175pt x 
+[52 <./NMPionPlottingImages/12-NMPionPlotting.png> <./NMFourSquaredPlottingImag
+es/1-NMFourSquaredPlotting.png>]
+<NMFourSquaredPlottingImages/3-NMFourSquaredPlotting.png, id=604, 700.6175pt x 
 472.76625pt>
 File: NMFourSquaredPlottingImages/3-NMFourSquaredPlotting.png Graphic file (typ
 e png)
  <use NMFourSquaredPlottingImages/3-NMFourSquaredPlotting.png>
 Package pdftex.def Info: NMFourSquaredPlottingImages/3-NMFourSquaredPlotting.pn
-g used on input line 982.
+g used on input line 979.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[52 <./NMFourSquaredPlottingImages/1-NMFourSquaredPlotting.png> <./NMFourSquare
-dPlottingImages/2-NMFourSquaredPlotting.png>]
-<NMFourSquaredPlottingImages/4-NMFourSquaredPlotting.png, id=601, 700.6175pt x 
+<NMFourSquaredPlottingImages/4-NMFourSquaredPlotting.png, id=605, 700.6175pt x 
 472.76625pt>
 File: NMFourSquaredPlottingImages/4-NMFourSquaredPlotting.png Graphic file (typ
 e png)
  <use NMFourSquaredPlottingImages/4-NMFourSquaredPlotting.png>
 Package pdftex.def Info: NMFourSquaredPlottingImages/4-NMFourSquaredPlotting.pn
-g used on input line 988.
+g used on input line 985.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-<NMFourSquaredPlottingImages/5-NMFourSquaredPlotting.png, id=602, 700.6175pt x 
+[53 <./NMFourSquaredPlottingImages/2-NMFourSquaredPlotting.png> <./NMFourSquare
+dPlottingImages/3-NMFourSquaredPlotting.png>]
+<NMFourSquaredPlottingImages/5-NMFourSquaredPlotting.png, id=612, 700.6175pt x 
 472.76625pt>
 File: NMFourSquaredPlottingImages/5-NMFourSquaredPlotting.png Graphic file (typ
 e png)
  <use NMFourSquaredPlottingImages/5-NMFourSquaredPlotting.png>
 Package pdftex.def Info: NMFourSquaredPlottingImages/5-NMFourSquaredPlotting.pn
-g used on input line 994.
+g used on input line 991.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[53 <./NMFourSquaredPlottingImages/3-NMFourSquaredPlotting.png> <./NMFourSquare
-dPlottingImages/4-NMFourSquaredPlotting.png>]
-<NMFourSquaredPlottingImages/6-NMFourSquaredPlotting.png, id=609, 700.6175pt x 
+<NMFourSquaredPlottingImages/6-NMFourSquaredPlotting.png, id=613, 700.6175pt x 
 472.76625pt>
 File: NMFourSquaredPlottingImages/6-NMFourSquaredPlotting.png Graphic file (typ
 e png)
  <use NMFourSquaredPlottingImages/6-NMFourSquaredPlotting.png>
 Package pdftex.def Info: NMFourSquaredPlottingImages/6-NMFourSquaredPlotting.pn
-g used on input line 1000.
+g used on input line 997.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-<ANMCombinedPlotsImages/1-ANMCombinedPlots.png, id=610, 700.6175pt x 472.76625p
+[54 <./NMFourSquaredPlottingImages/4-NMFourSquaredPlotting.png> <./NMFourSquare
+dPlottingImages/5-NMFourSquaredPlotting.png>]
+<ANMCombinedPlotsImages/1-ANMCombinedPlots.png, id=620, 700.6175pt x 472.76625p
 t>
 File: ANMCombinedPlotsImages/1-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/1-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/1-ANMCombinedPlots.png used on 
-input line 1010.
+input line 1007.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [54 <./NMFourSquaredPlottingImages/5-NMFourSquaredPlotting.png> <./NMFourSquar
-edPlottingImages/6-NMFourSquaredPlotting.png>]
-<ANMCombinedPlotsImages/2-ANMCombinedPlots.png, id=617, 700.6175pt x 472.76625p
+
+<ANMCombinedPlotsImages/2-ANMCombinedPlots.png, id=621, 700.6175pt x 472.76625p
 t>
 File: ANMCombinedPlotsImages/2-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/2-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/2-ANMCombinedPlots.png used on 
-input line 1016.
+input line 1013.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMCombinedPlotsImages/3-ANMCombinedPlots.png, id=618, 700.6175pt x 472.76625p
+ [55 <./NMFourSquaredPlottingImages/6-NMFourSquaredPlotting.png> <./ANMCombined
+PlotsImages/1-ANMCombinedPlots.png>]
+<ANMCombinedPlotsImages/3-ANMCombinedPlots.png, id=630, 700.6175pt x 472.76625p
 t>
 File: ANMCombinedPlotsImages/3-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/3-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/3-ANMCombinedPlots.png used on 
-input line 1022.
+input line 1019.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [55 <./ANMCombinedPlotsImages/1-ANMCombinedPlots.png> <./ANMCombinedPlotsImage
-s/2-ANMCombinedPlots.png>]
-<ANMCombinedPlotsImages/4-ANMCombinedPlots.png, id=627, 700.6175pt x 472.76625p
+
+<ANMCombinedPlotsImages/4-ANMCombinedPlots.png, id=631, 700.6175pt x 472.76625p
 t>
 File: ANMCombinedPlotsImages/4-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/4-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/4-ANMCombinedPlots.png used on 
-input line 1028.
+input line 1025.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMCombinedPlotsImages/5-ANMCombinedPlots.png, id=628, 700.6175pt x 472.76625p
+ [56 <./ANMCombinedPlotsImages/2-ANMCombinedPlots.png> <./ANMCombinedPlotsImage
+s/3-ANMCombinedPlots.png>]
+<ANMCombinedPlotsImages/5-ANMCombinedPlots.png, id=638, 700.6175pt x 472.76625p
 t>
 File: ANMCombinedPlotsImages/5-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/5-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/5-ANMCombinedPlots.png used on 
-input line 1034.
+input line 1031.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [56 <./ANMCombinedPlotsImages/3-ANMCombinedPlots.png> <./ANMCombinedPlotsImage
-s/4-ANMCombinedPlots.png>]
-<ANMCombinedPlotsImages/6-ANMCombinedPlots.png, id=635, 700.6175pt x 472.76625p
+
+<ANMCombinedPlotsImages/6-ANMCombinedPlots.png, id=639, 700.6175pt x 472.76625p
 t>
 File: ANMCombinedPlotsImages/6-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/6-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/6-ANMCombinedPlots.png used on 
-input line 1040.
+input line 1037.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMCombinedPlotsImages/7-ANMCombinedPlots.png, id=636, 700.6175pt x 472.76625p
+ [57 <./ANMCombinedPlotsImages/4-ANMCombinedPlots.png> <./ANMCombinedPlotsImage
+s/5-ANMCombinedPlots.png>]
+<ANMCombinedPlotsImages/7-ANMCombinedPlots.png, id=646, 700.6175pt x 472.76625p
 t>
 File: ANMCombinedPlotsImages/7-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/7-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/7-ANMCombinedPlots.png used on 
-input line 1046.
+input line 1043.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [57 <./ANMCombinedPlotsImages/5-ANMCombinedPlots.png> <./ANMCombinedPlotsImage
-s/6-ANMCombinedPlots.png>]
-<ANMCombinedPlotsImages/8-ANMCombinedPlots.png, id=643, 700.6175pt x 472.76625p
+
+<ANMCombinedPlotsImages/8-ANMCombinedPlots.png, id=647, 700.6175pt x 472.76625p
 t>
 File: ANMCombinedPlotsImages/8-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/8-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/8-ANMCombinedPlots.png used on 
-input line 1052.
+input line 1049.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMCombinedPlotsImages/9-ANMCombinedPlots.png, id=644, 700.6175pt x 472.76625p
+ [58 <./ANMCombinedPlotsImages/6-ANMCombinedPlots.png> <./ANMCombinedPlotsImage
+s/7-ANMCombinedPlots.png>]
+<ANMCombinedPlotsImages/9-ANMCombinedPlots.png, id=654, 700.6175pt x 472.76625p
 t>
 File: ANMCombinedPlotsImages/9-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/9-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/9-ANMCombinedPlots.png used on 
-input line 1058.
+input line 1055.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [58 <./ANMCombinedPlotsImages/7-ANMCombinedPlots.png> <./ANMCombinedPlotsImage
-s/8-ANMCombinedPlots.png>]
-<ANMCombinedPlotsImages/10-ANMCombinedPlots.png, id=651, 700.6175pt x 472.76625
+
+<ANMCombinedPlotsImages/10-ANMCombinedPlots.png, id=655, 700.6175pt x 472.76625
 pt>
 File: ANMCombinedPlotsImages/10-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/10-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/10-ANMCombinedPlots.png used on
- input line 1064.
+ input line 1061.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMCombinedPlotsImages/11-ANMCombinedPlots.png, id=652, 700.6175pt x 472.76625
+ [59 <./ANMCombinedPlotsImages/8-ANMCombinedPlots.png> <./ANMCombinedPlotsImage
+s/9-ANMCombinedPlots.png>]
+<ANMCombinedPlotsImages/11-ANMCombinedPlots.png, id=662, 700.6175pt x 472.76625
 pt>
 File: ANMCombinedPlotsImages/11-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/11-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/11-ANMCombinedPlots.png used on
- input line 1070.
+ input line 1067.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [59 <./ANMCombinedPlotsImages/9-ANMCombinedPlots.png> <./ANMCombinedPlotsImage
-s/10-ANMCombinedPlots.png>]
-<ANMCombinedPlotsImages/12-ANMCombinedPlots.png, id=659, 700.6175pt x 472.76625
+
+<ANMCombinedPlotsImages/12-ANMCombinedPlots.png, id=663, 700.6175pt x 472.76625
 pt>
 File: ANMCombinedPlotsImages/12-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/12-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/12-ANMCombinedPlots.png used on
- input line 1076.
+ input line 1073.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMCombinedPlotsImages/13-ANMCombinedPlots.png, id=660, 700.6175pt x 472.76625
+ [60 <./ANMCombinedPlotsImages/10-ANMCombinedPlots.png> <./ANMCombinedPlotsImag
+es/11-ANMCombinedPlots.png>]
+<ANMCombinedPlotsImages/13-ANMCombinedPlots.png, id=670, 700.6175pt x 472.76625
 pt>
 File: ANMCombinedPlotsImages/13-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/13-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/13-ANMCombinedPlots.png used on
- input line 1082.
+ input line 1079.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [60 <./ANMCombinedPlotsImages/11-ANMCombinedPlots.png> <./ANMCombinedPlotsImag
-es/12-ANMCombinedPlots.png>]
-<ANMCombinedPlotsImages/14-ANMCombinedPlots.png, id=667, 700.6175pt x 472.76625
+
+<ANMCombinedPlotsImages/14-ANMCombinedPlots.png, id=671, 700.6175pt x 472.76625
 pt>
 File: ANMCombinedPlotsImages/14-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/14-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/14-ANMCombinedPlots.png used on
- input line 1088.
+ input line 1085.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMCombinedPlotsImages/15-ANMCombinedPlots.png, id=668, 700.6175pt x 472.76625
+ [61 <./ANMCombinedPlotsImages/12-ANMCombinedPlots.png> <./ANMCombinedPlotsImag
+es/13-ANMCombinedPlots.png>]
+<ANMCombinedPlotsImages/15-ANMCombinedPlots.png, id=679, 700.6175pt x 472.76625
 pt>
 File: ANMCombinedPlotsImages/15-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/15-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/15-ANMCombinedPlots.png used on
- input line 1094.
+ input line 1091.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [61 <./ANMCombinedPlotsImages/13-ANMCombinedPlots.png> <./ANMCombinedPlotsImag
-es/14-ANMCombinedPlots.png>]
-<ANMCombinedPlotsImages/16-ANMCombinedPlots.png, id=676, 700.6175pt x 472.76625
+
+<ANMCombinedPlotsImages/16-ANMCombinedPlots.png, id=680, 700.6175pt x 472.76625
 pt>
 File: ANMCombinedPlotsImages/16-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/16-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/16-ANMCombinedPlots.png used on
- input line 1100.
+ input line 1097.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMCombinedPlotsImages/17-ANMCombinedPlots.png, id=677, 700.6175pt x 472.76625
+ [62 <./ANMCombinedPlotsImages/14-ANMCombinedPlots.png> <./ANMCombinedPlotsImag
+es/15-ANMCombinedPlots.png>]
+<ANMCombinedPlotsImages/17-ANMCombinedPlots.png, id=687, 700.6175pt x 472.76625
 pt>
 File: ANMCombinedPlotsImages/17-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/17-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/17-ANMCombinedPlots.png used on
- input line 1106.
+ input line 1103.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [62 <./ANMCombinedPlotsImages/15-ANMCombinedPlots.png> <./ANMCombinedPlotsImag
-es/16-ANMCombinedPlots.png>]
-<ANMCombinedPlotsImages/18-ANMCombinedPlots.png, id=684, 700.6175pt x 472.76625
+
+<ANMCombinedPlotsImages/18-ANMCombinedPlots.png, id=688, 700.6175pt x 472.76625
 pt>
 File: ANMCombinedPlotsImages/18-ANMCombinedPlots.png Graphic file (type png)
  <use ANMCombinedPlotsImages/18-ANMCombinedPlots.png>
 Package pdftex.def Info: ANMCombinedPlotsImages/18-ANMCombinedPlots.png used on
- input line 1112.
+ input line 1109.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMPionPlottingImages/1-ANMPionPlotting.png, id=685, 700.6175pt x 472.76625pt>
+ [63 <./ANMCombinedPlotsImages/16-ANMCombinedPlots.png> <./ANMCombinedPlotsImag
+es/17-ANMCombinedPlots.png>]
+<ANMPionPlottingImages/1-ANMPionPlotting.png, id=695, 700.6175pt x 472.76625pt>
 File: ANMPionPlottingImages/1-ANMPionPlotting.png Graphic file (type png)
 <use ANMPionPlottingImages/1-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/1-ANMPionPlotting.png used on in
-put line 1122.
+put line 1119.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [63 <./ANMCombinedPlotsImages/17-ANMCombinedPlots.png> <./ANMCombinedPlotsImag
-es/18-ANMCombinedPlots.png>]
-<ANMPionPlottingImages/2-ANMPionPlotting.png, id=692, 700.6175pt x 472.76625pt>
+
+<ANMPionPlottingImages/2-ANMPionPlotting.png, id=696, 700.6175pt x 472.76625pt>
 File: ANMPionPlottingImages/2-ANMPionPlotting.png Graphic file (type png)
 <use ANMPionPlottingImages/2-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/2-ANMPionPlotting.png used on in
-put line 1128.
+put line 1125.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMPionPlottingImages/3-ANMPionPlotting.png, id=693, 700.6175pt x 472.76625pt>
+ [64 <./ANMCombinedPlotsImages/18-ANMCombinedPlots.png> <./ANMPionPlottingImage
+s/1-ANMPionPlotting.png>]
+<ANMPionPlottingImages/3-ANMPionPlotting.png, id=703, 700.6175pt x 472.76625pt>
 File: ANMPionPlottingImages/3-ANMPionPlotting.png Graphic file (type png)
 <use ANMPionPlottingImages/3-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/3-ANMPionPlotting.png used on in
-put line 1134.
+put line 1131.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [64 <./ANMPionPlottingImages/1-ANMPionPlotting.png> <./ANMPionPlottingImages/2
--ANMPionPlotting.png>]
-<ANMPionPlottingImages/4-ANMPionPlotting.png, id=700, 700.6175pt x 472.76625pt>
+
+<ANMPionPlottingImages/4-ANMPionPlotting.png, id=704, 700.6175pt x 472.76625pt>
 File: ANMPionPlottingImages/4-ANMPionPlotting.png Graphic file (type png)
 <use ANMPionPlottingImages/4-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/4-ANMPionPlotting.png used on in
-put line 1140.
+put line 1137.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMPionPlottingImages/5-ANMPionPlotting.png, id=701, 700.6175pt x 472.76625pt>
+ [65 <./ANMPionPlottingImages/2-ANMPionPlotting.png> <./ANMPionPlottingImages/3
+-ANMPionPlotting.png>]
+<ANMPionPlottingImages/5-ANMPionPlotting.png, id=711, 700.6175pt x 472.76625pt>
 File: ANMPionPlottingImages/5-ANMPionPlotting.png Graphic file (type png)
 <use ANMPionPlottingImages/5-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/5-ANMPionPlotting.png used on in
-put line 1146.
+put line 1143.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [65 <./ANMPionPlottingImages/3-ANMPionPlotting.png> <./ANMPionPlottingImages/4
--ANMPionPlotting.png>]
-<ANMPionPlottingImages/6-ANMPionPlotting.png, id=708, 700.6175pt x 472.76625pt>
+
+<ANMPionPlottingImages/6-ANMPionPlotting.png, id=712, 700.6175pt x 472.76625pt>
 File: ANMPionPlottingImages/6-ANMPionPlotting.png Graphic file (type png)
 <use ANMPionPlottingImages/6-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/6-ANMPionPlotting.png used on in
-put line 1152.
+put line 1149.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMPionPlottingImages/7-ANMPionPlotting.png, id=709, 700.6175pt x 472.76625pt>
+ [66 <./ANMPionPlottingImages/4-ANMPionPlotting.png> <./ANMPionPlottingImages/5
+-ANMPionPlotting.png>]
+<ANMPionPlottingImages/7-ANMPionPlotting.png, id=719, 700.6175pt x 472.76625pt>
 File: ANMPionPlottingImages/7-ANMPionPlotting.png Graphic file (type png)
 <use ANMPionPlottingImages/7-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/7-ANMPionPlotting.png used on in
-put line 1158.
+put line 1155.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [66 <./ANMPionPlottingImages/5-ANMPionPlotting.png> <./ANMPionPlottingImages/6
--ANMPionPlotting.png>]
-<ANMPionPlottingImages/8-ANMPionPlotting.png, id=716, 700.6175pt x 472.76625pt>
+
+<ANMPionPlottingImages/8-ANMPionPlotting.png, id=720, 700.6175pt x 472.76625pt>
 File: ANMPionPlottingImages/8-ANMPionPlotting.png Graphic file (type png)
 <use ANMPionPlottingImages/8-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/8-ANMPionPlotting.png used on in
-put line 1164.
+put line 1161.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMPionPlottingImages/9-ANMPionPlotting.png, id=717, 700.6175pt x 472.76625pt>
+ [67 <./ANMPionPlottingImages/6-ANMPionPlotting.png> <./ANMPionPlottingImages/7
+-ANMPionPlotting.png>]
+<ANMPionPlottingImages/9-ANMPionPlotting.png, id=728, 700.6175pt x 472.76625pt>
 File: ANMPionPlottingImages/9-ANMPionPlotting.png Graphic file (type png)
 <use ANMPionPlottingImages/9-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/9-ANMPionPlotting.png used on in
-put line 1170.
+put line 1167.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [67 <./ANMPionPlottingImages/7-ANMPionPlotting.png> <./ANMPionPlottingImages/8
--ANMPionPlotting.png>]
-<ANMPionPlottingImages/10-ANMPionPlotting.png, id=725, 700.6175pt x 472.76625pt
+
+<ANMPionPlottingImages/10-ANMPionPlotting.png, id=729, 700.6175pt x 472.76625pt
 >
 File: ANMPionPlottingImages/10-ANMPionPlotting.png Graphic file (type png)
  <use ANMPionPlottingImages/10-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/10-ANMPionPlotting.png used on i
-nput line 1176.
+nput line 1173.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMPionPlottingImages/11-ANMPionPlotting.png, id=726, 700.6175pt x 472.76625pt
+ [68 <./ANMPionPlottingImages/8-ANMPionPlotting.png> <./ANMPionPlottingImages/9
+-ANMPionPlotting.png>]
+<ANMPionPlottingImages/11-ANMPionPlotting.png, id=736, 700.6175pt x 472.76625pt
 >
 File: ANMPionPlottingImages/11-ANMPionPlotting.png Graphic file (type png)
  <use ANMPionPlottingImages/11-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/11-ANMPionPlotting.png used on i
-nput line 1182.
+nput line 1179.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
- [68 <./ANMPionPlottingImages/9-ANMPionPlotting.png> <./ANMPionPlottingImages/1
-0-ANMPionPlotting.png>]
-<ANMPionPlottingImages/12-ANMPionPlotting.png, id=733, 700.6175pt x 472.76625pt
+
+<ANMPionPlottingImages/12-ANMPionPlotting.png, id=737, 700.6175pt x 472.76625pt
 >
 File: ANMPionPlottingImages/12-ANMPionPlotting.png Graphic file (type png)
  <use ANMPionPlottingImages/12-ANMPionPlotting.png>
 Package pdftex.def Info: ANMPionPlottingImages/12-ANMPionPlotting.png used on i
-nput line 1188.
+nput line 1185.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
-
-<ANMFourSquaredPlottingImages/1-ANMFourSquaredPlotting.png, id=734, 700.6175pt 
+ [69 <./ANMPionPlottingImages/10-ANMPionPlotting.png> <./ANMPionPlottingImages/
+11-ANMPionPlotting.png>]
+<ANMFourSquaredPlottingImages/1-ANMFourSquaredPlotting.png, id=744, 700.6175pt 
 x 472.76625pt>
 File: ANMFourSquaredPlottingImages/1-ANMFourSquaredPlotting.png Graphic file (t
 ype png)
  <use ANMFourSquaredPlottingImages/1-ANMFourSquaredPlotting.png>
 Package pdftex.def Info: ANMFourSquaredPlottingImages/1-ANMFourSquaredPlotting.
-png used on input line 1198.
+png used on input line 1195.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[69 <./ANMPionPlottingImages/11-ANMPionPlotting.png> <./ANMPionPlottingImages/1
-2-ANMPionPlotting.png>]
-<ANMFourSquaredPlottingImages/2-ANMFourSquaredPlotting.png, id=741, 700.6175pt 
+<ANMFourSquaredPlottingImages/2-ANMFourSquaredPlotting.png, id=745, 700.6175pt 
 x 472.76625pt>
 File: ANMFourSquaredPlottingImages/2-ANMFourSquaredPlotting.png Graphic file (t
 ype png)
  <use ANMFourSquaredPlottingImages/2-ANMFourSquaredPlotting.png>
 Package pdftex.def Info: ANMFourSquaredPlottingImages/2-ANMFourSquaredPlotting.
-png used on input line 1204.
+png used on input line 1201.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-<ANMFourSquaredPlottingImages/3-ANMFourSquaredPlotting.png, id=742, 700.6175pt 
+[70 <./ANMPionPlottingImages/12-ANMPionPlotting.png> <./ANMFourSquaredPlottingI
+mages/1-ANMFourSquaredPlotting.png>]
+<ANMFourSquaredPlottingImages/3-ANMFourSquaredPlotting.png, id=752, 700.6175pt 
 x 472.76625pt>
 File: ANMFourSquaredPlottingImages/3-ANMFourSquaredPlotting.png Graphic file (t
 ype png)
  <use ANMFourSquaredPlottingImages/3-ANMFourSquaredPlotting.png>
 Package pdftex.def Info: ANMFourSquaredPlottingImages/3-ANMFourSquaredPlotting.
-png used on input line 1210.
+png used on input line 1207.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[70 <./ANMFourSquaredPlottingImages/1-ANMFourSquaredPlotting.png> <./ANMFourSqu
-aredPlottingImages/2-ANMFourSquaredPlotting.png>]
-<ANMFourSquaredPlottingImages/4-ANMFourSquaredPlotting.png, id=749, 700.6175pt 
+<ANMFourSquaredPlottingImages/4-ANMFourSquaredPlotting.png, id=753, 700.6175pt 
 x 472.76625pt>
 File: ANMFourSquaredPlottingImages/4-ANMFourSquaredPlotting.png Graphic file (t
 ype png)
  <use ANMFourSquaredPlottingImages/4-ANMFourSquaredPlotting.png>
 Package pdftex.def Info: ANMFourSquaredPlottingImages/4-ANMFourSquaredPlotting.
-png used on input line 1216.
+png used on input line 1213.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-<ANMFourSquaredPlottingImages/5-ANMFourSquaredPlotting.png, id=750, 700.6175pt 
+[71 <./ANMFourSquaredPlottingImages/2-ANMFourSquaredPlotting.png> <./ANMFourSqu
+aredPlottingImages/3-ANMFourSquaredPlotting.png>]
+<ANMFourSquaredPlottingImages/5-ANMFourSquaredPlotting.png, id=760, 700.6175pt 
 x 472.76625pt>
 File: ANMFourSquaredPlottingImages/5-ANMFourSquaredPlotting.png Graphic file (t
 ype png)
  <use ANMFourSquaredPlottingImages/5-ANMFourSquaredPlotting.png>
 Package pdftex.def Info: ANMFourSquaredPlottingImages/5-ANMFourSquaredPlotting.
-png used on input line 1222.
+png used on input line 1219.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[71 <./ANMFourSquaredPlottingImages/3-ANMFourSquaredPlotting.png> <./ANMFourSqu
-aredPlottingImages/4-ANMFourSquaredPlotting.png>]
-<ANMFourSquaredPlottingImages/6-ANMFourSquaredPlotting.png, id=757, 700.6175pt 
+<ANMFourSquaredPlottingImages/6-ANMFourSquaredPlotting.png, id=761, 700.6175pt 
 x 472.76625pt>
 File: ANMFourSquaredPlottingImages/6-ANMFourSquaredPlotting.png Graphic file (t
 ype png)
  <use ANMFourSquaredPlottingImages/6-ANMFourSquaredPlotting.png>
 Package pdftex.def Info: ANMFourSquaredPlottingImages/6-ANMFourSquaredPlotting.
-png used on input line 1228.
+png used on input line 1225.
 (pdftex.def)             Requested size: 281.85587pt x 190.19243pt.
 
-[72 <./ANMFourSquaredPlottingImages/5-ANMFourSquaredPlotting.png> <./ANMFourSqu
-aredPlottingImages/6-ANMFourSquaredPlotting.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1277.
- [73]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1277.
-
-(./TechNoteRoughDraft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1277.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1277.
+[72 <./ANMFourSquaredPlottingImages/4-ANMFourSquaredPlotting.png> <./ANMFourSqu
+aredPlottingImages/5-ANMFourSquaredPlotting.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1278.
+ [73 <./ANMFourSquaredPlottingImages/6-ANMFourSquaredPlotting.png>] [74]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1278.
+ (./TechNoteRoughDraft.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1278.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1278.
 
 Package rerunfilecheck Info: File `TechNoteRoughDraft.out' has not changed.
-(rerunfilecheck)             Checksum: 371A75FE21733231E79FB47D38D12E15;2433.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1277.
+(rerunfilecheck)             Checksum: 19F2E43A6C353F4830204D2BA747DC43;2594.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1278.
  ) 
 Here is how much of TeX's memory you used:
- 9260 strings out of 494910
- 150901 string characters out of 6179836
- 227075 words of memory out of 5000000
- 12021 multiletter control sequences out of 15000+600000
+ 9275 strings out of 494910
+ 150968 string characters out of 6179836
+ 224900 words of memory out of 5000000
+ 12036 multiletter control sequences out of 15000+600000
  18128 words of font info for 42 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 32i,8n,51p,1052b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,8n,51p,1052b,1104s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/zwilliams/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </ho
 me/zwilliams/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/zwil
 liams/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/zwilliams/.
@@ -1901,10 +1904,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TechNoteRoughDraft.pdf (73 pages, 1870580 bytes).
+Output written on TechNoteRoughDraft.pdf (74 pages, 1874115 bytes).
 PDF statistics:
- 1184 PDF objects out of 1200 (max. 8388607)
- 675 compressed objects within 7 object streams
+ 1189 PDF objects out of 1200 (max. 8388607)
+ 683 compressed objects within 7 object streams
  285 named destinations out of 1000 (max. 500000)
- 913 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 929 words of extra memory for PDF output out of 10000 (max. 10000000)
 

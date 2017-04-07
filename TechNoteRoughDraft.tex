@@ -27,7 +27,7 @@
 
 \title{Acceptance Study for SciBooNE Charged-Current Coherent Pion Production Technical Note Rough Draft}
 \author[1]{Jonathan Asaadi\thanks{jonathan.asaadi@uta.edu}}
-\author[1]{Zachary Glenn Randell Williams\thanks{zachary.williams2@mavs.uta.edu}}
+\author[1]{Zachary Williams\thanks{zachary.williams2@mavs.uta.edu}}
 \affil[1]{Department of Physics, The University of Texas at Arlington}
 
 \renewcommand\Authands{ and }
@@ -39,7 +39,7 @@
 \begin{minipage}[h]{\textwidth}
 \maketitle
 \begin{abstract}
-This was blah blah and blah blah blah yes thank you.
+Should there be an abstract?
 \end{abstract}
 \end{minipage}
 \newpage
@@ -49,39 +49,36 @@ This was blah blah and blah blah blah yes thank you.
 
 %============================ A New Section Begins Here ===================================
 \section{Introduction}
-The purpose of this document is to serve as both a reference and guide for those who will work with the SciBooNE Acceptance Study Code that was written by Zachary Williams. Ideally, the order of the figures that appear in this document will follow the order that the same figures appear in the acceptance study slide show hyper-linked \href{https://drive.google.com/open?id=1bMB4h3mLkGnKXWI7Tkn8edYM4Eyt6c9w6497nT9lB3A}{here}. The code can be downloaded from this github repository labeled \href{https://github.com/williamszg/SciBooNE-MC}{SciBooNE-MC}.
-
-There is a lot more to say in this introduction before I just nonchalantly move on to the next fucking subject of this fucking tech note!
+The purpose of this document is to serve as both a reference and guide for those who will work with the SciBooNE Acceptance Study Code that was written by Zachary Williams. Ideally, the order of the figures that appear in this document will follow the order that the same figures appear in the acceptance study slide show hyper-linked \href{https://drive.google.com/open?id=1bMB4h3mLkGnKXWI7Tkn8edYM4Eyt6c9w6497nT9lB3A}{here}. The code can be downloaded from this github repository labeled \href{https://github.com/williamszg/SciBooNE-MC}{SciBooNE-MC}. (Eventually need to put in where to go to download the root files that Callum generated for us)
 
 %-----------------------------------------------------------------------------------------------------------------|
 \subsection{The Goal}
-The goal of the reanalysis is to examine the acceptance modeling for the SciBooNE results in the presence of modern neutrino generators and updated models in order to understand why SciBooNE did not observe Charged-Current Coherent Pion Production at low neutrino energy. The purpose of this acceptance study is to blah blah blah... 
+The goal of the reanalysis is to examine the acceptance modeling for the SciBooNE results in the presence of modern neutrino generators and updated models in order to understand why SciBooNE did not observe Charged-Current Coherent Pion Production at low neutrino energy. The purpose of this acceptance study is to blah blah blah... (coming back to this later...)
 %%%%%%%%%%%%%%%%%%%%%%%%%%% The Introduction section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 %============================ A New Section Begins Here ===================================
 \section{Selecting Charged-Current Coherent Pion Production Events}
-This section is intended to detail the nuances of this acceptance model, and to detail what assumptions are made in the acceptance modeling to result in accurate classifications of events as Charged-Current Coherent Pion Production.
+This section is intended to detail the nuances of this acceptance model, and to detail what assumptions are made in the acceptance modeling to result in accurate classifications of events as Charged-Current Coherent Pion Production, which starts by correctly simulating the detector.
 
 %-----------------------------------------------------------------------------------------------------------------|
 \subsection{The Detector}
-For the purposes of this acceptance study, there are two sub-detectors, which are both simulated for event classification and selection cuts, that the detector of the SciBooNE experiment is composed of. The first (and the more upstream) of the sub-detectors, is the Scintillator Bar Tracker (SciBar) which was originally conceived and constructed to function as the near detector for the K2K experiment [reference]. The second (and more downstream) of the sub-detectors, is the Muon Range Detector (MRD), which is the detector designed and constructed specifically for SciBooNE for measuring the momentums of the muons produced from charged-current neutrino interactions up to $1.2$ $GeV/c$ by using the observed range of the trajectory of the muon.
+For the purposes of this acceptance study, there are two sub-detectors that the detector of the SciBooNE experiment is composed of. The first (and the more upstream) of the sub-detectors, is the Scintillator Bar Tracker (SciBar) which was originally conceived and constructed to function as the near detector for the K2K experiment [reference]. The second (and more downstream) of the sub-detectors, is the Muon Range Detector (MRD), which is the detector designed and constructed specifically for SciBooNE for measuring the momentums of the muons produced from charged-current neutrino interactions up to $1.2$ $GeV/c$ by using the observed range of the trajectory of the muon.
 
 \subsubsection{The Scintillator Bar Tracker (SciBar)}
-\begin{lstlisting}[language=C]
-hPStoppedBSCC->Sumw2();
-hPNonStoppedBSCC->Sumw2();
-hCosStoppedBSCC->Sumw2();
-hCosNonStoppedBSCC->Sumw2();
-\end{lstlisting}
+The Scintillator Bar Tracker (SciBar) sub-detector is a scintillator detector (go into more detail?). In this acceptance study, the z-direction starts at 0 at the front face of the SciBar sub-detector. The direction of the beam is in the z-direction, which means the xy-plane is perpindicular to the beam. The dimensions of the sub-detector have the x and y dimensions of the same length of $3.0$ $m$. The z dimension is $1.7$ $m$. This simulation models the scintillator materials as having a constant energy depostion ($dE/dx$) value of $2.04$ $MeV/cm$.
 
 \subsubsection{The Muon Range Detector (MRD)}
-Here I will detail the MRD and how I simulated it in my code, such as the dimensions and the energy required to traverse the detector.
+The Muon Range Detector (MRD) is located $0.55$ $m$ downstream of SciBar in the z-direction, and is a composition of 2 sets of 13 alternating slabs of steel-scintillator layers, where the scintillator layers alternate between being horizontally oriented or vertically oriented, in the xy-plane. The steel layers have a z-direction thickness of $5.08$ $cm$ and the scintillator layers have a z-direction thickness of $0.6$ $cm$. Combining all the layers of the different alternating materials results in 26 scintillator layers that "sandwich" (yes, I just used sandwich as a verb) 25 steel layers inbetween and gives a total z-direction dimension of being $1.37 m$. The xy-plane is modeled as a square again (as was the case with SciBar, too) with dimensions in the x-direction and the y-direction of $2.6$ $m$. The energy deposition ($dE/dx$) of the muon for the scintillator layers is again a constant of $2.04$ $MeV/cm$ and the energy deposition for the steel layers are a constant with value $11.43$ $MeV/cm$.
 
 %-----------------------------------------------------------------------------------------------------------------|
 \subsection{Vertex Distributions}
 The events were all given a random initial point that was generated with the goal that the vertex distributions of this simulation would closely match the vertex distributions that Hiraide (need to put a reference) showed in his thesis. This was done by... etc.
+
+\begin{lstlisting}[language=C]
+Put in the code for how we made the vertex distributions of the interactions.
+\end{lstlisting}
 
 \begin{figure}[H]
 \centering
@@ -94,7 +91,7 @@ The events were all given a random initial point that was generated with the goa
 There were three different classifications for events that qualified as CC-Coh Pion Production events, that the muon made it to the MRD, and the muon penetrated at least three layers of steel. These categories will be referenced multiple times throughout the remainder of this paper, which makes pertinent that the reader has an understanding of what each of the three specifically mean for any event that falls under any of these classifications.
 
 \subsubsection{Stopped}
-An event is classified as "Stopped," if the event qualified as being a CC-Coh Pion Production event, the muon of the event reached the MRD, penetrated three layers of steel, and stopped (or embedded) in the MRD without exiting the sides or the back face. Events that are classified as "Stopped" are included in the combined samples of this acceptance study and are called "Good" events. This is shown in the figure below.
+An event is classified as "Stopped," if the event qualified as being a CC-Coh Pion Production event, the muon of the event reached the MRD, penetrated three layers of steel, and stopped (or embedded) in the MRD without exiting the sides or the back face. Events that are classified as "Stopped" are included in the combined samples of this acceptance study and are called "Good" events. Maybe put in the dimensions of the xy-plane and z-direction that meet this classification for the MRD? This is shown in the figure below.
 
 \begin{figure}[H]
 \centering
@@ -103,7 +100,7 @@ An event is classified as "Stopped," if the event qualified as being a CC-Coh Pi
 \end{figure}
 
 \subsubsection{Not-Stopped}
-An event is classified as "Not-Stopped," if the event qualified as being a CC-Coh Pion Production event, the muon of the event reached the MRD, and the muon passed out the back face of the MRD without stopping. Events that are classified as "Not-Stopped" are included in the combined samples of this acceptance study and are also called "Good" events. This is shown in the figure below.
+An event is classified as "Not-Stopped," if the event qualified as being a CC-Coh Pion Production event, the muon of the event reached the MRD, and the muon passed out the back face of the MRD without stopping. Events that are classified as "Not-Stopped" are included in the combined samples of this acceptance study and are also called "Good" events. Maybe put in the dimensions of the xy-plane and z-direction that meet this classification for the MRD? This is shown in the figure below.
 
 \begin{figure}[H]
 \centering
@@ -112,7 +109,7 @@ An event is classified as "Not-Stopped," if the event qualified as being a CC-Co
 \end{figure}
 
 \subsubsection{Out-Side}
-An event is classified as "Out-Side," if the event qualified as being a CC-Coh Pion Production event, the muon of the event reached the MRD, penetrated three layers of steel, and then passed through one of the sides of the MRD (not including the back face) without stopping. Events that are classified as "Out-Side" are not included in the combined samples because there was not enough material traversal for an accurate reconstruction of the particles momentum and energy to be made. This is shown in the figure below.
+An event is classified as "Out-Side," if the event qualified as being a CC-Coh Pion Production event, the muon of the event reached the MRD, penetrated three layers of steel, and then passed through one of the sides of the MRD (not including the back face) without stopping. Events that are classified as "Out-Side" are not included in the combined samples because there was not enough material traversal for an accurate reconstruction of the particles momentum and energy to be made. Maybe put in the dimensions of the xy-plane and z-direction that meet this classification for the MRD? This is shown in the figure below.
 
 \begin{figure}[H]
 \centering
@@ -121,8 +118,8 @@ An event is classified as "Out-Side," if the event qualified as being a CC-Coh P
 \end{figure}
 
 %-----------------------------------------------------------------------------------------------------------------|
-\subsection{What Is Next?}
-Blank example.
+\subsection{Stepping Through the Detectors Along an Event}
+I do not know if I am really going to include this here or not...
 %%%%%%%%%%%%%%%%%%%%%%%%%%% The CC-Coh Pion section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -194,7 +191,7 @@ This file is the macro that corresponds to the "NewNMReinSehgal.h" file, which c
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth]{NewNMReinSehgalImages/7-LayerPenetrationNMRS.png}
-\caption{This is a plot right here. Nice of you to notice!}
+\caption{This histogram depicts the amount of muons that embedded in what layer of steel.}
 \end{figure}
 
 \begin{figure}[H]
@@ -1238,10 +1235,10 @@ The instructions on how to run the code and the order the files need to run in s
 
 \begin{adjustwidth}{4.0em}{0pt}
 \begin{steps}
-  \item This is the first step.
-  \item This is the second step.
-  \item This is the third step.
-  \item Etc.
+  \item This is the first step. (Run the NewNM macros and the NewANM macros and the OldNM macro.)
+  \item This is the second step. (Run the combined plotting macros.)
+  \item This is the third step. (Run the Pion Plotting macros.)
+  \item Etc. (Run the FourSquaredMomentum macros.)
 \end{steps}
 \end{adjustwidth}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Steps for Running the Code section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
@@ -1257,15 +1254,19 @@ These are just a few cautionary suggestions for potential issues that might be e
 
 %====================================== A New Section Begins Here ==============================================|
 \section{Acknowledgements}
-Thank everyone who helped, and thank everyone who gave their inputs into your acceptance study. YOU NEED TO GIVE A HUGE AND SPECIAL THANKS TO DR. ASAADI RIGHT HERE!
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Steps for Running the Code section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
+Thank everyone who helped, and thank everyone who gave their inputs into your acceptance study. YOU NEED TO GIVE A HUGE AND SPECIAL THANKS TO DR. ASAADI RIGHT HERE! (He has been suuuuuuuper patient...)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Acknowledgements section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
 
 
 
 %===================================== A New Section Begins Here ===============================================|
 \section{Appendix}
+\subsection{List of Figures}
 There will eventually be a huge list of figures here.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Steps for Running the Code section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
+
+\subsection{List of Tables}
+There will eventually be the event reduction tables and 2D histogram tables here.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Appendix section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
 
 
 
