@@ -5,9 +5,12 @@
 \usepackage{indentfirst}
 \usepackage{changepage}
 \usepackage{gensymb}
+\usepackage{rotating}
 \usepackage{enumitem}
 \usepackage{graphicx}
+\usepackage{adjustbox}
 \usepackage{float}
+\usepackage{csvsimple}
 \usepackage{authblk}
 \usepackage{listings}
 
@@ -1379,14 +1382,54 @@ There will eventually be a huge list of figures here.
 
 \subsection{List of Tables}
 There will eventually be the event reduction tables and 2D histogram tables here.
+
+\newpage
+\begin{sidewaystable}[htbp]
+\centering
+\caption{Table for 2D Histogram for New NM-Rein-Sehgal}
+\begin{adjustbox}{max width=\textwidth, max height=\textheight}
+\csvautotabular{TechNoteTables/New-NM-RS.csv}
+\end{adjustbox}
+\end{sidewaystable}
+
+\newpage
+\begin{sidewaystable}
+\centering
+\caption{Table for 2D Histogram for New NM-Berger-Sehgal}
+\begin{adjustbox}{max width=\textwidth, max height=\textheight}
+\csvautotabular{TechNoteTables/New-NM-BS.csv}
+\end{adjustbox}
+\end{sidewaystable}
+
+\newpage
+\begin{sidewaystable}
+\centering
+\caption{Table for 2D Histogram for Old NM-Rein-Sehgal}
+\begin{adjustbox}{max width=\textwidth, max height=\textheight}
+\csvautotabular{TechNoteTables/Old-NM-RS.csv}
+\end{adjustbox}
+\end{sidewaystable}
+
+\newpage
+\begin{sidewaystable}
+\centering
+\caption{Table for 2D Histogram for New ANM-Rein-Sehgal}
+\begin{adjustbox}{max width=\textwidth, max height=\textheight}
+\csvautotabular{TechNoteTables/New-ANM-RS.csv}
+\end{adjustbox}
+\end{sidewaystable}
+
+\newpage
+\begin{sidewaystable}
+\centering
+\caption{Table for 2D Histogram for New ANM-Berger-Sehgal}
+\begin{adjustbox}{max width=\textwidth, max height=\textheight}
+\csvautotabular{TechNoteTables/New-ANM-BS.csv}
+\end{adjustbox}
+\end{sidewaystable}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Appendix section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
 
 
-
-%===================================== A New Section Begins Here ===============================================|
-\section{Yo Momma So Ugly}
-She really is! Believe me! I'm a scientist. I know these things.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Yo Momma So Ugly section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
 
 \end{document}
 %|------------------------------The Document Ends Here----------------------------------|
