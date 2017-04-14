@@ -12,27 +12,29 @@
 \BOOKMARK [3][-]{subsubsection.4.1.3}{Out-Side}{subsection.4.1}% 12
 \BOOKMARK [2][-]{subsection.4.2}{Stepping Through the Detectors Along an Event}{section.4}% 13
 \BOOKMARK [1][-]{section.5}{Results}{}% 14
-\BOOKMARK [1][-]{appendix.A}{Appendix: Sample Details}{}% 15
-\BOOKMARK [2][-]{subsection.A.1}{-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 16
-\BOOKMARK [2][-]{subsection.A.2}{-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 17
-\BOOKMARK [2][-]{subsection.A.3}{-Mode Rein-Sehgal NEUTvx.x.x}{appendix.A}% 18
-\BOOKMARK [2][-]{subsection.A.4}{bar-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 19
-\BOOKMARK [2][-]{subsection.A.5}{"7016-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 20
-\BOOKMARK [2][-]{subsection.A.6}{Vertex Distributions}{appendix.A}% 21
-\BOOKMARK [2][-]{subsection.A.7}{NewNMReinSehgal.C}{appendix.A}% 22
-\BOOKMARK [2][-]{subsection.A.8}{NewNMBergerSehgal.C}{appendix.A}% 23
-\BOOKMARK [2][-]{subsection.A.9}{OldNMReinSehgal.C}{appendix.A}% 24
-\BOOKMARK [2][-]{subsection.A.10}{NewANMReinSehgal.C}{appendix.A}% 25
-\BOOKMARK [2][-]{subsection.A.11}{NewANMBergerSehgal.C}{appendix.A}% 26
-\BOOKMARK [2][-]{subsection.A.12}{NMCombinedPlots.C}{appendix.A}% 27
-\BOOKMARK [2][-]{subsection.A.13}{NMPionPlotting.C}{appendix.A}% 28
-\BOOKMARK [2][-]{subsection.A.14}{NMFourSquaredPlotting.C}{appendix.A}% 29
-\BOOKMARK [2][-]{subsection.A.15}{ANMCombinedPlots.C}{appendix.A}% 30
-\BOOKMARK [2][-]{subsection.A.16}{ANMPionPlotting.C}{appendix.A}% 31
-\BOOKMARK [2][-]{subsection.A.17}{ANMFourSquaredPlotting.C}{appendix.A}% 32
-\BOOKMARK [1][-]{appendix.B}{Steps for Running the Code}{}% 33
-\BOOKMARK [1][-]{appendix.C}{Closing Remarks and Cautions}{}% 34
-\BOOKMARK [1][-]{appendix.D}{Acknowledgements}{}% 35
-\BOOKMARK [1][-]{appendix.E}{Appendix}{}% 36
-\BOOKMARK [2][-]{subsection.E.1}{List of Figures}{appendix.E}% 37
-\BOOKMARK [2][-]{subsection.E.2}{List of Tables}{appendix.E}% 38
+\BOOKMARK [2][-]{subsection.5.1}{Charged-Current Inclusive Events}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Charged-Current Coherent Pion Production Events}{section.5}% 16
+\BOOKMARK [1][-]{appendix.A}{Appendix: Sample Details}{}% 17
+\BOOKMARK [2][-]{subsection.A.1}{-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 18
+\BOOKMARK [2][-]{subsection.A.2}{-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 19
+\BOOKMARK [2][-]{subsection.A.3}{-Mode Rein-Sehgal NEUTvx.x.x}{appendix.A}% 20
+\BOOKMARK [2][-]{subsection.A.4}{bar-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 21
+\BOOKMARK [2][-]{subsection.A.5}{"7016-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 22
+\BOOKMARK [2][-]{subsection.A.6}{Vertex Distributions}{appendix.A}% 23
+\BOOKMARK [2][-]{subsection.A.7}{NewNMReinSehgal.C}{appendix.A}% 24
+\BOOKMARK [2][-]{subsection.A.8}{NewNMBergerSehgal.C}{appendix.A}% 25
+\BOOKMARK [2][-]{subsection.A.9}{OldNMReinSehgal.C}{appendix.A}% 26
+\BOOKMARK [2][-]{subsection.A.10}{NewANMReinSehgal.C}{appendix.A}% 27
+\BOOKMARK [2][-]{subsection.A.11}{NewANMBergerSehgal.C}{appendix.A}% 28
+\BOOKMARK [2][-]{subsection.A.12}{NMCombinedPlots.C}{appendix.A}% 29
+\BOOKMARK [2][-]{subsection.A.13}{NMPionPlotting.C}{appendix.A}% 30
+\BOOKMARK [2][-]{subsection.A.14}{NMFourSquaredPlotting.C}{appendix.A}% 31
+\BOOKMARK [2][-]{subsection.A.15}{ANMCombinedPlots.C}{appendix.A}% 32
+\BOOKMARK [2][-]{subsection.A.16}{ANMPionPlotting.C}{appendix.A}% 33
+\BOOKMARK [2][-]{subsection.A.17}{ANMFourSquaredPlotting.C}{appendix.A}% 34
+\BOOKMARK [1][-]{appendix.B}{Steps for Running the Code}{}% 35
+\BOOKMARK [1][-]{appendix.C}{Closing Remarks and Cautions}{}% 36
+\BOOKMARK [1][-]{appendix.D}{Acknowledgements}{}% 37
+\BOOKMARK [1][-]{appendix.E}{Figures and Tables}{}% 38
+\BOOKMARK [2][-]{subsection.E.1}{List of Figures}{appendix.E}% 39
+\BOOKMARK [2][-]{subsection.E.2}{List of Tables}{appendix.E}% 40
