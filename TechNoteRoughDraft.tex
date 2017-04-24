@@ -85,7 +85,7 @@ Five different samples were used in this study, three samples for $\nu$-mode and
 	\begin{center}
 	%\resizebox{0.45\textwidth}{!}{%
 	\begin{tabular}{c|c|c|c}
-	\multicolumn{4}{c}{\textbf{Summary of samples}} \\
+	\multicolumn{4}{c}{\textbf{Summary of Samples}} \\
 	\hline \hline
 	 Mode & NEUT version & Pion-Model & Number of simulated events\\
 	\hline
@@ -100,9 +100,9 @@ Five different samples were used in this study, three samples for $\nu$-mode and
 	$\bar{\nu}$ & 5.3.6 & Berger-Sehgal & 1,000,000 \\
 	\hline
 	\end{tabular}%}
-	\caption{Summary of the samples used to build the acceptance model for this study.} \label{tab:samples}
+	\caption{Summary of the samples used to build the acceptance model for this study.} 
 	\end{center}
-\end{table}
+\end{table}\label{tab:samples}
 \end{center}
 
 
@@ -233,17 +233,17 @@ Here we define the charged current inclusive sample (CC-Inclusive) which we use 
 	\hline
 	\hline
 	\end{tabular}}
-	\caption{Event reduction table for a sample of $\nu$-mode CC-Inclusive evnets simulated in the SciBooNE geometry.} \label{tab:NuCCIncEventReduction}
+	\caption{Event reduction table for a sample of $\nu$-mode CC-Inclusive evnets simulated in the SciBooNE geometry.}
 	\end{center}
-\end{table}
+\end{table}\label{tab:NuCCIncEventReduction}
 \end{center}
 
 Figure \ref{fig:NuModeCCInclusiveMomAndAng} shows the momentum and angular distribution for the sample of $\nu$-mode CC-Inclusive events passing all our requirements for all three models considered in this study (NEUT v5.3.6 Rein-Sehgal, NEUT v5.3.6 Berger-Sehgal, NEUT vx.x.x Rein-Sehgal). The distributions have been normalized to the same area and show no strong differences between them. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.3\textwidth]{CCInclusivePlots/CCInclusiveMuonPDummyImage.png}
-\includegraphics[width=0.3\textwidth]{CCInclusivePlots/CCInclusiveMuonAngleDummyImage.png}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/NMCCInclusiveTotalMomentum.png}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/NMCCInclusiveTotalAngle.png}
 \caption{Muon Momentum (left) and Muon Angle (right) for $\nu$-mode CC-Inclusive interactions for all three models included in this study. These samples kinematics are, unsurprisingly, very similar for the sample of CC-Inclusive}
 \end{figure}\label{fig:NuModeCCInclusiveMomAndAng}
 
@@ -257,13 +257,28 @@ Figure \ref{fig:OneDEfficiency} represents the one-dimensional efficiency for se
 \end{figure}\label{fig:OneDEfficiency}
 
 
-Figure \ref{fig:TwoDEfficiency} shows the two-dimensional efficiency for selecting $\nu$-mode CC-Inclusive events for this study compared to results derived from Morgan's reference sample (need more words here about this....see email)
+Figure \ref{fig:TwoDEfficiencyRS} shows the two-dimensional efficiency for selecting $\nu$-mode CC-Inclusive events for this study compared to results derived from Morgan's reference sample (need more words here about this....see email)
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{CCInclusivePlots/twoDEffCompare.png}
-\caption{Two-dimensional efficiency plots for the $\nu$-mode CC-Inclusive sample.}
-\end{figure}\label{fig:TwoDEfficiency}
+\includegraphics[width=0.3\textwidth]{CCInclusivePlots/MorgansCCInclusiveSample.png}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/2DEffCompareNMRS.png}
+\caption{Two-dimensional efficiency plots for the $\nu$-mode Rein-Sehgal CC-Inclusive sample.}
+\end{figure}\label{fig:TwoDEfficiencyRS}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{CCInclusivePlots/MorgansCCInclusiveSample.png}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/2DEffCompareNMBS.png}
+\caption{Two-dimensional efficiency plots for the $\nu$-mode Berger-Sehgal CC-Inclusive sample.}
+\end{figure}\label{fig:TwoDEfficiencyBS}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{CCInclusivePlots/MorgansCCInclusiveSample.png}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/2DEffCompareNMORS.png}
+\caption{Two-dimensional efficiency plots for the $\nu$-mode Old Rein-Sehgal CC-Inclusive sample.}
+\end{figure}\label{fig:TwoDEfficiencyORS}
 
 Similar to before, Table \ref{tab:AntiNuCCIncEventReduction} goes through the event selection criteria for selecting a sample of CC-Inclusive events from the neutrino mode ($\bar{\nu}$-mode) Monte Carlo.
 
@@ -296,9 +311,9 @@ Similar to before, Table \ref{tab:AntiNuCCIncEventReduction} goes through the ev
 	\hline
 	\hline
 	\end{tabular}}
-	\caption{Event reduction table for a sample of $\bar{\nu}$-mode CC-Inclusive evnets simulated in the SciBooNE geometry.} \label{tab:AntiNuCCIncEventReduction}
+	\caption{Event reduction table for a sample of $\bar{\nu}$-mode CC-Inclusive evnets simulated in the SciBooNE geometry.} 
 	\end{center}
-\end{table}
+\end{table}\label{tab:AntiNuCCIncEventReduction}
 \end{center}
 
 
@@ -306,8 +321,8 @@ Figure \ref{fig:NuModeCCInclusiveMomAndAng} shows the momentum and angular distr
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.3\textwidth]{CCInclusivePlots/CCInclusiveMuonPDummyImage.png}
-\includegraphics[width=0.3\textwidth]{CCInclusivePlots/CCInclusiveMuonAngleDummyImage.png}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/ANMCCInclusiveTotalMomentum.png}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/ANMCCInclusiveTotalAngle.png}
 \caption{Muon Momentum (left) and Muon Angle (right) for $\bar{\nu}$-mode CC-Inclusive interactions for all three models included in this study. These samples kinematics are, unsurprisingly, very similar for the sample of CC-Inclusive}
 \end{figure}
 
@@ -315,91 +330,28 @@ Figure \ref{fig:OneDEfficiencyAntiNu} represents the one-dimensional efficiency 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{CCInclusivePlots/OneDAntiNuEffDummyPlot.png}
-\caption{One-dimension efficiency plots for the $\bar{\nu}$-mode CC-Inclusive sample.}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/OneDAntiNuEffMomentum.png}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/OneDAntiNuEffAngle.png}
+\caption{One-dimension efficiency plots for the $\bar{\nu}$-mode CC-Inclusive sample. Muon's Momentums is on the right and the Muon's Angles is on the left.}
 \end{figure}\label{fig:OneDEfficiencyAntiNu}
 
+Figure \ref{fig:TwoDEfficiencyRS} shows the two-dimensional efficiency for selecting $\bar{\nu}$-mode CC-Inclusive events for this study compared to results derived from Morgan's reference sample (need more words here about this....see email)
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{CCInclusivePlots/MorgansCCInclusiveSample.png}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/2DEffCompareANMRS.png}
+\caption{Two-dimensional efficiency plots for the $\bar{\nu}$-mode Rein-Sehgal CC-Inclusive sample.}
+\end{figure}\label{fig:TwoDEfficiencyRS}
 
-%---------------------------------------------------------------------|
-\subsection{Charged-Current Coherent Pion Production Events}\label{sub:CCCohPion}
-%---------------------------------------------------------------------|
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{CCInclusivePlots/MorgansCCInclusiveSample.png}
+\includegraphics[width=0.4\textwidth]{CCInclusivePlots/2DEffCompareANMBS.png}
+\caption{Two-dimensional efficiency plots for the $\bar{\nu}$-mode Berger-Sehgal CC-Inclusive sample.}
+\end{figure}\label{fig:TwoDEfficiencyBS}
 
-\begin{center}
-\begin{table}[htb]
-	\begin{center}
-	\resizebox{0.99\textwidth}{!}{%
-	\begin{tabular}{|c|c|c|c|}
-	\multicolumn{4}{c}{\textbf{$\nu$-mode CC-Coherent Pion Event Reduction}} \\
-	\hline \hline
-	 Events Selection & NEUT v5.3.6 Rein-Sehgal & NEUT v5.3.6 Berger-Sehgal & NEUT vx.x.x Rein-Sehgal\\
-	\hline
-	Total Sample & 1,000,000 & 1,000,000 & 100,000 \\
-	\hline
-	CC-Coherent Pion Interaction & 12,186 & 2,576 & 1,320 \\
-	($\mu$ + $\pi$ + $\varnothing$ in SciBar) & & & \\
-	\hline
-	Both muon and pion are  & 8,535 & 1,845 & 884 \\
-	forward going &  &  &  \\
-	\hline
-	Muon enters the MRD and & 7,407 & 1,592 & 767 \\
-	penetrates $\geq$ 3 layers of steel & & & \\
-	\hline
-	``Stopped''-Events & 6,448 & 1,350 & 669 \\
-	``Out-the-back''-Events & 530 & 150 & 56 \\
-	``Out-the-side''-Events & 429 & 92 & 42 \\
-	\hline
-	\hline
-	\textbf{Good Coherent Pion Events} & \textbf{6,978} & \textbf{1,500} & \textbf{725} \\
-	\hline
-	\hline
-	\end{tabular}}
-	\caption{Event reduction table for a sample of $\nu$-mode Charged Current Coherent Pion events simulated in the SciBooNE geometry.} \label{tab:NuCCCoherentEventReduction}
-	\end{center}
-\end{table}
-\end{center}
-
-
-
-
-\begin{center}
-\begin{table}[htb]
-	\begin{center}
-	\resizebox{0.99\textwidth}{!}{%
-	\begin{tabular}{|c|c|c|}
-	\multicolumn{3}{c}{\textbf{$\bar{\nu}$-mode CC-Coherent Pion Event Reduction}} \\
-	\hline \hline
-	 Events Selection & NEUT v5.3.6 Rein-Sehgal & NEUT v5.3.6 Berger-Sehgal \\
-	\hline
-	Total Sample & 1,000,000 & 1,000,000 \\
-	\hline
-	CC-Coherent Pion Interaction & 36,669 & 7,790 \\
-	($\mu$ + $\pi$ + $\varnothing$ in SciBar) & & \\
-	\hline
-	Both muon and pion are  & 24,675 & 5,477 \\
-	forward going & & \\
-	\hline
-	Muon enters the MRD and & 20,445 & 4,517 \\
-	penetrates $\geq$ 3 layers of steel & & \\
-	\hline
-	``Stopped''-Events & 18,935 & 4,203 \\
-	``Out-the-back''-Events & 372 & 82 \\
-	``Out-the-side''-Events & 1,138 & 232 \\
-	\hline
-	\hline
-	\textbf{Good Coherent Pion Events} & \textbf{19,307} & \textbf{4,285} \\
-	\hline
-	\hline
-	\end{tabular}}
-	\caption{Event reduction table for a sample of $\bar{\nu}$-mode Charged Current Coherent Pion events simulated in the SciBooNE geometry.} \label{tab:NuCCCoherentEventReduction}
-	\end{center}
-\end{table}
-\end{center}
-
-
-
-
-(Again, you show the momentum and angle spectrum. You show the 1-d efficiencies and you have the 2-d efficiency plots AND A TABLE WHICH LISTS THEM (this is the biggest piece that is missing and I was expecting to see), here you also include the q2 and |t| distributions and their definitions.)
+Below are the tables that correspond to the five 2D Efficiency CC-Inclusive histograms that are above.
 
 % Here are the tables for the 2D efficiency histograms
 \newpage
@@ -458,80 +410,205 @@ Figure \ref{fig:OneDEfficiencyAntiNu} represents the one-dimensional efficiency 
 \end{landscape}
 % This is where the 2D efficiency histograms end
 
+
+
+%---------------------------------------------------------------------|
+\subsection{Charged-Current Coherent Pion Production Events}\label{sub:CCCohPion}
+%---------------------------------------------------------------------|
+
+Here we define the Charged-Current Coherent Pion Production sample (CC-Coh $\pi^{+/-}$) which we use to validate our acceptance model against previous simulation studies which were done. Table \ref{tab:NuCCCoherentEventReduction} goes through the event selection criteria for selecting a sample of CC-Coh $\pi^{+/-}$ events from the neutrino mode ($\nu$-mode) Monte Carlo.
+
+\begin{center}
+\begin{table}[htb]
+	\begin{center}
+	\resizebox{0.99\textwidth}{!}{%
+	\begin{tabular}{|c|c|c|c|}
+	\multicolumn{4}{c}{\textbf{$\nu$-mode CC-Coherent Pion Event Reduction}} \\
+	\hline \hline
+	 Events Selection & NEUT v5.3.6 Rein-Sehgal & NEUT v5.3.6 Berger-Sehgal & NEUT vx.x.x Rein-Sehgal\\
+	\hline
+	Total Sample & 1,000,000 & 1,000,000 & 100,000 \\
+	\hline
+	CC-Coherent Pion Interaction & 12,186 & 2,576 & 1,320 \\
+	($\mu$ + $\pi$ + $\varnothing$ in SciBar) & & & \\
+	\hline
+	Both muon and pion are  & 8,535 & 1,845 & 884 \\
+	forward going &  &  &  \\
+	\hline
+	Muon enters the MRD and & 7,407 & 1,592 & 767 \\
+	penetrates $\geq$ 3 layers of steel & & & \\
+	\hline
+	``Stopped''-Events & 6,448 & 1,350 & 669 \\
+	``Out-the-back''-Events & 530 & 150 & 56 \\
+	``Out-the-side''-Events & 429 & 92 & 42 \\
+	\hline
+	\hline
+	\textbf{Good Coherent Pion Events} & \textbf{6,978} & \textbf{1,500} & \textbf{725} \\
+	\hline
+	\hline
+	\end{tabular}}
+	\caption{Event reduction table for a sample of $\nu$-mode Charged Current Coherent Pion events simulated in the SciBooNE geometry.} 
+	\end{center}
+\end{table}\label{tab:NuCCCoherentEventReduction}
+\end{center}
+
+Here will be the plots for CC-Coh Pion with the total momentum efficiencies and the angle efficiencies!
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\textwidth]{CCCohPlots/NMCCCohTotalMomentum.png}
+\includegraphics[width=0.4\textwidth]{CCCohPlots/NMCCCohTotalAngle.png}
+\caption{"Total" Muon Momentum (left) and "Total" Muon Angle (right) for $\nu$-mode CC-Coh $\pi^{+/-}$ interactions for all three models included in this study. The "Total" classification means that all CC-Coh $\pi^{+/-}$ events are included in these histograms.}
+\end{figure}\label{fig:NuModeCCCohTotalMomAndAng}
+
+Here will be the plots for CC-Coh Pion with the good momentum efficiencies and the angle efficiencies!
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\textwidth]{CCCohPlots/NMCCCohGoodMomentum.png}
+\includegraphics[width=0.4\textwidth]{CCCohPlots/NMCCCohGoodAngle.png}
+\caption{"Good" Muon Momentum (left) and "Good" Muon Angle (right) for $\nu$-mode CC-Coh $\pi^{+/-}$ interactions for all three models included in this study. The "Good" classification means that only the stopped and not-stopped CC-Coh $\pi^{+/-}$ events are included for these histograms.}
+\end{figure}\label{fig:NuModeCCCohGoodMomAndAng}
+
+Now from here on will be the rest of the results for CC-Coh Events (so this will be the $|t|$ and $Q^2$ plots with the explanations for what they are!!). You might also want to make a figure that depicts what the $\theta_{particle}$'s are... think about it.
+
+% You need to rewrite what is between here, but these equations are correct!
+The NewANMBergerSehgal.C macro also calculates many different quantities for the generated simulation of the events and saves the information in histograms that are later called upon through the plotting macros (which are after all of the analysis macros). The first quantity that is calculated for the different vertexes is the momentum of both the muon and the pion, which are both calculated using the equations:
+
+\begin{equation}
+|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
+\end{equation}
+
+\begin{equation}
+|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
+\end{equation}
+
+\noindent
+The momentum is reported in units of $MeV/c$.
+
+The next quantity that is calculated in the macro is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
+
+\begin{equation}
+\theta_\mu = tan^{-1}(\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}/{P_{\mu_z}})
+\end{equation}
+
+\begin{equation}
+\theta_\pi = tan^{-1}(\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}/{P_{\pi_z}})
+\end{equation}
+
+\noindent
+The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
+
+The last two quantities that this analysis macro calculates are the two different types of four-momentum transfers specific to this interaction, which are $Q^2$ and $|t|$. The $Q^2$ corresponds to the four-momentum transfer from the neutrino and muon to the nucleus and pion, and is calculated using the equation:
+
+\begin{equation}
+Q^2 = |(P_{\nu_\mu} - P_\mu)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $Q^2$:
+
+\begin{equation}
+Q^2 = |(P_{\nu_{\mu,x}} - P_{\mu_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E})^2|
+\end{equation}
+
+\noindent
+$Q^2$ is reported in units of $(MeV/c)^2$.
+
+The $|t|$ corresponds to the four-momentum transfer from the neutrino, muon, and pion to the nucleus, and is calculated using the equation:
+
+\begin{equation}
+|t| = |(Q - P_\pi)^2| = |(P_{\nu_\mu} - P_\mu - P_\pi)^2|
+\end{equation}
+
+\noindent
+This equation is the four-momentum notational form. The code follows the equation below in order to compute $|t|$:
+
+\begin{equation}
+|t| = |(P_{\nu_{\mu,x}} - P_{\mu_x} - P_{\pi_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y} - P_{\pi_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z} - P_{\pi_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E} - P_{\pi_E})^2|
+\end{equation}
+
+\noindent
+$|t|$ is reported in units of $(MeV/c)^2$.
+% And this is the end of the section that has been set aside with the intention of being rewritten
+
 % This is where the t and q2 plots are
 $\nu$-Mode $|t|$ and $Q^2$ plots are below:
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/1-NMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/2-NMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
+\includegraphics[width=0.4\textwidth]{CCCohPlots/NMCCCohGoodT.png}
+\includegraphics[width=0.4\textwidth]{CCCohPlots/NMCCCohGoodQ2.png}
+\caption{The $|t|$ Good Momentum Transfer (left) and $Q^2$ Good Momentum Transfer (right) for $\nu$-mode CC-Coh $\pi^{+/-}$ interactions for the three models included in this study. The Good classification means that this includes both the stopped and the not-stopped classifications of the CC-Coh $\pi^{+/-}$ events only.}
+\end{figure}\label{fig:AntiNuModeCCCohGoodTAndQ2}
+%End of neutrino mode q2 and |t| plots!!
+
+
+
+Similar to before, Table \ref{tab:AntiNuCCCoherentEventReduction} goes through the event selection criteria for selecting a sample of CC-Coh $\pi^{+/-}$ events from the neutrino mode ($\bar{\nu}$-mode) Monte Carlo.
+
+\begin{center}
+\begin{table}[htb]
+	\begin{center}
+	\resizebox{0.99\textwidth}{!}{%
+	\begin{tabular}{|c|c|c|}
+	\multicolumn{3}{c}{\textbf{$\bar{\nu}$-mode CC-Coherent Pion Event Reduction}} \\
+	\hline \hline
+	 Events Selection & NEUT v5.3.6 Rein-Sehgal & NEUT v5.3.6 Berger-Sehgal \\
+	\hline
+	Total Sample & 1,000,000 & 1,000,000 \\
+	\hline
+	CC-Coherent Pion Interaction & 36,669 & 7,790 \\
+	($\mu$ + $\pi$ + $\varnothing$ in SciBar) & & \\
+	\hline
+	Both muon and pion are  & 24,675 & 5,477 \\
+	forward going & & \\
+	\hline
+	Muon enters the MRD and & 20,445 & 4,517 \\
+	penetrates $\geq$ 3 layers of steel & & \\
+	\hline
+	``Stopped''-Events & 18,935 & 4,203 \\
+	``Out-the-back''-Events & 372 & 82 \\
+	``Out-the-side''-Events & 1,138 & 232 \\
+	\hline
+	\hline
+	\textbf{Good Coherent Pion Events} & \textbf{19,307} & \textbf{4,285} \\
+	\hline
+	\hline
+	\end{tabular}}
+	\caption{Event reduction table for a sample of $\bar{\nu}$-mode Charged Current Coherent Pion events simulated in the SciBooNE geometry.} 
+	\end{center}
+\end{table}\label{tab:AntiNuCCCoherentEventReduction}
+\end{center}
+
+Here will go the plots for CC-Coh Events for ANM both the momentums and the angles for total events.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/3-NMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
+\includegraphics[width=0.4\textwidth]{CCCohPlots/ANMCCCohTotalMomentum.png}
+\includegraphics[width=0.4\textwidth]{CCCohPlots/ANMCCCohTotalAngle.png}
+\caption{"Total" Muon Momentum (left) and "Total" Muon Angle (right) for $\nu$-mode CC-Coh $\pi^{+/-}$ interactions for all three models included in this study. The "Total" classification means that all CC-Coh $\pi^{+/-}$ events are included in these histograms.}
+\end{figure}\label{fig:AntiNuModeCCCohTotalMomAndAng}
+
+Here will go the plots for CC-Coh Events for ANM both the momentums and the angles for good events.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/4-NMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
+\includegraphics[width=0.4\textwidth]{CCCohPlots/ANMCCCohGoodMomentum.png}
+\includegraphics[width=0.4\textwidth]{CCCohPlots/ANMCCCohGoodAngle.png}
+\caption{"Good" Muon Momentum (left) and "Good" Muon Angle (right) for $\bar{\nu}$-mode CC-Coh $\pi^{+/-}$ interactions for both of the models included in this study. The "Good" classification means that only the stopped and not-stopped CC-Coh $\pi^{+/-}$ events are included in these histograms.}
+\end{figure}\label{fig:AntiNuModeCCCohGoodMomAndAng}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/5-NMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{NMFourSquaredPlottingImages/6-NMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
+Here should be a description of the different t and q plots!
 
 $\bar{\nu}$-Mode $|t|$ and $Q^2$ plots are below:
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/1-ANMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/2-ANMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/3-ANMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/4-ANMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/5-ANMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{ANMFourSquaredPlottingImages/6-ANMFourSquaredPlotting.png}
-\caption{}
-\end{figure}
+\includegraphics[width=0.4\textwidth]{CCCohPlots/ANMCCCohGoodT.png}
+\includegraphics[width=0.4\textwidth]{CCCohPlots/ANMCCCohGoodQ2.png}
+\caption{The $|t|$ Good Momentum Transfer (left) and $Q^2$ Good Momentum Transfer (right) for $\bar{\nu}$-mode CC-Coh $\pi^{+/-}$ interactions for both of the models included in this study. The Good classification means that this includes both the stopped and the not-stopped classifications of the CC-Coh $\pi^{+/-}$ events only.}
+\end{figure}\label{fig:AntiNuModeCCCohGoodTAndQ2}
 % This is where the t and q2 plots end
 
 
