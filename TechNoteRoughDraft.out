@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Goal}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.1}{Goal of the Re-Analysis}{section.1}% 2
 \BOOKMARK [1][-]{section.2}{Samples}{}% 3
-\BOOKMARK [1][-]{section.3}{Simulation}{}% 4
+\BOOKMARK [1][-]{section.3}{Detector Simulation}{}% 4
 \BOOKMARK [2][-]{subsection.3.1}{The Detector}{section.3}% 5
 \BOOKMARK [3][-]{subsubsection.3.1.1}{The Scintillator Bar Tracker \(SciBar\)}{subsection.3.1}% 6
 \BOOKMARK [3][-]{subsubsection.3.1.2}{The Muon Range Detector \(MRD\)}{subsection.3.1}% 7
@@ -16,7 +16,7 @@
 \BOOKMARK [2][-]{subsection.A.1}{-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 16
 \BOOKMARK [2][-]{subsection.A.2}{-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 17
 \BOOKMARK [2][-]{subsection.A.3}{-Mode Rein-Sehgal NEUTvx.x.x}{appendix.A}% 18
-\BOOKMARK [2][-]{subsection.A.4}{bar-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 19
+\BOOKMARK [2][-]{subsection.A.4}{"7016-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 19
 \BOOKMARK [2][-]{subsection.A.5}{"7016-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 20
 \BOOKMARK [2][-]{subsection.A.6}{Vertex Distributions}{appendix.A}% 21
 \BOOKMARK [2][-]{subsection.A.7}{NewNMReinSehgal.C}{appendix.A}% 22
