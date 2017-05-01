@@ -112,7 +112,7 @@ This section is intended to detail the nuances of detector simulation in this ac
 %----------------------------------------------------------------------|
 \subsection{The Detector}\label{subsec:detector}
 %----------------------------------------------------------------------|
-For the purposes of this acceptance study, the SciBooNE experiment is composed of two sub-detectors. The first (and the more upstream) of the sub-detectors, is the Scintillator Bar Tracker (SciBar) which was originally conceived and constructed to function as the near detector for the K2K experiment [reference]. The second (and more downstream) of the sub-detectors, is the Muon Range Detector (MRD), which is the detector designed and constructed specifically for SciBooNE for measuring the momentum of muons produced from charged-current neutrino interactions up to $1.2$ $GeV/c$ by using the observed range of the trajectory of the muon. The coordinante system used throughout this study, and illustrated in  Figure \ref{fig:SciBooNEDetector}, puts the origin in the lower corner of the SciBar detector, has $z$ along the beam direction, $y$ opposite to gravity, and $x$ to beam left. 
+For the purposes of this acceptance study, the SciBooNE experiment is composed of two sub-detectors. The first (and the more upstream) of the sub-detectors, is the Scintillator Bar Tracker (SciBar) which was originally conceived and constructed to function as the near detector for the K2K experiment. The second (and more downstream) of the sub-detectors, is the Muon Range Detector (MRD), which is the detector designed and constructed specifically for SciBooNE for measuring the momentum of muons produced from charged-current neutrino interactions up to $1.2$ $GeV/c$ by using the observed range of the trajectory of the muon. The coordinante system used throughout this study, and illustrated in  Figure \ref*{fig:SciBooNEDetector}, puts the origin in the lower corner of the SciBar detector, has $z$ along the beam direction, $y$ opposite to gravity, and $x$ to beam left. 
 
 \begin{figure}[H]
 \centering
@@ -123,17 +123,17 @@ For the purposes of this acceptance study, the SciBooNE experiment is composed o
 %----------------------------------------------------------------------|
 \subsubsection{The Scintillator Bar Tracker (SciBar)} \label{subsubsec:SciBar}
 %----------------------------------------------------------------------|
-The Scintillator Bar Tracker (SciBar) sub-detector is a scintillator detector which was used to identify neutrino interactions within SciBooNE. The dimensions of teh SciBar detector used in this simulation are $0 < x < 3.0$ m, $0 < y < 3.0$ m, and $0 < z < 1.7$ m. This simulation models the scintillator materials as having a constant energy deposition per unit length ($dE/dx$) for both muons and pions of $2.04$ MeV/cm based on previous SciBooNE analyses and on mean values for typical particle momentum in the PDG.
+The Scintillator Bar Tracker (SciBar) sub-detector is a scintillator detector which was used to identify neutrino interactions within SciBooNE. The dimensions of the SciBar detector used in this simulation are $0 < x < 3.0$ m, $0 < y < 3.0$ m, and $0 < z < 1.7$ m. This simulation models the scintillator materials as having a constant energy deposition per unit length ($dE/dx$) for both muons and pions of $2.04$ MeV/cm based on previous SciBooNE analyses and on mean values for typical particle momentum in the PDG.
 
 %----------------------------------------------------------------------|
 \subsubsection{The Muon Range Detector (MRD)}\label{subsubsec:MRD}
 %----------------------------------------------------------------------|
-The Muon Range Detector (MRD), depicted in Figure \ref{fig:mrddetector} is located $0.55$ $m$ downstream of SciBar in the z-direction, and is a composition of two sets of thirteen alternating slabs of steel-scintillator layers, where the scintillator layers alternate between being horizontally oriented or vertically oriented, in the $xy$-plane. The steel layers have a z-direction thickness of $5.08$ $cm$ and the scintillator layers have a z-direction thickness of $0.6$ $cm$. Combining all the layers of the different alternating materials results in 26 scintillator layers that "sandwich" twenty five steel layers in-between and gives a total z-direction dimension of being $1.37 m$. The xy-plane is modeled as a square again (as was the case with SciBar, too) with dimensions in the x-direction and the y-direction of $2.6$ $m$. The energy deposition per unit length ($dE/dx$) of a muon penetrating the scintillator layers is assumed to be a constant $2.04$ MeV/cm while the energy deposition for the muon in the steel layers is assumed to be a greater value of $11.43$ $MeV/cm$. Both values are typical for muons at the energy range produced in SciBooNE and taken from the PDG
+The Muon Range Detector (MRD), depicted in Figure \ref*{fig:mrddetector} is located $0.55$ $m$ downstream of SciBar in the z-direction, and is a composition of two sets of thirteen alternating slabs of steel-scintillator layers, where the scintillator layers alternate between being horizontally oriented or vertically oriented, in the $xy$-plane. The steel layers have a z-direction thickness of $5.08$ $cm$ and the scintillator layers have a z-direction thickness of $0.6$ $cm$. Combining all the layers of the different alternating materials results in 26 scintillator layers that "sandwich" twenty five steel layers in-between and gives a total z-direction dimension of being $1.37 m$. The xy-plane is modeled as a square again (as was the case with SciBar, too) with dimensions in the x-direction and the y-direction of $2.6$ $m$. The energy deposition per unit length ($dE/dx$) of a muon penetrating the scintillator layers is assumed to be a constant $2.04$ MeV/cm while the energy deposition for the muon in the steel layers is assumed to be a greater value of $11.43$ $MeV/cm$. Both values are typical for muons at the energy range produced in SciBooNE and taken from the PDG.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.75\textwidth]{EventClassifications/mrd.png}
-\caption*{Figure \ref*{fig:mrddetector}: Depiction of the Muon Range Detector (MRB) which consists of alternating layers of horizontal scintillator (shown in pink) steel slabs (showin in grey) and vertical scintillator (shown in purple)}
+\caption*{Figure \ref*{fig:mrddetector}: Depiction of the Muon Range Detector (MRD) which consists of alternating layers of horizontal scintillator (shown in pink) steel slabs (shown in grey) and vertical scintillator (shown in purple)}
 \end{figure}\label{fig:mrddetector}
 
 
@@ -178,7 +178,7 @@ The exact momentum of muons which pass completely through the MRD could not be m
 %----------------------------------------------------------------------|
 \subsection{Muon exits out the side of the MRD (``Out-the-side'')}
 %----------------------------------------------------------------------|
-The classification of a neutrino interaction as ``out-the-side'' requires that the muon from the interaction to have reached the MRD, penetrated at least three layers of steel, but to have then exited out the side of the active volume of the MRD (excluding the very back face). Events which are classified as ``out-the-side'' are excluded from this study because no accurate reconstruction of the muons momentum can be made when the muon exits out the side of the MRD. An illustration of such an excluded event which exits out the side of the MRD is given in Figure \ref*{fig:OutTheSideEvent}.
+The classification of a neutrino interaction as ``out-the-side'' requires that the muon from the interaction reached the MRD, penetrated at least three layers of steel, and then to have exited out the side of the active volume of the MRD (excluding the very back face). Events which are classified as ``out-the-side'' are excluded from this study because no accurate reconstruction of the muons momentum can be made when the muon exits out the side of the MRD. An illustration of such an excluded event which exits out the side of the MRD is given in Figure \ref*{fig:OutTheSideEvent}.
 
 
 \begin{figure}[H]
@@ -193,7 +193,6 @@ The classification of a neutrino interaction as ``out-the-side'' requires that t
 %=======================================================================
 \section{Results}\label{sec:Results}
 %=======================================================================
-
 The results of this acceptance study can be broken down into two different classification schemes of events. Those that met the conditions to qualify as a CC-Inclusive event, and those that met the conditions of classification as Charged-Current Coherent Pion Production events. The plots in the two subsections below show our results.
 
 %---------------------------------------------------------------------|
@@ -230,7 +229,7 @@ Here we define the charged current inclusive sample (CC-Inclusive) which we use 
 	\hline
 	\hline
 	\end{tabular}}
-	\caption*{Table \ref*{tab:NuCCIncEventReduction}: Event reduction table for a sample of $\nu$-mode CC-Inclusive evnets simulated in the SciBooNE geometry.}
+	\caption*{Table \ref*{tab:NuCCIncEventReduction}: Event reduction table for a sample of $\nu$-mode CC-Inclusive events simulated in the SciBooNE geometry.}
 	\end{center}
 \end{table}\label{tab:NuCCIncEventReduction}
 \end{center}
@@ -475,10 +474,8 @@ The next quantity that is calculated in the macro is the angle from the beam-dir
 \end{equation}
 
 \noindent
-The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
+The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of charged-current coherent pion production, the angle should never be larger than $90\degree$.
 % --AND HERE!!
-
-Here will be the plots for CC-Coh Pion with the total momentum efficiencies and the angle efficiencies!
 
 
 \begin{figure}[H]
