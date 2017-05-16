@@ -670,7 +670,17 @@ found at the following link (put link to sample here).
 The events were all given a random initial point that was generated with the goal that the vertex distributions of this simulation would closely match the vertex distributions that Hiraide (need to put a reference) showed in his thesis. This was done by... etc.
 
 \begin{lstlisting}[language=C]
-Put in the code for how we made the vertex distributions of the interactions.
+TRandom3 *randX = new TRandom3();
+TRandom3 *randY = new TRandom3();
+TRandom3 *flat = new TRandom3();
+randX->SetSeed(jentry/2);
+randY->SetSeed(jentry*jentry);
+flat->SetSeed(jentry*jentry*jentry);
+double Xpos = randX->Gaus(1.5,1.3);
+while (Xpos<0 || Xpos>3.0) { Xpos = randX->Gaus(1.5,1.3); }
+double Ypos = randY->Gaus(1.5,1.05);
+while (Ypos<0 || Ypos>3.0) { Ypos = randY->Gaus(1.5,1.05); }
+double Zpos = flat->Uniform(0,1.7);
 \end{lstlisting}
 
 \begin{figure}[H]
@@ -858,63 +868,6 @@ This file is the macro that corresponds to the "NewNMBergerSehgal.h" file, which
 \caption{This is a 2D histogram for the momentum and angle of the muon in the total CC Coh Pion events.}
 \end{figure}
 
-The NewNMBergerSehgal.C macro also calculates many different quantities for the generated simulation of the events and saves the information in histograms that are later called upon through the plotting macros (which are after all of the analysis macros). The first quantity that is calculated for the different vertexes is the momentum of both the muon and the pion, which are both calculated using the equations:
-
-\begin{equation}
-|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
-\end{equation}
-
-\begin{equation}
-|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
-\end{equation}
-
-\noindent
-The momentum is reported in units of $MeV/c$.
-
-The next quantity that is calculated in the macro is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
-
-\begin{equation}
-\theta_\mu = tan^{-1}(\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}/{P_{\mu_z}})
-\end{equation}
-
-\begin{equation}
-\theta_\pi = tan^{-1}(\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}/{P_{\pi_z}})
-\end{equation}
-
-\noindent
-The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
-
-The last two quantities that this analysis macro calculates are the two different types of four-momentum transfers specific to this interaction, which are $Q^2$ and $|t|$. The $Q^2$ corresponds to the four-momentum transfer from the neutrino and muon to the nucleus and pion, and is calculated using the equation:
-
-\begin{equation}
-Q^2 = |(P_{\nu_\mu} - P_\mu)^2|
-\end{equation}
-
-\noindent
-This equation is the four-momentum notational form. The code follows the equation below in order to compute $Q^2$:
-
-\begin{equation}
-Q^2 = |(P_{\nu_{\mu,x}} - P_{\mu_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E})^2|
-\end{equation}
-
-\noindent
-$Q^2$ is reported in units of $(MeV/c)^2$.
-
-The $|t|$ corresponds to the four-momentum transfer from the neutrino, muon, and pion to the nucleus, and is calculated using the equation:
-
-\begin{equation}
-|t| = |(Q - P_\pi)^2| = |(P_{\nu_\mu} - P_\mu - P_\pi)^2|
-\end{equation}
-
-\noindent
-This equation is the four-momentum notational form. The code follows the equation below in order to compute $|t|$:
-
-\begin{equation}
-|t| = |(P_{\nu_{\mu,x}} - P_{\mu_x} - P_{\pi_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y} - P_{\pi_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z} - P_{\pi_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E} - P_{\pi_E})^2|
-\end{equation}
-
-\noindent
-$|t|$ is reported in units of $(MeV/c)^2$.
 
 %-----------------------------------------------------------------------------------------------------------------|
 \subsection{OldNMReinSehgal.C}
@@ -974,63 +927,6 @@ This file is the macro that corresponds to the "OldNMReinSehgal.h" file, which c
 \caption{This is a 2D histogram for the momentum and angle of the muon in the total CC Coh Pion events.}
 \end{figure}
 
-The OldNMReinSehgal.C macro also calculates many different quantities for the generated simulation of the events and saves the information in histograms that are later called upon through the plotting macros (which are after all of the analysis macros). The first quantity that is calculated for the different vertexes is the momentum of both the muon and the pion, which are both calculated using the equations:
-
-\begin{equation}
-|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
-\end{equation}
-
-\begin{equation}
-|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
-\end{equation}
-
-\noindent
-The momentum is reported in units of $MeV/c$.
-
-The next quantity that is calculated in the macro is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
-
-\begin{equation}
-\theta_\mu = tan^{-1}(\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}/{P_{\mu_z}})
-\end{equation}
-
-\begin{equation}
-\theta_\pi = tan^{-1}(\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}/{P_{\pi_z}})
-\end{equation}
-
-\noindent
-The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
-
-The last two quantities that this analysis macro calculates are the two different types of four-momentum transfers specific to this interaction, which are $Q^2$ and $|t|$. The $Q^2$ corresponds to the four-momentum transfer from the neutrino and muon to the nucleus and pion, and is calculated using the equation:
-
-\begin{equation}
-Q^2 = |(P_{\nu_\mu} - P_\mu)^2|
-\end{equation}
-
-\noindent
-This equation is the four-momentum notational form. The code follows the equation below in order to compute $Q^2$:
-
-\begin{equation}
-Q^2 = |(P_{\nu_{\mu,x}} - P_{\mu_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E})^2|
-\end{equation}
-
-\noindent
-$Q^2$ is reported in units of $(MeV/c)^2$.
-
-The $|t|$ corresponds to the four-momentum transfer from the neutrino, muon, and pion to the nucleus, and is calculated using the equation:
-
-\begin{equation}
-|t| = |(Q - P_\pi)^2| = |(P_{\nu_\mu} - P_\mu - P_\pi)^2|
-\end{equation}
-
-\noindent
-This equation is the four-momentum notational form. The code follows the equation below in order to compute $|t|$:
-
-\begin{equation}
-|t| = |(P_{\nu_{\mu,x}} - P_{\mu_x} - P_{\pi_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y} - P_{\pi_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z} - P_{\pi_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E} - P_{\pi_E})^2|
-\end{equation}
-
-\noindent
-$|t|$ is reported in units of $(MeV/c)^2$.
 
 %-----------------------------------------------------------------------------------------------------------------|
 \subsection{NewANMReinSehgal.C}
@@ -1090,63 +986,6 @@ This file is the macro that corresponds to the "NewANMReinSehgal.h" file, which 
 \caption{This is a 2D histogram for the momentum and angle of the muon in the total CC Coh Pion events.}
 \end{figure}
 
-The NewANMReinSehgal.C macro also calculates many different quantities for the generated simulation of the events and saves the information in histograms that are later called upon through the plotting macros (which are after all of the analysis macros). The first quantity that is calculated for the different vertexes is the momentum of both the muon and the pion, which are both calculated using the equations:
-
-\begin{equation}
-|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
-\end{equation}
-
-\begin{equation}
-|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
-\end{equation}
-
-\noindent
-The momentum is reported in units of $MeV/c$.
-
-The next quantity that is calculated in the macro is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
-
-\begin{equation}
-\theta_\mu = tan^{-1}(\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}/{P_{\mu_z}})
-\end{equation}
-
-\begin{equation}
-\theta_\pi = tan^{-1}(\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}/{P_{\pi_z}})
-\end{equation}
-
-\noindent
-The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
-
-The last two quantities that this analysis macro calculates are the two different types of four-momentum transfers specific to this interaction, which are $Q^2$ and $|t|$. The $Q^2$ corresponds to the four-momentum transfer from the neutrino and muon to the nucleus and pion, and is calculated using the equation:
-
-\begin{equation}
-Q^2 = |(P_{\nu_\mu} - P_\mu)^2|
-\end{equation}
-
-\noindent
-This equation is the four-momentum notational form. The code follows the equation below in order to compute $Q^2$:
-
-\begin{equation}
-Q^2 = |(P_{\nu_{\mu,x}} - P_{\mu_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E})^2|
-\end{equation}
-
-\noindent
-$Q^2$ is reported in units of $(MeV/c)^2$.
-
-The $|t|$ corresponds to the four-momentum transfer from the neutrino, muon, and pion to the nucleus, and is calculated using the equation:
-
-\begin{equation}
-|t| = |(Q - P_\pi)^2| = |(P_{\nu_\mu} - P_\mu - P_\pi)^2|
-\end{equation}
-
-\noindent
-This equation is the four-momentum notational form. The code follows the equation below in order to compute $|t|$:
-
-\begin{equation}
-|t| = |(P_{\nu_{\mu,x}} - P_{\mu_x} - P_{\pi_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y} - P_{\pi_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z} - P_{\pi_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E} - P_{\pi_E})^2|
-\end{equation}
-
-\noindent
-$|t|$ is reported in units of $(MeV/c)^2$.
 
 %-----------------------------------------------------------------------------------------------------------------|
 \subsection{NewANMBergerSehgal.C}
@@ -1206,63 +1045,6 @@ This file is the macro that corresponds to the "NewANMBergerSehgal.h" file, whic
 \caption{This is a 2D histogram for the momentum and angle of the muon in the total CC Coh Pion events.}
 \end{figure}
 
-The NewANMBergerSehgal.C macro also calculates many different quantities for the generated simulation of the events and saves the information in histograms that are later called upon through the plotting macros (which are after all of the analysis macros). The first quantity that is calculated for the different vertexes is the momentum of both the muon and the pion, which are both calculated using the equations:
-
-\begin{equation}
-|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
-\end{equation}
-
-\begin{equation}
-|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
-\end{equation}
-
-\noindent
-The momentum is reported in units of $MeV/c$.
-
-The next quantity that is calculated in the macro is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
-
-\begin{equation}
-\theta_\mu = tan^{-1}(\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}/{P_{\mu_z}})
-\end{equation}
-
-\begin{equation}
-\theta_\pi = tan^{-1}(\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}/{P_{\pi_z}})
-\end{equation}
-
-\noindent
-The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of Charged-Current Coherent Pion Production, the angle should never be larger than $90\degree$.
-
-The last two quantities that this analysis macro calculates are the two different types of four-momentum transfers specific to this interaction, which are $Q^2$ and $|t|$. The $Q^2$ corresponds to the four-momentum transfer from the neutrino and muon to the nucleus and pion, and is calculated using the equation:
-
-\begin{equation}
-Q^2 = |(P_{\nu_\mu} - P_\mu)^2|
-\end{equation}
-
-\noindent
-This equation is the four-momentum notational form. The code follows the equation below in order to compute $Q^2$:
-
-\begin{equation}
-Q^2 = |(P_{\nu_{\mu,x}} - P_{\mu_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E})^2|
-\end{equation}
-
-\noindent
-$Q^2$ is reported in units of $(MeV/c)^2$.
-
-The $|t|$ corresponds to the four-momentum transfer from the neutrino, muon, and pion to the nucleus, and is calculated using the equation:
-
-\begin{equation}
-|t| = |(Q - P_\pi)^2| = |(P_{\nu_\mu} - P_\mu - P_\pi)^2|
-\end{equation}
-
-\noindent
-This equation is the four-momentum notational form. The code follows the equation below in order to compute $|t|$:
-
-\begin{equation}
-|t| = |(P_{\nu_{\mu,x}} - P_{\mu_x} - P_{\pi_x})^2 + (P_{\nu_{\mu,y}} - P_{\mu_y} - P_{\pi_y})^2 + (P_{\nu_{\mu,z}} - P_{\mu_z} - P_{\pi_z})^2 + (P_{\nu_{\mu,E}} - P_{\mu_E} - P_{\pi_E})^2|
-\end{equation}
-
-\noindent
-$|t|$ is reported in units of $(MeV/c)^2$.
 
 %-----------------------------------------------------------------------------------------------------------------|
 \subsection{NMCombinedPlots.C}
