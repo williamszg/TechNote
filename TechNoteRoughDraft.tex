@@ -45,12 +45,12 @@
 %|------------------------------The Title Page Begins Here---------------------
 \begin{minipage}[h]{\textwidth}
 \maketitle
-\begin{abstract}
-We showed that the SciBooNE guys tried to mess physics up by cutting out all of their CC-Coh Pion events from their data that was actually there! Duh.
+%\begin{abstract}
+%We showed that the SciBooNE guys tried to mess physics up by cutting out all of their CC-Coh Pion events from their data that was actually there! Duh.
 
 
-Do we need an abstract?
-\end{abstract}
+%Do we need an abstract?
+%\end{abstract}
 \end{minipage}
 %|===============================The Title Page Ends Here============================
 
@@ -667,7 +667,7 @@ found at the following link (put link to sample here).
 
 %-----------------------------------------------------------------------------------------------------------------|
 \subsection{Vertex Distributions}
-The events were all given a random initial point that was generated with the goal that the vertex distributions of this simulation would closely match the vertex distributions that Hiraide (need to put a reference) showed in his thesis. This was done by... etc.
+The events were all given a random initial point that was generated with the goal that the vertex distributions of this simulation would closely match the vertex distributions that Hiraide \footnote{Hiraide's thesis can be found here: \href{http://www-he.scphys.kyoto-u.ac.jp/theses/doctor/hiraide_dt.pdf}{http://www-he.scphys.kyoto-u.ac.jp/theses/doctor/hiraide\textunderscore{}dt.pdf}} showed in his thesis. This was done by... etc.
 
 \begin{lstlisting}[language=C]
 TRandom3 *randX = new TRandom3();
@@ -683,12 +683,12 @@ while (Ypos<0 || Ypos>3.0) { Ypos = randY->Gaus(1.5,1.05); }
 double Zpos = flat->Uniform(0,1.7);
 \end{lstlisting}
 
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1.0\textwidth]{EventClassifications/VertexDistributions.png}
-\caption{Vertex distributions of the events in the new Rein-Sehgal sample.}
+\caption{Vertex distributions of the events in the new Rein-Sehgal sample in $\nu$-mode.}
 \end{figure}
-
 
 
 
@@ -1560,13 +1560,6 @@ The instructions on how to run the code and the order the files need to run in s
 \end{steps}
 \end{adjustwidth}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Steps for Running the Code section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
-
-
-
-%===================================== A New Section Begins Here ===============================================|
-\section{Closing Remarks and Cautions}
-These are just a few cautionary suggestions for potential issues that might be encountered while trying to use this code. This will also be where and further closing remarks can be made.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The Steps for Running the Code section ends here! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|
 
 
 
