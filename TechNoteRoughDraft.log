@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.27)  17 MAY 2017 11:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.27)  17 MAY 2017 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -877,14 +877,6 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
-
 Overfull \hbox (17.0pt too wide) in paragraph at lines 46--56
 []$[]$ 
  []
@@ -922,17 +914,17 @@ File: EventClassifications/NotStopped.png Graphic file (type png)
 Package pdftex.def Info: EventClassifications/NotStopped.png used on input line
  172.
 (pdftex.def)             Requested size: 281.85587pt x 151.13647pt.
- [4 <./EventClassifications/Stopped.png>] <EventClassifications/OutSide.png, id
-=195, 762.85pt x 479.7925pt>
+ [4 <./EventClassifications/Stopped.png> <./EventClassifications/NotStopped.png
+>]
+<EventClassifications/OutSide.png, id=196, 762.85pt x 479.7925pt>
 File: EventClassifications/OutSide.png Graphic file (type png)
 
 <use EventClassifications/OutSide.png>
 Package pdftex.def Info: EventClassifications/OutSide.png used on input line 18
 6.
 (pdftex.def)             Requested size: 281.85587pt x 177.27151pt.
- [5 <./EventClassifications/NotStopped.png> <./EventClassifications/OutSide.png
->]
-<CCInclusivePlots/NMCCInclusiveTotalMomentum.png, id=202, 700.6175pt x 472.7662
+
+<CCInclusivePlots/NMCCInclusiveTotalMomentum.png, id=197, 700.6175pt x 472.7662
 5pt>
 File: CCInclusivePlots/NMCCInclusiveTotalMomentum.png Graphic file (type png)
  <use CCInclusivePlots/NMCCInclusiveTotalMomentum.png>
@@ -940,14 +932,14 @@ Package pdftex.def Info: CCInclusivePlots/NMCCInclusiveTotalMomentum.png used o
 n input line 242.
 (pdftex.def)             Requested size: 187.89914pt x 126.79015pt.
 
-<CCInclusivePlots/NMCCInclusiveTotalAngle.png, id=203, 700.6175pt x 472.76625pt
+<CCInclusivePlots/NMCCInclusiveTotalAngle.png, id=198, 700.6175pt x 472.76625pt
 >
 File: CCInclusivePlots/NMCCInclusiveTotalAngle.png Graphic file (type png)
  <use CCInclusivePlots/NMCCInclusiveTotalAngle.png>
 Package pdftex.def Info: CCInclusivePlots/NMCCInclusiveTotalAngle.png used on i
 nput line 243.
 (pdftex.def)             Requested size: 187.89914pt x 126.79015pt.
-
+ [5 <./EventClassifications/OutSide.png>]
 <CCInclusivePlots/CCInc1DEff.png, id=206, 1017.8025pt x 684.5575pt>
 File: CCInclusivePlots/CCInc1DEff.png Graphic file (type png)
 
@@ -986,23 +978,24 @@ File: CCInclusivePlots/2DEffCompareNMBS.png Graphic file (type png)
 Package pdftex.def Info: CCInclusivePlots/2DEffCompareNMBS.png used on input li
 ne 269.
 (pdftex.def)             Requested size: 187.89914pt x 126.79015pt.
- [7 <./CCInclusivePlots/CCInc1DEff.png> <./CCInclusivePlots/MorgansCCInclusiveS
-ample.png> <./CCInclusivePlots/2DEffCompareNMRS.png>]
 File: CCInclusivePlots/MorgansCCInclusiveSample.png Graphic file (type png)
- <use CCInclusivePlots/MorgansCCInclusiveSample.png>
+
+<use CCInclusivePlots/MorgansCCInclusiveSample.png>
 Package pdftex.def Info: CCInclusivePlots/MorgansCCInclusiveSample.png used on 
 input line 275.
 (pdftex.def)             Requested size: 140.92793pt x 125.40372pt.
 
-<CCInclusivePlots/2DEffCompareNMORS.png, id=225, 700.6175pt x 472.76625pt>
+<CCInclusivePlots/2DEffCompareNMORS.png, id=218, 700.6175pt x 472.76625pt>
 File: CCInclusivePlots/2DEffCompareNMORS.png Graphic file (type png)
 
 <use CCInclusivePlots/2DEffCompareNMORS.png>
 Package pdftex.def Info: CCInclusivePlots/2DEffCompareNMORS.png used on input l
 ine 276.
 (pdftex.def)             Requested size: 187.89914pt x 126.79015pt.
-
-<CCInclusivePlots/ANMCCInclusiveTotalMomentum.png, id=226, 700.6175pt x 472.766
+ [7 <./CCInclusivePlots/CCInc1DEff.png> <./CCInclusivePlots/MorgansCCInclusiveS
+ample.png> <./CCInclusivePlots/2DEffCompareNMRS.png> <./CCInclusivePlots/2DEffC
+ompareNMBS.png>]
+<CCInclusivePlots/ANMCCInclusiveTotalMomentum.png, id=227, 700.6175pt x 472.766
 25pt>
 File: CCInclusivePlots/ANMCCInclusiveTotalMomentum.png Graphic file (type png)
  <use CCInclusivePlots/ANMCCInclusiveTotalMomentum.png>
@@ -1010,15 +1003,14 @@ Package pdftex.def Info: CCInclusivePlots/ANMCCInclusiveTotalMomentum.png used
 on input line 321.
 (pdftex.def)             Requested size: 187.89914pt x 126.79015pt.
 
-<CCInclusivePlots/ANMCCInclusiveTotalAngle.png, id=227, 700.6175pt x 472.76625p
+<CCInclusivePlots/ANMCCInclusiveTotalAngle.png, id=228, 700.6175pt x 472.76625p
 t>
 File: CCInclusivePlots/ANMCCInclusiveTotalAngle.png Graphic file (type png)
  <use CCInclusivePlots/ANMCCInclusiveTotalAngle.png>
 Package pdftex.def Info: CCInclusivePlots/ANMCCInclusiveTotalAngle.png used on 
 input line 322.
 (pdftex.def)             Requested size: 187.89914pt x 126.79015pt.
- [8 <./CCInclusivePlots/2DEffCompareNMBS.png> <./CCInclusivePlots/2DEffCompareN
-MORS.png>]
+ [8 <./CCInclusivePlots/2DEffCompareNMORS.png>]
 <CCInclusivePlots/OneDAntiNuEffMomentum.png, id=235, 700.6175pt x 472.76625pt>
 File: CCInclusivePlots/OneDAntiNuEffMomentum.png Graphic file (type png)
 
@@ -1239,6 +1231,12 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 673.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 673.
@@ -2370,11 +2368,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1639.
  ) 
 Here is how much of TeX's memory you used:
- 13811 strings out of 494910
- 237770 string characters out of 6179836
- 555922 words of memory out of 5000000
- 16385 multiletter control sequences out of 15000+600000
- 20722 words of font info for 59 fonts, out of 8000000 for 9000
+ 13807 strings out of 494910
+ 237723 string characters out of 6179836
+ 555677 words of memory out of 5000000
+ 16382 multiletter control sequences out of 15000+600000
+ 20035 words of font info for 58 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  40i,11n,77p,1228b,1907s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/zwilliams/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </ho
@@ -2397,9 +2395,9 @@ s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on TechNoteRoughDraft.pdf (91 pages, 2353342 bytes).
+Output written on TechNoteRoughDraft.pdf (91 pages, 2351624 bytes).
 PDF statistics:
- 1411 PDF objects out of 1440 (max. 8388607)
+ 1408 PDF objects out of 1440 (max. 8388607)
  787 compressed objects within 8 object streams
  324 named destinations out of 1000 (max. 500000)
  1072 words of extra memory for PDF output out of 10000 (max. 10000000)
