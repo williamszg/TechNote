@@ -433,7 +433,7 @@ Here we define the Charged-Current Coherent Pion Production sample (CC-Coh $\pi^
 	\begin{tabular}{|c|c|c|c|}
 	\multicolumn{4}{c}{\textbf{$\nu$-mode CC-Coherent Pion Event Reduction}} \\
 	\hline \hline
-	 Events Selection & NEUT v5.3.6 Rein-Sehgal & NEUT v5.3.6 Berger-Sehgal & NEUT vx.x.x Rein-Sehgal\\
+	 Events Selection & NEUT v5.3.6 Rein-Sehgal & NEUT v5.3.6 Berger-Sehgal & NEUT v5.0.1 Rein-Sehgal\\
 	\hline
 	Total Sample & 1,000,000 & 1,000,000 & 100,000 \\
 	\hline
@@ -549,6 +549,61 @@ $\nu$-Mode $|t|$ and $Q^2$ plots are below:
 
 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{CCCohPlots/2DEffNMRS.png}
+\caption*{Figure \ref*{fig:TwoDEfficiencyCCCohNMRS}: Two-dimensional efficiency plot for the new NEUT $\nu$-mode Rein-Sehgal CC-Coherent sample.}
+\end{figure}\label{fig:TwoDEfficiencyCCCohNMRS}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{CCCohPlots/2DEffNMBS.png}
+\caption*{Figure \ref*{fig:TwoDEfficiencyCCCohNMBS}: Two-dimensional efficiency plot for the new NEUT $\nu$-mode Berger-Sehgal CC-Coherent sample.}
+\end{figure}\label{fig:TwoDEfficiencyCCCohNMBS}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{CCCohPlots/2DEffNMORS.png}
+\caption*{Figure \ref*{fig:TwoDEfficiencyCCCohNMORS}: Two-dimensional efficiency plot for the old NEUT $\nu$-mode Rein-Sehgal CC-Coherent sample.}
+\end{figure}\label{fig:TwoDEfficiencyCCCohNMORS}
+
+
+
+\newpage
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Table for 2D Histogram for New CC-Coh Pion NM-Rein-Sehgal}
+\begin{adjustbox}{width=\paperwidth}
+\csvautotabular{TechNoteTables/CC-Coh-New-NM-RS.csv}
+\end{adjustbox}
+\end{table}
+\end{landscape}
+
+\newpage
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Table for 2D Histogram for New CC-Coh Pion NM-Berger-Sehgal}
+\begin{adjustbox}{width=\paperwidth}
+\csvautotabular{TechNoteTables/CC-Coh-New-NM-BS.csv}
+\end{adjustbox}
+\end{table}
+\end{landscape}
+
+\newpage
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Table for 2D Histogram for Old CC-Coh Pion NM-Rein-Sehgal}
+\begin{adjustbox}{width=\paperwidth}
+\csvautotabular{TechNoteTables/CC-Coh-Old-NM-RS.csv}
+\end{adjustbox}
+\end{table}
+\end{landscape}
+
+
+
 Similar to before, Table \ref{tab:AntiNuCCCoherentEventReduction} goes through the event selection criteria for selecting a sample of CC-Coh $\pi^{+/-}$ events from the anti-neutrino mode ($\bar{\nu}$-mode) Monte Carlo.
 
 \begin{center}
@@ -612,6 +667,44 @@ $\bar{\nu}$-mode $|t|$ and $Q^2$ plots are below. They also have the same overal
 \caption{The $|t|$ Momentum Transfer (left) and $Q^2$ Momentum Transfer (right) for $\bar{\nu}$-mode CC-Coh $\pi^{+/-}$ interactions for both of the models included in this study which are the "stopped" and "not-stopped" events.}
 \end{figure}\label{fig:AntiNuModeCCCohGoodTAndQ2}
 % This is where the t and q2 plots end
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{CCCohPlots/2DEffANMRS.png}
+\caption*{Figure \ref*{fig:TwoDEfficiencyCCCohANMRS}: Two-dimensional efficiency plot for the new NEUT $\bar{\nu}$-mode Rein-Sehgal CC-Coherent sample.}
+\end{figure}\label{fig:TwoDEfficiencyCCCohANMRS}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{CCCohPlots/2DEffANMBS.png}
+\caption*{Figure \ref*{fig:TwoDEfficiencyCCCohANMBS}: Two-dimensional efficiency plot for the new NEUT $\bar{\nu}$-mode Berger-Sehgal CC-Coherent sample.}
+\end{figure}\label{fig:TwoDEfficiencyCCCohANMBS}
+
+
+
+\newpage
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Table for 2D Histogram for New CC-Coh Pion ANM-Rein-Sehgal}
+\begin{adjustbox}{width=\paperwidth}
+\csvautotabular{TechNoteTables/CC-Coh-New-ANM-RS.csv}
+\end{adjustbox}
+\end{table}
+\end{landscape}
+
+\newpage
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Table for 2D Histogram for New CC-Coh Pion ANM-Berger-Sehgal}
+\begin{adjustbox}{width=\paperwidth}
+\csvautotabular{TechNoteTables/CC-Coh-New-ANM-BS.csv}
+\end{adjustbox}
+\end{table}
+\end{landscape}
 
 
 %=========================================================================
@@ -1640,6 +1733,66 @@ There will eventually be the event reduction tables and 2D histogram tables here
 \caption{Table for 2D Histogram for New ANM-Berger-Sehgal}
 \begin{adjustbox}{width=\paperwidth}
 \csvautotabular{TechNoteTables/New-ANM-BS.csv}
+\end{adjustbox}
+\end{table}
+\end{landscape}
+
+
+
+
+
+%  Below is the CC-Coh 2D Efficiency Tables
+\newpage
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Table for 2D Histogram for New CC-Coh Pion NM-Rein-Sehgal}
+\begin{adjustbox}{width=\paperwidth}
+\csvautotabular{TechNoteTables/CC-Coh-New-NM-RS.csv}
+\end{adjustbox}
+\end{table}
+\end{landscape}
+
+\newpage
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Table for 2D Histogram for New CC-Coh Pion NM-Berger-Sehgal}
+\begin{adjustbox}{width=\paperwidth}
+\csvautotabular{TechNoteTables/CC-Coh-New-NM-BS.csv}
+\end{adjustbox}
+\end{table}
+\end{landscape}
+
+\newpage
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Table for 2D Histogram for Old CC-Coh Pion NM-Rein-Sehgal}
+\begin{adjustbox}{width=\paperwidth}
+\csvautotabular{TechNoteTables/CC-Coh-Old-NM-RS.csv}
+\end{adjustbox}
+\end{table}
+\end{landscape}
+
+\newpage
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Table for 2D Histogram for New CC-Coh Pion ANM-Rein-Sehgal}
+\begin{adjustbox}{width=\paperwidth}
+\csvautotabular{TechNoteTables/CC-Coh-New-ANM-RS.csv}
+\end{adjustbox}
+\end{table}
+\end{landscape}
+
+\newpage
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Table for 2D Histogram for New CC-Coh Pion ANM-Berger-Sehgal}
+\begin{adjustbox}{width=\paperwidth}
+\csvautotabular{TechNoteTables/CC-Coh-New-ANM-BS.csv}
 \end{adjustbox}
 \end{table}
 \end{landscape}
