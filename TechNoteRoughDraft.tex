@@ -195,7 +195,7 @@ The results of this acceptance study can be broken down into two different class
 \subsection{Charged-Current Inclusive Events}\label{sub:CCInclusive}
 %---------------------------------------------------------------------|
 
-Here we define the charged current inclusive sample (CC-Inclusive) which we use to validate our acceptance model against previously performed simulation studies. 
+Here we define the charged current inclusive sample (CC-Inclusive) which we use to validate our acceptance model against previously performed simulation studies.
 
 %---------------------------------------------------------------------|
 \subsubsection{$\nu$-mode Charged-Current Inclusive Events}\label{sub:NuModeCCInclusive}
@@ -235,6 +235,32 @@ Table \ref*{tab:NuCCIncEventReduction} goes through the event selection criteria
 \end{table}\label{tab:NuCCIncEventReduction}
 \end{center}
 
+The first quantity that is calculated for the different events is the momentum of both the muon and the pion, which are both found from the equations:
+
+\begin{equation}
+|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
+\end{equation}
+
+\begin{equation}
+|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
+\end{equation}
+
+\noindent
+where $|\vec{p}_\mu|$ represents the magnitude of the momentum for the corresponding particle, and $P_{\mu_x}$ represents the component of the four momentum for the corresponding particle. The momentum is reported in units of $MeV/c$.
+
+The next quantity calculated is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
+
+\begin{equation}
+\theta_\mu = tan^{-1}\Bigg(\frac{\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}}{P_{\mu_z}}\Bigg)
+\end{equation}
+
+\begin{equation}
+\theta_\pi = tan^{-1}\Bigg(\frac{\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}}{P_{\pi_z}}\Bigg)
+\end{equation}
+
+\noindent
+The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of charged-current coherent pion production, the angle should never be larger than $90\degree$.
+
 Figure \ref*{fig:NuModeCCInclusiveMomAndAng} shows the momentum and angular ($\theta$) distribution for the sample of $\nu$-mode CC-Inclusive events passing all our requirements for all three models considered in this study (NEUT v5.3.6 Rein-Sehgal, NEUT v5.3.6 Berger-Sehgal, NEUT v5.0.1 Rein-Sehgal). The distributions have been normalized to the same area and show no strong differences between them.
 
 
@@ -250,7 +276,7 @@ Figure \ref{fig:OneDEfficiency} represents the one-dimensional efficiency for se
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{CCInclusivePlots/CCInc1DEff.png}
+\includegraphics[width=0.8\textwidth]{CCInclusivePlots/CC1DIncEff.png}
 \caption*{Figure \ref*{fig:OneDEfficiency}: One-dimension efficiency plots for the $\nu$-mode CC-Inclusive sample.}
 \end{figure}\label{fig:OneDEfficiency}
 
@@ -334,8 +360,8 @@ Figure \ref*{fig:OneDEfficiencyAntiNu} represents the one-dimensional efficiency
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.4\textwidth]{CCInclusivePlots/OneDAntiNuEffMomentum.png}
-\includegraphics[width=0.4\textwidth]{CCInclusivePlots/OneDAntiNuEffAngle.png}
+\includegraphics[width=0.4\textwidth]{ANMCombinedPlotsImages/16-ANMCombinedPlots.png}
+\includegraphics[width=0.4\textwidth]{ANMCombinedPlotsImages/15-ANMCombinedPlots.png}
 \caption*{Figure \ref*{fig:OneDEfficiencyAntiNu}: One-dimension efficiency plots for the $\bar{\nu}$-mode CC-Inclusive sample. Muon's Momentums is on the right and the Muon's Angles is on the left.}
 \end{figure}\label{fig:OneDEfficiencyAntiNu}
 
@@ -404,32 +430,6 @@ Table \ref*{tab:NuCCCoherentEventReduction} goes through the event selection cri
 	\end{center}
 \end{table}\label{tab:NuCCCoherentEventReduction}
 \end{center}
-
-The first quantity that is calculated for the different events is the momentum of both the muon and the pion, which are both found from the equations:
-
-\begin{equation}
-|\vec{p}_\mu| = \sqrt{P_{\mu_x}^2 + P_{\mu_y}^2 + P_{\mu_z}^2}
-\end{equation}
-
-\begin{equation}
-|\vec{p}_\pi| = \sqrt{P_{\pi_x}^2 + P_{\pi_y}^2 + P_{\pi_z}^2}
-\end{equation}
-
-\noindent
-where $|\vec{p}_\mu|$ represents the magnitude of the momentum for the corresponding particle, and $P_{\mu_x}$ represents the component of the four momentum for the corresponding particle. The momentum is reported in units of $MeV/c$.
-
-The next quantity calculated is the angle from the beam-direction for both the muon and the pion, which are labeled as either $\theta_\mu$, or $\theta_\pi$, respectively. The angle from the beam-direction is the same as the angle from the z-direction, and this angle is known as the azimuthal angle. The calculation of the azimuthal angle is slightly more involved than the simple calculation used for finding the magnitude of the momentum of the two particles, and is calculated using the equations:
-
-\begin{equation}
-\theta_\mu = tan^{-1}\Bigg(\frac{\sqrt{P_{\mu_x}^2 + P_{\mu_y}^2}}{P_{\mu_z}}\Bigg)
-\end{equation}
-
-\begin{equation}
-\theta_\pi = tan^{-1}\Bigg(\frac{\sqrt{P_{\pi_x}^2 + P_{\pi_y}^2}}{P_{\pi_z}}\Bigg)
-\end{equation}
-
-\noindent
-The angles are reported in units of $\degree$, and should run from $0\degree$ to $180\degree$. In the case of charged-current coherent pion production, the angle should never be larger than $90\degree$.
 
 
 \begin{figure}[H]
