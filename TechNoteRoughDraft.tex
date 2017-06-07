@@ -66,7 +66,7 @@ The appendix is left to explain the details of the macros. The appendix also det
 %----------------------------------------
 The goal of the re-analysis is to examine the acceptance modeling for the SciBooNE results in the presence of modern neutrino generators and updated models in order to hopefully shed light on why SciBooNE did not observe charged-current coherent pion production at low neutrino energy.
 
-This study is intended to examine the effects of the acceptance modeling for a sample of coherent pion interactions inside the SciBooNE detector and compare what these would have been for various coherent pion production models. We utilize a simple, but robust, simulation of the SciBooNE detector and the NEUT neutrino generator to select and classify these neutrino events. 
+This study is intended to examine the effects of the acceptance modeling for a sample of CC-Coh $\pi$ interactions inside the SciBooNE detector and compare what these would have been for various CC-Coh $\pi$ production models. We utilize a simple, but robust, simulation of the SciBooNE detector and the NEUT neutrino generator to select and classify these neutrino events. 
 
 
 
@@ -286,7 +286,7 @@ The angles are reported in units of $\degree$, and should run from $0\degree$ to
 \label{fig:NuModeCCInclusiveMomAndAng}
 \end{figure}
 
-Figure \ref*{fig:NuModeCCInclusiveMomAndAng} shows the momentum and angular ($\theta$) distribution for the sample of $\nu$-mode CC-Inclusive events passing all of our requirements for all three models considered in this study (NEUT v5.3.6 Rein-Sehgal, NEUT v5.3.6 Berger-Sehgal, NEUT v5.0.1 Rein-Sehgal). The distributions have been normalized to the same area and show no strong differences between them. 
+Figure \ref*{fig:NuModeCCInclusiveMomAndAng} shows the momentum and angular ($\theta_{\mu}$) distribution for the sample of $\nu$-mode CC-Inclusive events passing all of our requirements for all three models considered in this study (NEUT v5.3.6 Rein-Sehgal, NEUT v5.3.6 Berger-Sehgal, NEUT v5.0.1 Rein-Sehgal). The distributions have been normalized to the same area and show no strong differences between them. 
 
 \begin{figure}[H]
 \centering
@@ -666,7 +666,13 @@ Below are the two-dimensional efficiency plots for the CC-Coh $\pi$ events in $\
 \label{sec:conclusion}
 %-------------------------------------------------------------------------
 
-This is where the conclusion goes and you need to write that now...
+The purpose of this acceptance study was to reproduce the acceptance model that was used in SciBooNE's original study, and to see the differences that resulted from multiple CC-Coh $\pi$ models with a more modern NEUT generator (the old NEUT version originally used in the SciBooNE study is believed to be NEUT v5.0.1 and the modern version used in this study is NEUT v5.3.6). The two-dimensional efficiency histograms for CC-Inclusive events were made and are shown in Figures \ref*{fig:TwoDEfficiencyRS}-\ref*{fig:TwoDEfficiencyORS}, Figure \ref*{fig:ANMTwoDEfficiencyRS}, and Figure \ref*{fig:ANMTwoDEfficiencyBS} with the corresponding tables being Tables \ref*{tab:app:CCIncNMRS}-\ref*{tab:app:CCIncANMBS}. The two-dimensional efficiency histograms for CC-Coh $\pi$ were also made and can now be used in the re-analysis as they were intended with Figures \ref*{fig:TwoDEfficiencyCCCohNMRS}-\ref*{fig:TwoDEfficiencyCCCohNMORS}, Figure \ref*{fig:TwoDEfficiencyCCCohANMRS}, and Figure \ref*{fig:TwoDEfficiencyCCCohANMBS} being the associated CC-Coh $\pi$ two-dimensional efficiency histograms. The tables that correspond to the CC-Coh $\pi$ two-dimensional efficiency histograms are Tables \ref*{tab:app:CCCohNMRS}-\ref*{tab:app:CCCohANMBS}.
+
+While working with CC-Inclusive events we were able to reproduce the results of a previous study, which is evident in the close agreement between the one-dimensional efficiency histograms for the muon's momentum and angle with Hiraide's thesis in Figure \ref*{fig:OneDEfficiency}. Though our model is simplistic, this agreement is a strong indication that our simplistic model is accurate and reasonable. In comparison with the two-dimensional efficiency histogram that was provided by Morgan for CC-Inclusive events, our two-dimensional efficiency histograms fail to corroborate what Morgan provided, as seen in Figures \ref*{fig:TwoDEfficiencyRS}-\ref*{fig:TwoDEfficiencyORS}. This is a result that we do not understand, but we do realize that our acceptance study is being compared with two different studies, so we do not know for certain what this implies about our acceptance study.
+
+The results for CC-Coh $\pi$ events showed a strong difference between the Rein-Sehgal models and the Berger-Sehgal model in the four-momentum transfer variables: $|t|$, and $Q^2$ (evident in Figure \ref*{fig:NuModeCCCohGoodTAndQ2} for $\nu$-mode events and in Figure \ref*{fig:AntiNuModeCCCohGoodTAndQ2} for $\bar{\nu}$-mode events). This result has striking implications for the way that the data is sliced, but looking at the results of the two-dimensional efficiency histograms for CC-Coh $\pi$ events (Figures \ref*{fig:TwoDEfficiencyCCCohNMRS}-\ref*{fig:TwoDEfficiencyCCCohNMORS} for $\nu$-mode and Figures \ref*{fig:TwoDEfficiencyCCCohANMRS}-\ref*{fig:TwoDEfficiencyCCCohANMBS} for $\bar{\nu}$-mode) there is no clearly distinguishable difference in the two-dimensional efficiency histograms between the different models. This implies that the detector is equally sensitive to both models, and that the issue of SciBooNE's non-observance of CC-Coh $\pi$ is not a result of the detector not being sensitive to different models, but is due to the slicing of the data.
+
+The results above strongly indicate that our simplistic model is reasonable, and they also indicate that the SciBooNE detector is equally sensitive to the different models for CC-Coh $\pi$ used in this acceptance study. This gives the clear implication that the cuts made for selecting CC-Coh $\pi$ in data are model dependent, and the selection cuts would depend on which kinematic variables are used to distinguish a CC-Coh $\pi$ event in the data. Future studies could be done on the differences in other kinematic variables between the different models, and there could also be a study that looked only at the events with a ``stopped'' muon and what their corresponding acceptance results would be.
 
 %-------------------------------------------------------------------------
 
