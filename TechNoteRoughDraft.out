@@ -16,22 +16,25 @@
 \BOOKMARK [2][-]{subsection.5.2}{Charged-Current Coherent Pion Production Events}{section.5}% 16
 \BOOKMARK [3][-]{subsubsection.5.2.1}{-mode Charged-Current Coherent Pion Events}{subsection.5.2}% 17
 \BOOKMARK [3][-]{subsubsection.5.2.2}{"7016-mode Charged-Current Coherent Pion Events}{subsection.5.2}% 18
-\BOOKMARK [1][-]{appendix.A}{Appendix: Sample Details}{}% 19
-\BOOKMARK [2][-]{subsection.A.1}{-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 20
-\BOOKMARK [2][-]{subsection.A.2}{-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 21
-\BOOKMARK [2][-]{subsection.A.3}{-Mode Rein-Sehgal NEUTv5.0.1}{appendix.A}% 22
-\BOOKMARK [2][-]{subsection.A.4}{"7016-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 23
-\BOOKMARK [2][-]{subsection.A.5}{"7016-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 24
-\BOOKMARK [2][-]{subsection.A.6}{Vertex Distributions}{appendix.A}% 25
-\BOOKMARK [2][-]{subsection.A.7}{NewNMReinSehgal.C}{appendix.A}% 26
-\BOOKMARK [2][-]{subsection.A.8}{NewNMBergerSehgal.C}{appendix.A}% 27
-\BOOKMARK [2][-]{subsection.A.9}{OldNMReinSehgal.C}{appendix.A}% 28
-\BOOKMARK [2][-]{subsection.A.10}{NewANMReinSehgal.C}{appendix.A}% 29
-\BOOKMARK [2][-]{subsection.A.11}{NewANMBergerSehgal.C}{appendix.A}% 30
-\BOOKMARK [2][-]{subsection.A.12}{NMCombinedPlots.C}{appendix.A}% 31
-\BOOKMARK [2][-]{subsection.A.13}{NMPionPlotting.C}{appendix.A}% 32
-\BOOKMARK [2][-]{subsection.A.14}{NMFourSquaredPlotting.C}{appendix.A}% 33
-\BOOKMARK [2][-]{subsection.A.15}{ANMCombinedPlots.C}{appendix.A}% 34
-\BOOKMARK [2][-]{subsection.A.16}{ANMPionPlotting.C}{appendix.A}% 35
-\BOOKMARK [2][-]{subsection.A.17}{ANMFourSquaredPlotting.C}{appendix.A}% 36
-\BOOKMARK [1][-]{appendix.B}{Efficiency Tables}{}% 37
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 19
+\BOOKMARK [1][-]{appendix.A}{Appendix: Sample Details}{}% 20
+\BOOKMARK [2][-]{subsection.A.1}{-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 21
+\BOOKMARK [2][-]{subsection.A.2}{-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 22
+\BOOKMARK [2][-]{subsection.A.3}{-Mode Rein-Sehgal NEUTv5.0.1}{appendix.A}% 23
+\BOOKMARK [2][-]{subsection.A.4}{"7016-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 24
+\BOOKMARK [2][-]{subsection.A.5}{"7016-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 25
+\BOOKMARK [2][-]{subsection.A.6}{Vertex Distributions}{appendix.A}% 26
+\BOOKMARK [2][-]{subsection.A.7}{NewNMReinSehgal.C}{appendix.A}% 27
+\BOOKMARK [2][-]{subsection.A.8}{NewNMBergerSehgal.C}{appendix.A}% 28
+\BOOKMARK [2][-]{subsection.A.9}{OldNMReinSehgal.C}{appendix.A}% 29
+\BOOKMARK [2][-]{subsection.A.10}{NewANMReinSehgal.C}{appendix.A}% 30
+\BOOKMARK [2][-]{subsection.A.11}{NewANMBergerSehgal.C}{appendix.A}% 31
+\BOOKMARK [2][-]{subsection.A.12}{NMCombinedPlots.C}{appendix.A}% 32
+\BOOKMARK [2][-]{subsection.A.13}{NMPionPlotting.C}{appendix.A}% 33
+\BOOKMARK [2][-]{subsection.A.14}{NMFourSquaredPlotting.C}{appendix.A}% 34
+\BOOKMARK [2][-]{subsection.A.15}{ANMCombinedPlots.C}{appendix.A}% 35
+\BOOKMARK [2][-]{subsection.A.16}{ANMPionPlotting.C}{appendix.A}% 36
+\BOOKMARK [2][-]{subsection.A.17}{ANMFourSquaredPlotting.C}{appendix.A}% 37
+\BOOKMARK [1][-]{appendix.B}{Efficiency Tables}{}% 38
+\BOOKMARK [2][-]{subsection.B.1}{Charged-Current Inclusive Sample Efficiency Tables}{appendix.B}% 39
+\BOOKMARK [2][-]{subsection.B.2}{Charged-Current Coherent Pion Production Efficiency Tables}{appendix.B}% 40
