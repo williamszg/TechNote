@@ -4,37 +4,38 @@
 \BOOKMARK [1][-]{section.3}{Detector Simulation}{}% 4
 \BOOKMARK [2][-]{subsection.3.1}{The Detector}{section.3}% 5
 \BOOKMARK [3][-]{subsubsection.3.1.1}{The Scintillator Bar Tracker \(SciBar\)}{subsection.3.1}% 6
-\BOOKMARK [3][-]{subsubsection.3.1.2}{The Muon Range Detector \(MRD\)}{subsection.3.1}% 7
-\BOOKMARK [1][-]{section.4}{Event Selection}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{Muon Stops within the MRD \(``Stopped''\)}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.2}{Muon exits out the back of the MRD \(``Out-the-back''\)}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.3}{Muon exits out the side of the MRD \(``Out-the-side''\)}{section.4}% 11
-\BOOKMARK [1][-]{section.5}{Results}{}% 12
-\BOOKMARK [2][-]{subsection.5.1}{Charged-Current Inclusive Events}{section.5}% 13
-\BOOKMARK [3][-]{subsubsection.5.1.1}{-mode Charged-Current Inclusive Events}{subsection.5.1}% 14
-\BOOKMARK [3][-]{subsubsection.5.1.2}{"7016-mode Charged-Current Inclusive Events}{subsection.5.1}% 15
-\BOOKMARK [2][-]{subsection.5.2}{Charged-Current Coherent Pion Production Events}{section.5}% 16
-\BOOKMARK [3][-]{subsubsection.5.2.1}{-mode Charged-Current Coherent Pion Events}{subsection.5.2}% 17
-\BOOKMARK [3][-]{subsubsection.5.2.2}{"7016-mode Charged-Current Coherent Pion Events}{subsection.5.2}% 18
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 19
-\BOOKMARK [1][-]{appendix.A}{Appendix: Sample Details}{}% 20
-\BOOKMARK [2][-]{subsection.A.1}{-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 21
-\BOOKMARK [2][-]{subsection.A.2}{-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 22
-\BOOKMARK [2][-]{subsection.A.3}{-Mode Rein-Sehgal NEUTv5.0.1}{appendix.A}% 23
-\BOOKMARK [2][-]{subsection.A.4}{"7016-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 24
-\BOOKMARK [2][-]{subsection.A.5}{"7016-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 25
-\BOOKMARK [2][-]{subsection.A.6}{Vertex Distributions}{appendix.A}% 26
-\BOOKMARK [2][-]{subsection.A.7}{NewNMReinSehgal.C}{appendix.A}% 27
-\BOOKMARK [2][-]{subsection.A.8}{NewNMBergerSehgal.C}{appendix.A}% 28
-\BOOKMARK [2][-]{subsection.A.9}{OldNMReinSehgal.C}{appendix.A}% 29
-\BOOKMARK [2][-]{subsection.A.10}{NewANMReinSehgal.C}{appendix.A}% 30
-\BOOKMARK [2][-]{subsection.A.11}{NewANMBergerSehgal.C}{appendix.A}% 31
-\BOOKMARK [2][-]{subsection.A.12}{NMCombinedPlots.C}{appendix.A}% 32
-\BOOKMARK [2][-]{subsection.A.13}{NMPionPlotting.C}{appendix.A}% 33
-\BOOKMARK [2][-]{subsection.A.14}{NMFourSquaredPlotting.C}{appendix.A}% 34
-\BOOKMARK [2][-]{subsection.A.15}{ANMCombinedPlots.C}{appendix.A}% 35
-\BOOKMARK [2][-]{subsection.A.16}{ANMPionPlotting.C}{appendix.A}% 36
-\BOOKMARK [2][-]{subsection.A.17}{ANMFourSquaredPlotting.C}{appendix.A}% 37
-\BOOKMARK [1][-]{appendix.B}{Efficiency Tables}{}% 38
-\BOOKMARK [2][-]{subsection.B.1}{Charged-Current Inclusive Sample Efficiency Tables}{appendix.B}% 39
-\BOOKMARK [2][-]{subsection.B.2}{Charged-Current Coherent Pion Production Efficiency Tables}{appendix.B}% 40
+\BOOKMARK [3][-]{subsubsection.3.1.2}{The Electromagnetic Calorimeter \(EC\)}{subsection.3.1}% 7
+\BOOKMARK [3][-]{subsubsection.3.1.3}{The Muon Range Detector \(MRD\)}{subsection.3.1}% 8
+\BOOKMARK [1][-]{section.4}{Event Selection}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Muon Stops within the MRD \(``Stopped''\)}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Muon exits out the back of the MRD \(``Out-the-back''\)}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Muon exits out the side of the MRD \(``Out-the-side''\)}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Results}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Charged-Current Inclusive Events}{section.5}% 14
+\BOOKMARK [3][-]{subsubsection.5.1.1}{-mode Charged-Current Inclusive Events}{subsection.5.1}% 15
+\BOOKMARK [3][-]{subsubsection.5.1.2}{"7016-mode Charged-Current Inclusive Events}{subsection.5.1}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Charged-Current Coherent Pion Production Events}{section.5}% 17
+\BOOKMARK [3][-]{subsubsection.5.2.1}{-mode Charged-Current Coherent Pion Events}{subsection.5.2}% 18
+\BOOKMARK [3][-]{subsubsection.5.2.2}{"7016-mode Charged-Current Coherent Pion Events}{subsection.5.2}% 19
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 20
+\BOOKMARK [1][-]{appendix.A}{Appendix: Sample Details}{}% 21
+\BOOKMARK [2][-]{subsection.A.1}{-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 22
+\BOOKMARK [2][-]{subsection.A.2}{-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 23
+\BOOKMARK [2][-]{subsection.A.3}{-Mode Rein-Sehgal NEUTv5.0.1}{appendix.A}% 24
+\BOOKMARK [2][-]{subsection.A.4}{"7016-Mode Rein-Sehgal NEUTv5.3.6}{appendix.A}% 25
+\BOOKMARK [2][-]{subsection.A.5}{"7016-Mode Berger-Sehgal NEUTv5.3.6}{appendix.A}% 26
+\BOOKMARK [2][-]{subsection.A.6}{Vertex Distributions}{appendix.A}% 27
+\BOOKMARK [2][-]{subsection.A.7}{NewNMReinSehgal.C}{appendix.A}% 28
+\BOOKMARK [2][-]{subsection.A.8}{NewNMBergerSehgal.C}{appendix.A}% 29
+\BOOKMARK [2][-]{subsection.A.9}{OldNMReinSehgal.C}{appendix.A}% 30
+\BOOKMARK [2][-]{subsection.A.10}{NewANMReinSehgal.C}{appendix.A}% 31
+\BOOKMARK [2][-]{subsection.A.11}{NewANMBergerSehgal.C}{appendix.A}% 32
+\BOOKMARK [2][-]{subsection.A.12}{NMCombinedPlots.C}{appendix.A}% 33
+\BOOKMARK [2][-]{subsection.A.13}{NMPionPlotting.C}{appendix.A}% 34
+\BOOKMARK [2][-]{subsection.A.14}{NMFourSquaredPlotting.C}{appendix.A}% 35
+\BOOKMARK [2][-]{subsection.A.15}{ANMCombinedPlots.C}{appendix.A}% 36
+\BOOKMARK [2][-]{subsection.A.16}{ANMPionPlotting.C}{appendix.A}% 37
+\BOOKMARK [2][-]{subsection.A.17}{ANMFourSquaredPlotting.C}{appendix.A}% 38
+\BOOKMARK [1][-]{appendix.B}{Efficiency Tables}{}% 39
+\BOOKMARK [2][-]{subsection.B.1}{Charged-Current Inclusive Sample Efficiency Tables}{appendix.B}% 40
+\BOOKMARK [2][-]{subsection.B.2}{Charged-Current Coherent Pion Production Efficiency Tables}{appendix.B}% 41
