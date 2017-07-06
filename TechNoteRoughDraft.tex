@@ -114,7 +114,7 @@ This section is intended to detail the detector simulation done in this acceptan
 \subsection{The Detector}
 \label{sub:detector}
 %----------------------------------------------------------------------|
-For the purposes of this acceptance study, the SciBooNE experiment is composed of three sub-detectors. The first (and the more upstream) of the sub-detectors, is the Scintillator Bar Tracker (SciBar) which was originally conceived and constructed to function as the near detector for the K2K experiment. The second (and more downstream) of the sub-detectors, is the Muon Range Detector (MRD), which is the detector designed and constructed specifically for SciBooNE for measuring the momentum of muons produced from charged-current neutrino interactions up to $1.2$ $GeV/c$ by using the observed range of the trajectory of the muon. The coordinante system used throughout this study, and illustrated in  Figure \ref*{fig:SciBooNEDetector}, puts the origin in the lower corner of the SciBar detector, has $z$ along the beam direction, $y$ opposite to gravity, and $x$ to beam left. 
+For the purposes of this acceptance study, the SciBooNE experiment is composed of three sub-detectors. The first (and the more upstream) of the sub-detectors, is the Scintillator Bar Tracker (SciBar) which was originally conceived and constructed to function as the near detector for the K2K experiment. The second (and in the middle) of the sub-detectors is the Electromagnetic Calorimeter (EC) detector, which is modeled as a simple dE/dx subtraction based on the incoming muon's angle for the events where the muon makes it to the front face of the Muon Range Detector (MRD). The third (and most downstream) of the sub-detectors, is the Muon Range Detector (MRD), which is the detector designed and constructed specifically for SciBooNE for measuring the momentum of muons produced from charged-current neutrino interactions up to $1.2$ $GeV/c$ by using the observed range of the trajectory of the muon. The coordinante system used throughout this study, and illustrated in  Figure \ref*{fig:SciBooNEDetector}, puts the origin in the lower corner of the SciBar detector, has $z$ along the beam direction, $y$ opposite to gravity, and $x$ to beam left. 
 
 \begin{figure}[H]
 \centering
@@ -133,7 +133,7 @@ The Scintillator Bar Tracker (SciBar) sub-detector is a scintillator detector wh
 \subsubsection{The Electromagnetic Calorimeter (EC)}
 \label{subsub:EC}
 %----------------------------------------------------------------------|
-The Electromagnetic Calorimeter (EC) sub-detector is installed downstream of SciBar and is accounted for by making a $91$ $MeV/cos(\theta)$ energy deposition approximation that depends on the particle's angle for all of the particles that passed through SciBar and made it to the front face of the Muon Range Detector (MRD). The detector has dimensions of...
+The Electromagnetic Calorimeter (EC) sub-detector is installed downstream of SciBar and is accounted for by making a $91$ $MeV/cos(\theta)$ energy deposition approximation that depends on the particle's angle for all of the particles that passed through SciBar and made it to the front face of the Muon Range Detector (MRD). The detector has dimensions of $0 < x < 2.7$ m, $0 < y < 2.6$ m, and is $11$ radiation lengths along the beam direction. The EC detector is a "spaghetti" type electromagnetic calorimeter, with the purpose of measuring the electron neutrino contamination in the beam, and to detect and tag photons that result from $\pi_{0}$ decays.
 
 %----------------------------------------------------------------------|
 \subsubsection{The Muon Range Detector (MRD)}
@@ -143,7 +143,7 @@ The Muon Range Detector (MRD), depicted in Figure \ref*{fig:mrddetector}\footnot
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{EventClassifications/mrd.png}
+\includegraphics[width=0.4\textwidth]{EventClassifications/mrd.png}
 \caption{Depiction of the Muon Range Detector (MRD) which consists of alternating layers of horizontal scintillator (shown in light blue) steel slabs (shown in red) and vertical scintillator (shown in dark blue)}
 \label{fig:mrddetector}
 \end{figure}
@@ -166,7 +166,7 @@ The requirement to classify a neutrino interaction as a ``stopped'' event requir
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{EventClassifications/Stopped.png}
+\includegraphics[width=0.6\textwidth]{EventClassifications/StoppedNew.png}
 \caption{Depiction of an event that was classified as ``stopped''.}
 \label{fig:stoppedEvent}
 \end{figure}
@@ -181,7 +181,7 @@ The classification of a neutrino interaction as ``out-the-back'' requires the mu
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{EventClassifications/NotStopped.png}
+\includegraphics[width=0.6\textwidth]{EventClassifications/OutTheBack.png}
 \caption{Depiction of an event that was classified as ``out-the-back''.}
 \label{fig:NotStoppedEvent}
 \end{figure}
@@ -197,7 +197,7 @@ The classification of a neutrino interaction as ``out-the-side'' requires that t
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{EventClassifications/OutSide.png}
+\includegraphics[width=0.55\textwidth]{EventClassifications/OutTheSide.png}
 \caption{Depiction of an event that was classified as ``out-the-side''.}
 \label{fig:OutTheSideEvent}
 \end{figure}
@@ -674,11 +674,11 @@ Below are the two-dimensional efficiency plots for the CC-Coh $\pi$ events in $\
 
 The purpose of this acceptance study was to reproduce the acceptance model that was used in SciBooNE's original study, and to see the differences that resulted from multiple CC-Coh $\pi$ models with a more modern NEUT generator (the old NEUT version originally used in the SciBooNE study is believed to be NEUT v5.0.1 and the modern version used in this study is NEUT v5.3.6). The two-dimensional efficiency histograms for CC-Inclusive events were made and are shown in Figures \ref*{fig:TwoDEfficiencyRS}-\ref*{fig:TwoDEfficiencyORS}, Figure \ref*{fig:ANMTwoDEfficiencyRS}, and Figure \ref*{fig:ANMTwoDEfficiencyBS} with the corresponding tables being Tables \ref*{tab:app:CCIncNMRS}-\ref*{tab:app:CCIncANMBS}. The two-dimensional efficiency histograms for CC-Coh $\pi$ were also made and can now be used in the re-analysis as they were intended with Figures \ref*{fig:TwoDEfficiencyCCCohNMRS}-\ref*{fig:TwoDEfficiencyCCCohNMORS}, Figure \ref*{fig:TwoDEfficiencyCCCohANMRS}, and Figure \ref*{fig:TwoDEfficiencyCCCohANMBS} being the associated CC-Coh $\pi$ two-dimensional efficiency histograms. The tables that correspond to the CC-Coh $\pi$ two-dimensional efficiency histograms are Tables \ref*{tab:app:CCCohNMRS}-\ref*{tab:app:CCCohANMBS}.
 
-While working with CC-Inclusive events we were able to reproduce the results of a previous study, which is evident in the close agreement between the one-dimensional efficiency histograms for the muon's momentum and angle with Hiraide's thesis in Figure \ref*{fig:OneDEfficiency}. Though our model is simplistic, this agreement is a strong indication that our simplistic model is accurate and reasonable. In comparison with the two-dimensional efficiency histogram that was provided by Morgan for CC-Inclusive events, our two-dimensional efficiency histograms fail to corroborate what Morgan provided, as seen in Figures \ref*{fig:TwoDEfficiencyRS}-\ref*{fig:TwoDEfficiencyORS}. This is a result that we do not understand, but we do realize that our acceptance study is being compared with two different studies, so we do not know for certain what this implies about our acceptance study.
+While working with CC-Inclusive events we were able to reproduce the results of a previous study, which is evident in the close agreement between the one-dimensional efficiency histograms for the muon's momentum and angle with Hiraide's thesis in Figure \ref*{fig:OneDEfficiency} (though there is a discrepancy in the percentages, the shape of the efficiencies agree). Though our model is simplistic, this agreement is a strong indication that our simplistic model is accurate and reasonable. In comparison with the two-dimensional efficiency histogram that was provided by Morgan for CC-Inclusive events, our two-dimensional efficiency histograms corroborate what Morgan provided, as seen in Figures \ref*{fig:TwoDEfficiencyRS}-\ref*{fig:TwoDEfficiencyORS}.
 
 The results for CC-Coh $\pi$ events showed a strong difference between the Rein-Sehgal models and the Berger-Sehgal model in the four-momentum transfer variables: $|t|$, and $Q^2$ (evident in Figure \ref*{fig:NuModeCCCohGoodTAndQ2} for $\nu$-mode events and in Figure \ref*{fig:AntiNuModeCCCohGoodTAndQ2} for $\bar{\nu}$-mode events). This result has striking implications for the way that the data is sliced, but looking at the results of the two-dimensional efficiency histograms for CC-Coh $\pi$ events (Figures \ref*{fig:TwoDEfficiencyCCCohNMRS}-\ref*{fig:TwoDEfficiencyCCCohNMORS} for $\nu$-mode and Figures \ref*{fig:TwoDEfficiencyCCCohANMRS}-\ref*{fig:TwoDEfficiencyCCCohANMBS} for $\bar{\nu}$-mode) there is no clearly distinguishable difference in the two-dimensional efficiency histograms between the different models. This implies that the detector is equally sensitive to both models, and that the issue of SciBooNE's non-observance of CC-Coh $\pi$ is not a result of the detector not being sensitive to different models, but is due to the slicing of the data.
 
-The results above strongly indicate that our simplistic model is reasonable, and they also indicate that the SciBooNE detector is equally sensitive to the different models for CC-Coh $\pi$ used in this acceptance study. This gives the clear implication that the cuts made for selecting CC-Coh $\pi$ in data are model dependent, and the selection cuts would depend on which kinematic variables are used to distinguish a CC-Coh $\pi$ event in the data. Future studies could be done on the differences in other kinematic variables between the different models, and there could also be a study that looked only at the events with a ``stopped'' muon and what their corresponding acceptance results would be.
+The results above strongly indicate that our simplistic model is reasonable, and they also indicate that the SciBooNE detector is equally sensitive to the different models for CC-Coh $\pi$ used in this acceptance study. This gives the clear implication that the cuts made for selecting CC-Coh $\pi$ in data are model dependent, and the selection cuts would depend on which kinematic variables are used to distinguish a CC-Coh $\pi$ event in the data. Future studies could be done on the differences in other kinematic variables between the different models, and there could also be a study that looked only at the events with a ``stopped'' muon and what their corresponding acceptance results would be. There is a study to determine if there is a significant contribution from events where either a proton or pion was identified as the muon currently in the works, and will ideally be completed soon.
 
 %-------------------------------------------------------------------------
 
@@ -799,16 +799,16 @@ This file is the macro that corresponds to the "NewNMReinSehgal.h" file, which c
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.4\textwidth]{NewNMReinSehgalImages/6-GoodCCCohMuonInfoNMRS.png}
-\includegraphics[width=0.4\textwidth]{NewNMReinSehgalImages/9-TotalCCCohMuonInfoNMRS.png}
+\includegraphics[width=0.4\textwidth]{NewNMReinSehgalImages/7.png}
+\includegraphics[width=0.4\textwidth]{NewNMReinSehgalImages/8.png}
 \caption{These are the two-dimensional histograms that when the left is divided by the right it returns the two-dimensional efficiency histogram for the CC-Inclusive events in the NEUT v5.3.6 Rein-Sehgal sample in $\nu$ mode. The left only contains events that the muon ``stopped'' or went ``out-the-back'', penetrated the front face of the MRD, and passed through at least four layers of scinitillator before stopping. The right contains all of the events that were classified as CC-Inclusive.}
 \label{fig:app:NMCCInclusiveMuon2DRS}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.4\textwidth]{NewNMReinSehgalImages/7.png}
-\includegraphics[width=0.4\textwidth]{NewNMReinSehgalImages/8.png}
+\includegraphics[width=0.4\textwidth]{NewNMReinSehgalImages/6-GoodCCCohMuonInfoNMRS.png}
+\includegraphics[width=0.4\textwidth]{NewNMReinSehgalImages/9-TotalCCCohMuonInfoNMRS.png}
 \caption{These are the two-dimensional histograms that when the left is divided by the right it returns the two-dimensional efficiency histogram for the CC-Coh $\pi$ events in the NEUT v5.3.6 Rein-Sehgal sample in $\nu$ mode. The left only contains events that the muon ``stopped'' or went ``out-the-back'', penetrated the front face of the MRD, and passed through at least four layers of scinitillator before stopping. The right contains all of the events that were classified as CC-Coh $\pi$.}
 \label{fig:app:NMCCCohMuon2DRS}
 \end{figure}
